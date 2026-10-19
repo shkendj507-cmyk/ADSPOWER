@@ -268,8 +268,16 @@ def get_worker_proxy(worker_id: int) -> dict | None:
             else:
                 user = f"{user}-session-{sess_id}"
 
+            # Always inject clean Tier-1 country (US, GB, DE, CA, FR) to bypass AdsPower 1008
+            tier1 = ["US", "GB", "DE", "CA", "FR", "NL", "AU"]
+            target_country = tier1[(worker_id + current_uses) % len(tier1)]
+            if "-country-" in user:
+                user = re.sub(r'-country-[a-zA-Z]+', f'-country-{target_country}', user)
+            else:
+                user = f"{user}-country-{target_country}"
+
             idx = lines.index(selected) + 1
-            print(f"[*] [Thread {worker_id}] Allocated Proxy #{idx}/{len(lines)} | Session Use: {current_uses}/2 max | Host: {ip}:{port}")
+            print(f"[*] [Thread {worker_id}] Allocated Proxy #{idx}/{len(lines)} | Session: {current_uses}/2 max | Country: {target_country} | Host: {ip}:{port}")
             return {
                 "server": f"http://{ip}:{port}",
                 "username": user,
@@ -500,16 +508,7 @@ async def register_account(headless: bool = False, worker_id: int = 1) -> dict |
         if captured.get("send_code_error"):
             print(f"\n[!] Send Code Rejected: {captured['send_code_error']}")
             print("[!] REASON FOR 'Unusual behavior, unable to register or login':")
-            print("    -> AdsPower server rate-limited the IP.")
-            err_str = str(captured['send_code_error']).lower()
-            if any(k in err_str for k in ("frequent", "limit", "unusual", "1008")):
-                print("[!] Writing RATE_LIMITED.flag so workflow triggers fresh Runner Main IP...")
-                flag_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "RATE_LIMITED.flag")
-                try:
-                    with open(flag_path, "w", encoding="utf-8") as f:
-                        f.write("rate_limited\n")
-                except Exception:
-                    pass
+            print("    -> AdsPower rate-limited this residential session. Rotating to next live proxy...")
             await context.close()
             try: shutil.rmtree(user_data_dir, ignore_errors=True)
             except Exception: pass
@@ -712,11 +711,6 @@ async def run_24h_creator_loop(target_buffer: int = 2, headless: bool = True, co
             print(f"\n[{now_str}] [*] [Cycle #{cycle}] Spawning {concurrency} browser thread(s) for continuous account creation...")
             tasks = [single_worker(i + 1) for i in range(concurrency)]
             await asyncio.gather(*tasks, return_exceptions=True)
-
-            flag_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "RATE_LIMITED.flag")
-            if os.path.exists(flag_file):
-                print("\n[!] AdsPower rate limit detected on current VPS main IP. Exiting to rotate RDP/VPS Main IP...")
-                break
 
             # Brief pause between creation cycles
             await asyncio.sleep(3)
