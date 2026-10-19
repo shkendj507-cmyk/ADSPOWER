@@ -108,6 +108,8 @@ def get_lan_ip() -> str:
 
     return "127.0.0.1"
 
+_DNS_CACHE = {}
+
 async def get_cached_ip(host: str) -> str:
     now = time.time()
     if host in _DNS_CACHE:
@@ -119,7 +121,7 @@ async def get_cached_ip(host: str) -> str:
         addr_info = await loop.getaddrinfo(host, None, family=socket.AF_INET)
         if addr_info:
             ip = addr_info[0][4][0]
-            _DNS_CACHE[host] = (ip, now + 1800)
+            _DNS_CACHE[host] = (ip, now + 7200)
             return ip
     except Exception:
         pass
@@ -131,11 +133,13 @@ def optimize_socket(writer):
     try:
         sock = writer.get_extra_info('socket')
         if sock:
+            # Disable Nagle's algorithm for instant 50ms-200ms latency
             sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
             try:
                 sock.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
-                sock.setsockopt(socket.SOL_SOCKET, socket.SO_RCVBUF, BUFFER_SIZE * 4)
-                sock.setsockopt(socket.SOL_SOCKET, socket.SO_SNDBUF, BUFFER_SIZE * 4)
+                # 256KB buffer for smooth streaming and zero buffering
+                sock.setsockopt(socket.SOL_SOCKET, socket.SO_RCVBUF, 262144)
+                sock.setsockopt(socket.SOL_SOCKET, socket.SO_SNDBUF, 262144)
             except Exception:
                 pass
     except Exception:
@@ -327,19 +331,19 @@ class LocalProxyServer:
             else:
                 u = f"{u}-session-{sess}"
 
-        # Adjust country only if requested country is known/supported, otherwise keep valid upstream country
-        valid_countries = {"US", "GB", "DE", "FR", "CA", "AU", "BR", "RU", "VN", "UA", "AR", "CL", "MA", "IN", "SG", "JP", "NL", "IT", "ES", "PL", "TR", "ID"}
-        if c and (c in valid_countries):
+        # Target Country Routing: Route to ANY requested country on SX.org
+        c_code = (c or self.default_country).strip().upper()
+        if c_code and (len(c_code) == 2 or c_code in ALL_COUNTRIES):
             if re.search(r'-country-[A-Za-z]+', u, re.IGNORECASE):
-                u = re.sub(r'-country-[A-Za-z]+', f'-country-{c}', u, flags=re.IGNORECASE)
+                u = re.sub(r'-country-[A-Za-z]+', f'-country-{c_code}', u, flags=re.IGNORECASE)
             elif re.search(r'-cc-[A-Za-z]+', u, re.IGNORECASE):
-                u = re.sub(r'-cc-[A-Za-z]+', f'-cc-{c}', u, flags=re.IGNORECASE)
+                u = re.sub(r'-cc-[A-Za-z]+', f'-cc-{c_code}', u, flags=re.IGNORECASE)
             elif re.search(r'_country_[A-Za-z]+', u, re.IGNORECASE):
-                u = re.sub(r'_country_[A-Za-z]+', f'_country_{c}', u, flags=re.IGNORECASE)
+                u = re.sub(r'_country_[A-Za-z]+', f'_country_{c_code}', u, flags=re.IGNORECASE)
             elif re.search(r'_cc_[A-Za-z]+', u, re.IGNORECASE):
-                u = re.sub(r'_cc_[A-Za-z]+', f'_cc_{c}', u, flags=re.IGNORECASE)
-            elif not re.search(rf'[-_](?:country|cc)[-_]{c}', u, re.IGNORECASE):
-                u = f"{u}-country-{c}"
+                u = re.sub(r'_cc_[A-Za-z]+', f'_cc_{c_code}', u, flags=re.IGNORECASE)
+            elif not re.search(rf'[-_](?:country|cc)[-_]{c_code}', u, re.IGNORECASE):
+                u = f"{u}-country-{c_code}"
 
         return u
 
@@ -350,6 +354,11 @@ class LocalProxyServer:
                     while True:
                         data = await client_reader.read(BUFFER_SIZE)
                         if not data:
+                            try:
+                                if hasattr(upstream_writer, 'write_eof'):
+                                    upstream_writer.write_eof()
+                            except Exception:
+                                pass
                             break
                         upstream_writer.write(data)
                         await upstream_writer.drain()
@@ -369,10 +378,13 @@ class LocalProxyServer:
 
             t1 = asyncio.create_task(fwd_c2u())
             t2 = asyncio.create_task(fwd_u2c())
-            done, pending = await asyncio.wait([t1, t2], return_when=asyncio.FIRST_COMPLETED)
-            for p in pending:
-                p.cancel()
-            await asyncio.gather(*pending, return_exceptions=True)
+
+            # CRITICAL FIX: Keep running until upstream finishes sending data to the client (t2 done)!
+            # Never prematurely cancel t2 when client stops sending request (t1 done).
+            await asyncio.wait([t2], timeout=180)
+            if not t1.done():
+                t1.cancel()
+            await asyncio.gather(t1, t2, return_exceptions=True)
         except Exception:
             pass
 
@@ -383,7 +395,8 @@ class LocalProxyServer:
         async def _attempt_connect(user_str):
             cred = base64.b64encode(f"{user_str}:{upstream['pass']}".encode("utf-8")).decode("utf-8")
             try:
-                r, w = await asyncio.wait_for(asyncio.open_connection(upstream_ip, upstream["port"]), timeout=12.0)
+                # Fast connection timeout (4.5s) for instant response in proxy checkers and browsers
+                r, w = await asyncio.wait_for(asyncio.open_connection(upstream_ip, upstream["port"]), timeout=4.5)
                 optimize_socket(w)
             except Exception as e:
                 return None, None, f"connect_failed: {e}"
@@ -398,14 +411,14 @@ class LocalProxyServer:
             await w.drain()
 
             try:
-                resp = await asyncio.wait_for(r.readline(), timeout=12.0)
+                resp = await asyncio.wait_for(r.readline(), timeout=5.0)
             except asyncio.TimeoutError:
                 w.close()
                 return None, None, "timeout"
 
             if resp.startswith(b"HTTP/1.1 200") or resp.startswith(b"HTTP/1.0 200"):
                 while True:
-                    hdr = await asyncio.wait_for(r.readline(), timeout=12.0)
+                    hdr = await asyncio.wait_for(r.readline(), timeout=5.0)
                     if hdr == b"\r\n" or not hdr:
                         break
                 return r, w, "ok"
