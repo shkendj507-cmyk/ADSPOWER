@@ -82,6 +82,46 @@ jobs:
           authkey: ${{ env.TS_KEY }}
           args: --ssh --hostname=github-runner
 
+      # Display VPS Login Information (Summary & Console)
+      - name: Display VPS Login Information
+        run: |
+          TS_IP=$(tailscale ip -4 2>/dev/null || echo "Not Connected (Add tailscale_authkey)")
+          HOST_NAME="github-runner"
+          
+          echo "================================================================"
+          echo "                 🖥️ VPS LOGIN INFORMATION                       "
+          echo "================================================================"
+          echo " HOSTNAME     : $HOST_NAME"
+          echo " TAILSCALE IP : $TS_IP"
+          echo " USERNAME     : runner  (or root)"
+          echo " PASSWORD     : ${{ env.LOGIN_PASS }}"
+          echo " SSH COMMAND  : ssh runner@$HOST_NAME"
+          echo " ALT COMMAND  : ssh runner@$TS_IP"
+          echo " PROXY PORTS  : 1000 & 8080"
+          echo " WEB SSH      : https://login.tailscale.com/admin/machines"
+          echo "================================================================"
+
+          # Write clean Markdown to GitHub Actions Run Summary
+          cat <<EOF >> $GITHUB_STEP_SUMMARY
+          ## 🖥️ VPS & Proxy Server Login Information
+
+          | Detail | Value |
+          |---|---|
+          | **Hostname** | \`$HOST_NAME\` |
+          | **Tailscale IP** | \`$TS_IP\` |
+          | **Username** | \`runner\` or \`root\` |
+          | **Password** | \`${{ env.LOGIN_PASS }}\` |
+          | **SSH Command** | \`ssh runner@$HOST_NAME\` or \`ssh runner@$TS_IP\` |
+          | **Web Terminal** | [Open Tailscale Machines](https://login.tailscale.com/admin/machines) |
+          | **Proxy Ports** | \`1000\` (Primary) & \`8080\` (Secondary) |
+          | **Runtime** | Active for up to 6 Hours |
+
+          > 💡 **Quick Connect Instructions:**
+          > 1. Make sure Tailscale is connected on your PC.
+          > 2. Open PowerShell or CMD and run: \`ssh runner@github-runner\`
+          > 3. Enter password: \`${{ env.LOGIN_PASS }}\`
+          EOF
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
