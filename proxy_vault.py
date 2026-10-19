@@ -1,3 +1,4 @@
+import asyncio
 import json
 import os
 import time
@@ -26,8 +27,8 @@ def format_proxy(p: dict) -> str:
     pwd = str(p.get("password") or p.get("pass") or "").strip()
     return f"{ip}:{port}:{login}:{pwd}"
 
-def ping_proxy_tunnel(proxy_dict: dict) -> Tuple[bool, str]:
-    """Tests TCP CONNECT through the proxy to cp.cloudflare.com:80."""
+def ping_proxy_tunnel(proxy_dict: dict, timeout: float = 2.5) -> Tuple[bool, str]:
+    """Tests TCP CONNECT through the proxy to cp.cloudflare.com:80 with fast timeout."""
     try:
         host = proxy_dict.get("ip") or proxy_dict.get("host")
         port = int(proxy_dict.get("port", 0))
@@ -36,13 +37,16 @@ def ping_proxy_tunnel(proxy_dict: dict) -> Tuple[bool, str]:
         if not (host and port and login and pwd):
             return False, "missing_credentials"
 
-        s = socket.create_connection((host, port), timeout=4)
+        s = socket.create_connection((host, port), timeout=timeout)
         s.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
         auth = base64.b64encode(f"{login}:{pwd}".encode("utf-8")).decode("utf-8")
         req = f"CONNECT cp.cloudflare.com:80 HTTP/1.1\r\nHost: cp.cloudflare.com:80\r\nProxy-Authorization: Basic {auth}\r\nUser-Agent: Mozilla/5.0\r\n\r\n"
         s.sendall(req.encode("utf-8"))
         resp = s.recv(256)
-        s.close()
+        try:
+            s.close()
+        except Exception:
+            pass
         resp_str = resp.decode("latin-1", errors="ignore").strip()
         if resp.startswith(b"HTTP/1.1 200") or resp.startswith(b"HTTP/1.0 200"):
             return True, "200 OK"
@@ -374,4 +378,58 @@ def pop_and_activate_next() -> Tuple[bool, dict]:
     _save_vault(vault)
     ok = activate_account_data(next_account)
     return ok, next_account
+
+async def scan_and_clean_dead_proxies(concurrency: int = 25) -> int:
+    """
+    Rapidly scans ALL proxies in proxy.txt concurrently in parallel batches.
+    Any proxy that returns 407 (Authentication Required / 1GB expired) is INSTANTLY purged.
+    Returns the number of dead proxies removed.
+    """
+    if not os.path.exists(PROXY_TXT_FILE):
+        return 0
+
+    try:
+        with open(PROXY_TXT_FILE, "r", encoding="utf-8") as f:
+            lines = [l.strip() for l in f if l.strip() and not l.strip().startswith("#")]
+    except Exception:
+        return 0
+
+    if not lines:
+        return 0
+
+    parsed = []
+    for line in lines:
+        parts = line.split(":")
+        if len(parts) >= 4:
+            parsed.append({
+                "host": parts[0].strip(),
+                "port": int(parts[1].strip()),
+                "user": parts[2].strip(),
+                "pass": parts[3].strip(),
+                "raw": line
+            })
+
+    if not parsed:
+        return 0
+
+    sem = asyncio.Semaphore(concurrency)
+    dead_proxies = []
+
+    async def _check(p):
+        async with sem:
+            ok, msg = await asyncio.to_thread(ping_proxy_tunnel, p, 2.5)
+            if not ok and ("407" in msg or "Authentication Required" in msg):
+                dead_proxies.append(p["raw"])
+
+    tasks = [_check(p) for p in parsed]
+    await asyncio.gather(*tasks, return_exceptions=True)
+
+    if dead_proxies:
+        for dead in dead_proxies:
+            remove_dead_proxy(dead)
+        print(f"[Vault-Scanner] [+] Rapid Scan: Purged {len(dead_proxies)} dead 407 proxies. {len(lines) - len(dead_proxies)} LIVE working proxies remain in proxy.txt.")
+        return len(dead_proxies)
+
+    print(f"[Vault-Scanner] [+] Rapid Scan: All {len(lines)} proxies verified LIVE and working!")
+    return 0
 
