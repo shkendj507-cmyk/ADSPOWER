@@ -108,11 +108,13 @@ jobs:
 
           if [ "$MODE" = "server" ]; then
             echo "=========================================================================="
-            echo " Starting 24/7 Unified Proxy Server (Port 1000) with Instant 0.001s Auto-Swap"
+            echo " Starting 24/7 Unified Proxy Server (Ports 1000 & 8080) with Instant 0.001s Auto-Swap"
             echo " Threads: $THREADS | Auto-Creator Active | Pre-Claimed Reserve Active"
             echo "=========================================================================="
-            # Runs main.py for up to 5.7 hours (342 minutes = 20520 seconds) before clean shutdown & commit
-            timeout 20520 python main.py $THREADS || true
+            # Grant port bind capability (< 1024)
+            sudo setcap 'cap_net_bind_service=+ep' $(readlink -f $(which python3)) 2>/dev/null || true
+            # Runs main.py for up to 5.7 hours with sudo -E to bind Port 1000 cleanly
+            sudo -E timeout 20520 python main.py $THREADS || true
           else
             echo "Running Creator-Only mode ($ACCOUNTS accounts)..."
             python adspower_creator.py --headless $ACCOUNTS $THREADS
