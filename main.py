@@ -87,9 +87,13 @@ async def main():
     asyncio.create_task(creator_worker_task(threads=threads), name="CreatorEngine")
     asyncio.create_task(keep_alive_monitor_task(), name="KeepAliveMonitor")
 
-    # Run continuously without ever exiting early until killed by workflow timeout
+    # Run continuously, checking if RATE_LIMITED.flag is created to rotate Runner IP
+    flag_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "RATE_LIMITED.flag")
     while True:
-        await asyncio.sleep(60)
+        await asyncio.sleep(5)
+        if os.path.exists(flag_file):
+            print("\n[!] AdsPower rate limit reached on current VPS/RDP IP. Exiting cleanly to rotate Runner Main IP...")
+            break
 
 if __name__ == "__main__":
     try:
