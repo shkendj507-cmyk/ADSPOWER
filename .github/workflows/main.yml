@@ -168,7 +168,10 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add links.txt proxy.txt proxies.txt claimed_proxies.json session.json 2>/dev/null || true
+          git stash || true
           git pull --rebase origin main || true
+          git stash pop 2>/dev/null || true
           git add links.txt proxy.txt proxies.txt claimed_proxies.json session.json 2>/dev/null || true
           git commit -m "Auto-update links.txt & claimed proxies [skip ci]" || echo "No changes to commit"
           git push origin main || echo "Push failed or nothing to push"
@@ -184,19 +187,4 @@ jobs:
             proxies.txt
             claimed_proxies.json
             session.json
-
-      # Automatically rotate RDP / VPS Runner Main IP when rate limited
-      - name: Auto-Restart with Fresh Runner IP on Rate Limit
-        if: always()
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          if [ -f "RATE_LIMITED.flag" ]; then
-            echo "=========================================================================="
-            echo " [!] AdsPower Rate Limit detected on current runner IP."
-            echo " [+] Automatically launching a NEW runner with a FRESH PUBLIC IP..."
-            echo "=========================================================================="
-            rm -f RATE_LIMITED.flag
-            gh workflow run main.yml -f mode="${{ github.event.inputs.mode || 'server' }}" -f threads="${{ github.event.inputs.threads || '2' }}" || true
-          fi
 
