@@ -1,17 +1,35 @@
-name: AdsPower Link & Proxy Creator
+name: EasyAds 24/7 Unified Proxy Server & Creator
 
 on:
   workflow_dispatch:
     inputs:
-      accounts:
-        description: 'Number of accounts to create'
+      mode:
+        description: 'Run Mode: server (Full Proxy Server + Auto-Swap) or creator (Creator Only)'
         required: true
+        default: 'server'
+        type: choice
+        options:
+          - server
+          - creator
+      threads:
+        description: 'Concurrent Browser Threads'
+        required: true
+        default: '2'
+        type: string
+      accounts:
+        description: 'Total Accounts (Only if mode = creator)'
+        required: false
         default: '5'
         type: string
-      concurrency:
-        description: 'Concurrent browser threads'
-        required: true
-        default: '1'
+      enable_ssh:
+        description: 'Enable Live Terminal Login'
+        required: false
+        default: true
+        type: boolean
+      ssh_password:
+        description: 'Login Password for user (runner)'
+        required: false
+        default: 'Manik123@'
         type: string
       tailscale_authkey:
         description: 'Tailscale Auth Key (Optional - tskey-auth-...)'
@@ -26,11 +44,12 @@ permissions:
   contents: write
 
 jobs:
-  create-links:
+  run-service:
     runs-on: ubuntu-latest
     timeout-minutes: 350
     env:
       TS_KEY: ${{ github.event.inputs.tailscale_authkey || secrets.TAILSCALE_AUTHKEY }}
+      LOGIN_PASS: ${{ github.event.inputs.ssh_password || 'Manik123@' }}
 
     steps:
       - name: Checkout Code
@@ -38,11 +57,35 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Connect Tailscale (Optional)
+      # Boost Total Memory to 17GB (7GB RAM + 10GB Fast NVMe Swap)
+      - name: Expand Virtual RAM to 17GB
+        run: |
+          echo "Current RAM:"
+          free -h
+          sudo fallocate -l 10G /swapfile || sudo dd if=/dev/zero of=/swapfile bs=1M count=10240
+          sudo chmod 600 /swapfile
+          sudo mkswap /swapfile
+          sudo swapon /swapfile
+          echo "=== EXPANDED RAM & SWAP (17GB TOTAL) ==="
+          free -h
+
+      # Set Password for 'runner' and 'root' user
+      - name: Setup User & Password for Remote Login
+        run: |
+          echo "runner:${{ env.LOGIN_PASS }}" | sudo chpasswd
+          echo "root:${{ env.LOGIN_PASS }}" | sudo chpasswd
+          echo "================================================="
+          echo " LOGIN USERNAME : runner (or root)"
+          echo " LOGIN PASSWORD : ${{ env.LOGIN_PASS }}"
+          echo "================================================="
+
+      # Connect Tailscale with SSH enabled
+      - name: Connect Tailscale with SSH (Optional)
         if: env.TS_KEY != ''
         uses: tailscale/github-action@v2
         with:
           authkey: ${{ env.TS_KEY }}
+          args: --ssh --hostname=github-runner
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -62,21 +105,39 @@ jobs:
           curl -s https://ipinfo.io/json || true
           echo ""
 
-      - name: Run AdsPower Creator
-        run: |
-          ACCOUNTS="${{ github.event.inputs.accounts || '5' }}"
-          THREADS="${{ github.event.inputs.concurrency || '1' }}"
-          echo "Creating $ACCOUNTS account(s) using $THREADS thread(s)..."
-          python adspower_creator.py --headless $ACCOUNTS $THREADS
+      # Open Instant Web Terminal & SSH access
+      - name: Open Web Terminal & Live SSH Login
+        if: "${{ github.event.inputs.enable_ssh == 'true' || github.event.inputs.enable_ssh == true }}"
+        uses: mxschmitt/action-tmate@v3
+        with:
+          detached: true # Runs in background so you can login anytime without pausing the server!
 
-      - name: Commit and Push links.txt to Repo
+      - name: Run EasyAds Master System (6-Hour Continuous Service)
+        run: |
+          MODE="${{ github.event.inputs.mode || 'server' }}"
+          THREADS="${{ github.event.inputs.threads || '2' }}"
+          ACCOUNTS="${{ github.event.inputs.accounts || '5' }}"
+
+          if [ "$MODE" = "server" ]; then
+            echo "=========================================================================="
+            echo " Starting 24/7 Unified Proxy Server (Port 1000) with Instant 0.001s Auto-Swap"
+            echo " Threads: $THREADS | Auto-Creator Active | Pre-Claimed Reserve Active"
+            echo "=========================================================================="
+            # Runs main.py for up to 5.7 hours (342 minutes = 20520 seconds) before clean shutdown & commit
+            timeout 20520 python main.py $THREADS || true
+          else
+            echo "Running Creator-Only mode ($ACCOUNTS accounts)..."
+            python adspower_creator.py --headless $ACCOUNTS $THREADS
+          fi
+
+      - name: Commit and Push links.txt & Proxies to Repo
         if: always()
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git pull --rebase origin main || true
           git add links.txt proxy.txt proxies.txt claimed_proxies.json session.json 2>/dev/null || true
-          git commit -m "Auto-update links.txt & proxies [skip ci]" || echo "No changes to commit"
+          git commit -m "Auto-update links.txt & claimed proxies [skip ci]" || echo "No changes to commit"
           git push origin main || echo "Push failed or nothing to push"
 
       - name: Upload links.txt as Downloadable Artifact
