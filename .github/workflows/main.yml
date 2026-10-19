@@ -14,7 +14,7 @@ on:
         default: '1'
         type: string
   schedule:
-    # Optional: runs automatically every 6 hours (uncomment or leave as is)
+    # Runs automatically every 6 hours
     - cron: '0 */6 * * *'
 
 permissions:
@@ -24,6 +24,8 @@ jobs:
   create-links:
     runs-on: ubuntu-latest
     timeout-minutes: 350
+    env:
+      TAILSCALE_AUTHKEY: ${{ secrets.TAILSCALE_AUTHKEY }}
 
     steps:
       - name: Checkout Code
@@ -32,10 +34,10 @@ jobs:
           fetch-depth: 0
 
       - name: Connect Tailscale (Optional)
-        if: "${{ secrets.TAILSCALE_AUTHKEY != '' }}"
+        if: env.TAILSCALE_AUTHKEY != ''
         uses: tailscale/github-action@v2
         with:
-          authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
+          authkey: ${{ env.TAILSCALE_AUTHKEY }}
 
       - name: Setup Python
         uses: actions/setup-python@v5
