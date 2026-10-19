@@ -40,29 +40,27 @@ async def proxy_server_task():
             await asyncio.sleep(2)
 
 async def keep_alive_monitor_task():
-    """Background monitor checking proxy tunnel health every 2 seconds and keeping sessions active."""
+    """Background monitor checking proxy tunnel health in parallel and keeping sessions active 24/7."""
     last_session_refresh = 0
+    last_full_scan = 0
     while True:
         try:
-            await asyncio.sleep(2)
+            await asyncio.sleep(5)
             now = time.time()
             if now - last_session_refresh > 45:
                 refreshed = proxy_vault.keep_all_sessions_alive()
                 last_session_refresh = now
 
-            proxies = local.LocalProxyServer().load_proxies()
-            if proxies:
-                for p in list(proxies)[:2]:
-                    ok, msg = proxy_vault.ping_proxy_tunnel(p)
-                    if not ok and ("407" in msg or "Authentication Required" in msg):
-                        dead_line = p.get("raw") or p.get("user")
-                        logger.warning(f"[Keep-Alive] 407 detected on proxy ({p.get('user', '')[:25]}...). Removing ONLY this proxy!")
-                        proxy_vault.remove_dead_proxy(dead_line)
-                        local.LocalProxyServer().load_proxies(force=True)
+            # Rapid background scan of all proxies in parallel every 90 seconds
+            if now - last_full_scan > 90:
+                await proxy_vault.scan_and_clean_dead_proxies(concurrency=25)
+                local.LocalProxyServer().load_proxies(force=True)
+                last_full_scan = now
+
         except asyncio.CancelledError:
             break
         except Exception as e:
-            await asyncio.sleep(2)
+            await asyncio.sleep(5)
 
 async def main():
     # Parse thread count from command line args if provided
@@ -73,7 +71,7 @@ async def main():
     print("\n" + "=" * 78)
     print("      EASYADS 24/7 UNIFIED AUTOMATED PROXY & CREATOR SYSTEM")
     print("=" * 78)
-    print(" [+] Mode             : Single Consolidated Master Service")
+    print(" [+] Mode             : Single Consolidated Master Service (24/7 Continuous)")
     print(f" [+] Creator Threads  : {threads} Concurrent Browser(s) creating accounts")
     print(" [+] Local Proxy      : 127.0.0.1:1000 (HTTP / HTTPS / SOCKS5)")
     print(" [+] Creator Engine   : 24/7 Headless Auto-Registration & SATE SATE Claim")
@@ -82,18 +80,18 @@ async def main():
     print(" [+] Press Ctrl+C anytime to stop.")
     print("=" * 78 + "\n")
 
-    # Start all 3 coordinated tasks together
+    # 1. Instant parallel health check on startup
+    print("[*] Performing instant parallel health-check of all upstream proxies...")
+    await proxy_vault.scan_and_clean_dead_proxies(concurrency=25)
+
+    # 2. Start all 3 coordinated tasks together
     asyncio.create_task(proxy_server_task(), name="ProxyServer")
     asyncio.create_task(creator_worker_task(threads=threads), name="CreatorEngine")
     asyncio.create_task(keep_alive_monitor_task(), name="KeepAliveMonitor")
 
-    # Run continuously, checking if RATE_LIMITED.flag is created to rotate Runner IP
-    flag_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "RATE_LIMITED.flag")
+    # Run continuously 24/7 without terminating the VPS or disconnecting SSH/RDP
     while True:
-        await asyncio.sleep(5)
-        if os.path.exists(flag_file):
-            print("\n[!] AdsPower rate limit reached on current VPS/RDP IP. Exiting cleanly to rotate Runner Main IP...")
-            break
+        await asyncio.sleep(60)
 
 if __name__ == "__main__":
     try:
