@@ -151,13 +151,15 @@ jobs:
             echo " Starting 24/7 Unified Proxy Server (Ports 1000 & 8080) with Instant 0.001s Auto-Swap"
             echo " Threads: $THREADS | Auto-Creator Active | Pre-Claimed Reserve Active"
             echo "=========================================================================="
-            # Grant port bind capability (< 1024)
-            sudo setcap 'cap_net_bind_service=+ep' $(readlink -f $(which python3)) 2>/dev/null || true
-            # Runs main.py for up to 5.7 hours with sudo -E to bind Port 1000 cleanly
-            sudo -E timeout 20520 python main.py $THREADS || true
+            # Allow non-root user (runner) to bind port 1000 and 8080 cleanly
+            sudo sysctl -w net.ipv4.ip_unprivileged_port_start=80
+            # Run main.py with unbuffered realtime output
+            export PYTHONUNBUFFERED=1
+            python -u main.py "$THREADS"
           else
             echo "Running Creator-Only mode ($ACCOUNTS accounts)..."
-            python adspower_creator.py --headless $ACCOUNTS $THREADS
+            export PYTHONUNBUFFERED=1
+            python -u adspower_creator.py --headless "$ACCOUNTS" "$THREADS"
           fi
 
       - name: Commit and Push links.txt & Proxies to Repo
@@ -178,4 +180,6 @@ jobs:
           path: |
             links.txt
             proxy.txt
+            proxies.txt
             claimed_proxies.json
+            session.json
