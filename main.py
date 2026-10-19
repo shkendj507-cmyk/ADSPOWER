@@ -16,18 +16,19 @@ logging.basicConfig(
 logger = logging.getLogger("EasyAds")
 
 async def creator_worker_task(threads: int = 2):
-    """24/7 Headless AdsPower Link Creator that immediately claims proxies into the reserve vault."""
-    try:
-        buffer_size = max(threads, 2)
-        await adspower_creator.run_24h_creator_loop(target_buffer=buffer_size, headless=True, concurrency=threads)
-    except asyncio.CancelledError:
-        pass
-    except Exception as e:
-        logger.error(f"[Creator] Worker crashed: {e}. Restarting in 5s...")
-        await asyncio.sleep(5)
+    """24/7 Headless AdsPower Link Creator that continuously creates and claims proxies."""
+    buffer_size = max(threads, 2)
+    while True:
+        try:
+            await adspower_creator.run_24h_creator_loop(target_buffer=buffer_size, headless=True, concurrency=threads)
+        except asyncio.CancelledError:
+            break
+        except Exception as e:
+            logger.error(f"[Creator] Worker notice: {e}. Retrying in 5s...")
+            await asyncio.sleep(5)
 
 async def proxy_server_task():
-    """Runs the 24/7 Local & LAN proxy server on port 1000 and country ports."""
+    """Runs the 24/7 Local & LAN proxy server on port 1000, 8080 and country ports."""
     server = local.LocalProxyServer(host="0.0.0.0", default_country="US")
     while True:
         try:
@@ -35,8 +36,8 @@ async def proxy_server_task():
         except asyncio.CancelledError:
             break
         except Exception as e:
-            logger.error(f"[Server] Proxy server error: {e}. Recovering in 1s...")
-            await asyncio.sleep(1)
+            logger.error(f"[Server] Proxy server notice: {e}. Recovering in 2s...")
+            await asyncio.sleep(2)
 
 async def keep_alive_monitor_task():
     """Background monitor checking proxy tunnel health every 2 seconds and keeping sessions active."""
@@ -82,11 +83,13 @@ async def main():
     print("=" * 78 + "\n")
 
     # Start all 3 coordinated tasks together
-    t_server = asyncio.create_task(proxy_server_task(), name="ProxyServer")
-    t_creator = asyncio.create_task(creator_worker_task(threads=threads), name="CreatorEngine")
-    t_monitor = asyncio.create_task(keep_alive_monitor_task(), name="KeepAliveMonitor")
+    asyncio.create_task(proxy_server_task(), name="ProxyServer")
+    asyncio.create_task(creator_worker_task(threads=threads), name="CreatorEngine")
+    asyncio.create_task(keep_alive_monitor_task(), name="KeepAliveMonitor")
 
-    await asyncio.gather(t_server, t_creator, t_monitor)
+    # Run continuously without ever exiting early until killed by workflow timeout
+    while True:
+        await asyncio.sleep(60)
 
 if __name__ == "__main__":
     try:
