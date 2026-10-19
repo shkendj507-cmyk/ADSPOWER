@@ -100,13 +100,6 @@ jobs:
           curl -s https://ipinfo.io/json || true
           echo ""
 
-      # Open Instant Web Terminal & SSH access
-      - name: Open Web Terminal & Live SSH Login
-        if: "${{ github.event.inputs.enable_ssh == 'true' || github.event.inputs.enable_ssh == true }}"
-        uses: mxschmitt/action-tmate@v3
-        with:
-          detached: true # Runs in background so you can login anytime without pausing the server!
-
       - name: Run EasyAds Master System (6-Hour Continuous Service)
         run: |
           MODE="${{ github.event.inputs.mode || 'server' }}"
