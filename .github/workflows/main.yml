@@ -42,6 +42,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   run-service:
@@ -183,3 +184,19 @@ jobs:
             proxies.txt
             claimed_proxies.json
             session.json
+
+      # Automatically rotate RDP / VPS Runner Main IP when rate limited
+      - name: Auto-Restart with Fresh Runner IP on Rate Limit
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -f "RATE_LIMITED.flag" ]; then
+            echo "=========================================================================="
+            echo " [!] AdsPower Rate Limit detected on current runner IP."
+            echo " [+] Automatically launching a NEW runner with a FRESH PUBLIC IP..."
+            echo "=========================================================================="
+            rm -f RATE_LIMITED.flag
+            gh workflow run main.yml -f mode="${{ github.event.inputs.mode || 'server' }}" -f threads="${{ github.event.inputs.threads || '2' }}" || true
+          fi
+
