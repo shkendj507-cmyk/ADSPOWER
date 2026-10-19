@@ -151,6 +151,7 @@ class LocalProxyServer:
         self.active_file = PROXY_TXT_FILE
         self.rot_index = 0
         self.servers = []
+        self.proxy_sessions = {}  # proxy_raw -> {"sess": str, "count": int} (Max 2 session changes per proxy!)
         self.session_pool = [uuid.uuid4().hex[:10] for _ in range(15)]
         self.session_counter = 0
         self.last_pool_refresh = time.time()
@@ -172,9 +173,30 @@ class LocalProxyServer:
                     return True
             return False
 
+    def get_proxy_session(self, proxy_raw: str, force_rotate: bool = False) -> str:
+        """
+        STRICT SX.ORG SAFETY RULE:
+        1 proxy only 2 session changes maximum.
+        Keeps session sticky across requests so SX.org account never gets suspended for excessive session changes.
+        """
+        key = (proxy_raw or "").strip()
+        data = self.proxy_sessions.get(key)
+        if not data:
+            new_sess = uuid.uuid4().hex[:8]
+            self.proxy_sessions[key] = {"sess": new_sess, "count": 1}
+            return new_sess
+
+        if force_rotate and data["count"] < 2:
+            new_sess = uuid.uuid4().hex[:8]
+            data["sess"] = new_sess
+            data["count"] += 1
+            logger.info(f"[*] Proxy session changed ({data['count']}/2 max): {key[:20]}...")
+            return new_sess
+
+        return data["sess"]
+
     def get_next_rotating_session(self) -> str:
         now = time.time()
-
         if now - self.last_pool_refresh > 90:
             self.session_pool = [uuid.uuid4().hex[:10] for _ in range(15)]
             self.last_pool_refresh = now
@@ -287,17 +309,21 @@ class LocalProxyServer:
         c = (country or self.default_country).strip().upper()
 
         # Session rotation logic:
-        # 1. If custom_session == "hold", preserve original upstream sticky session.
-        # 2. If client passed specific session (e.g. session-myname), use that fixed session.
-        # 3. Default (rotating mode): generate brand new random session for EVERY request so IP rotates!
+        # STRICT RULE: 1 proxy only 2 session changes max to avoid SX.org suspension!
         is_hold = custom_session in ("hold", "sticky")
-        sess = custom_session if (custom_session and not is_hold) else (None if is_hold else self.get_next_rotating_session())
+        if custom_session and not is_hold:
+            sess = custom_session
+        elif is_hold:
+            sess = None
+        else:
+            # Stable session with MAX 2 changes per proxy
+            sess = self.get_proxy_session(base_user, force_rotate=False)
 
         if sess:
-            if re.search(r'-session-[a-zA-Z0-9]+', u, re.IGNORECASE):
-                u = re.sub(r'-session-[a-zA-Z0-9]+', f'-session-{sess}', u, flags=re.IGNORECASE)
-            elif re.search(r'_session_[a-zA-Z0-9]+', u, re.IGNORECASE):
-                u = re.sub(r'_session_[a-zA-Z0-9]+', f'_session_{sess}', u, flags=re.IGNORECASE)
+            if re.search(r'-session-[a-zA-Z0-9_]+', u, re.IGNORECASE):
+                u = re.sub(r'-session-[a-zA-Z0-9_]+', f'-session-{sess}', u, flags=re.IGNORECASE)
+            elif re.search(r'_session_[a-zA-Z0-9_]+', u, re.IGNORECASE):
+                u = re.sub(r'_session_[a-zA-Z0-9_]+', f'_session_{sess}', u, flags=re.IGNORECASE)
             else:
                 u = f"{u}-session-{sess}"
 
