@@ -6325,5 +6325,449 @@
       }
     ],
     "primary": "212.8.248.20:9999:hp7ogtf49l-pool-res.mobile.corp-country-CL-mode-hold-session-6ad698055745d:DuL4mpSOZeGHAuv3"
+  },
+  {
+    "id": "889bd12c2ff146d9915c58d7969eb456",
+    "email": "ads-power-user1792449235230@sx.org",
+    "token": "2462199|wXLrh0r3QKNkt9Rvj1KoJdcnwvxDhXQHomGrxVopccfb71d3",
+    "session_id": "d6a995910a014bd3913cd8f70a67f8a3",
+    "auth_code": "4dn52bth6f",
+    "claimed_at": 1792449238.2220545,
+    "proxies": [
+      {
+        "host": "meissa.srvgdx.com",
+        "port": 9999,
+        "ip": "185.100.235.113",
+        "id": 242544751,
+        "login": "ejledr74no-pool-res.mobile.corp-country-CL-mode-hold-session-6ad69ad4ee894",
+        "password": "FRuOxLOCL6UT0AfJ",
+        "name": "19 October 22-33 - residential,mobile,corporate - CL",
+        "is_unlimited": false
+      },
+      {
+        "host": "phact.srvgdx.com",
+        "port": 9999,
+        "ip": "62.112.8.26",
+        "id": 242544750,
+        "login": "ejledr74no-pool-res.mobile.corp-country-GB-mode-hold-session-6ad69ad4ed66a",
+        "password": "FRuOxLOCL6UT0AfJ",
+        "name": "19 October 22-33 - residential,mobile,corporate - GB",
+        "is_unlimited": false
+      },
+      {
+        "host": "deneb.srvgdx.com",
+        "port": 9999,
+        "ip": "185.185.51.243",
+        "id": 242544749,
+        "login": "ejledr74no-pool-res.mobile.corp-country-AR-mode-hold-session-6ad69ad4ec409",
+        "password": "FRuOxLOCL6UT0AfJ",
+        "name": "19 October 22-33 - residential,mobile,corporate - AR",
+        "is_unlimited": false
+      },
+      {
+        "host": "wasat.srvgdx.com",
+        "port": 9999,
+        "ip": "45.14.135.182",
+        "id": 242544748,
+        "login": "ejledr74no-pool-res.mobile.corp-country-DE-mode-hold-session-6ad69ad4eb164",
+        "password": "FRuOxLOCL6UT0AfJ",
+        "name": "19 October 22-33 - residential,mobile,corporate - DE",
+        "is_unlimited": false
+      },
+      {
+        "host": "lich.srvgdx.com",
+        "port": 9999,
+        "ip": "190.2.141.31",
+        "id": 242544747,
+        "login": "ejledr74no-pool-res.mobile.corp-country-FR-mode-hold-session-6ad69ad4e9ec2",
+        "password": "FRuOxLOCL6UT0AfJ",
+        "name": "19 October 22-33 - residential,mobile,corporate - FR",
+        "is_unlimited": false
+      },
+      {
+        "host": "kochab.srvgdx.com",
+        "port": 9999,
+        "ip": "190.2.143.20",
+        "id": 242544746,
+        "login": "ejledr74no-pool-res.mobile.corp-country-UA-mode-hold-session-6ad69ad4e8be6",
+        "password": "FRuOxLOCL6UT0AfJ",
+        "name": "19 October 22-33 - residential,mobile,corporate - UA",
+        "is_unlimited": false
+      },
+      {
+        "host": "niki.srvgdx.com",
+        "port": 9999,
+        "ip": "212.8.248.113",
+        "id": 242544745,
+        "login": "ejledr74no-pool-res.mobile.corp-country-VN-mode-hold-session-6ad69ad4e7947",
+        "password": "FRuOxLOCL6UT0AfJ",
+        "name": "19 October 22-33 - residential,mobile,corporate - VN",
+        "is_unlimited": false
+      },
+      {
+        "host": "suhail.srvgdx.com",
+        "port": 9999,
+        "ip": "185.180.220.99",
+        "id": 242544744,
+        "login": "ejledr74no-pool-res.mobile.corp-country-BR-mode-hold-session-6ad69ad4e66e3",
+        "password": "FRuOxLOCL6UT0AfJ",
+        "name": "19 October 22-33 - residential,mobile,corporate - BR",
+        "is_unlimited": false
+      },
+      {
+        "host": "rukbat.srvgdx.com",
+        "port": 9999,
+        "ip": "190.2.141.12",
+        "id": 242544743,
+        "login": "ejledr74no-pool-res.mobile.corp-country-RU-mode-hold-session-6ad69ad4e5422",
+        "password": "FRuOxLOCL6UT0AfJ",
+        "name": "19 October 22-33 - residential,mobile,corporate - RU",
+        "is_unlimited": false
+      },
+      {
+        "host": "rappai.srvgdx.com",
+        "port": 9999,
+        "ip": "212.8.249.142",
+        "id": 242544742,
+        "login": "ejledr74no-pool-res.mobile.corp-country-US-mode-hold-session-6ad69ad4e3557",
+        "password": "FRuOxLOCL6UT0AfJ",
+        "name": "19 October 22-33 - residential,mobile,corporate - US",
+        "is_unlimited": false
+      }
+    ],
+    "primary": "185.100.235.113:9999:ejledr74no-pool-res.mobile.corp-country-CL-mode-hold-session-6ad69ad4ee894:FRuOxLOCL6UT0AfJ"
+  },
+  {
+    "id": "a0d88ae5cbe144bf8934024a267080bc",
+    "email": "ads-power-user1792449411307@sx.org",
+    "token": "2462200|mH8BxA8kioOW6uN9kUraJQ9BL94FxLHSeRRjN0Ot952aee79",
+    "session_id": "5ad0b88be0a541f49562225204b7598f",
+    "auth_code": "dvn1btfh8w",
+    "claimed_at": 1792449413.5470872,
+    "proxies": [
+      {
+        "host": "lich.srvgdx.com",
+        "port": 9999,
+        "ip": "190.2.141.31",
+        "id": 242544827,
+        "login": "csotlhfuol-pool-res.mobile.corp-country-CL-mode-hold-session-6ad69b845c4f4",
+        "password": "UfvOGZ7uOJ4Z9Uk0",
+        "name": "19 October 22-36 - residential,mobile,corporate - CL",
+        "is_unlimited": false
+      },
+      {
+        "host": "sika.srvgdx.com",
+        "port": 9999,
+        "ip": "185.132.177.174",
+        "id": 242544826,
+        "login": "csotlhfuol-pool-res.mobile.corp-country-GB-mode-hold-session-6ad69b845b356",
+        "password": "UfvOGZ7uOJ4Z9Uk0",
+        "name": "19 October 22-36 - residential,mobile,corporate - GB",
+        "is_unlimited": false
+      },
+      {
+        "host": "rukbat.srvgdx.com",
+        "port": 9999,
+        "ip": "190.2.141.12",
+        "id": 242544825,
+        "login": "csotlhfuol-pool-res.mobile.corp-country-AR-mode-hold-session-6ad69b845a1e3",
+        "password": "UfvOGZ7uOJ4Z9Uk0",
+        "name": "19 October 22-36 - residential,mobile,corporate - AR",
+        "is_unlimited": false
+      },
+      {
+        "host": "rappai.srvgdx.com",
+        "port": 9999,
+        "ip": "212.8.249.142",
+        "id": 242544824,
+        "login": "csotlhfuol-pool-res.mobile.corp-country-DE-mode-hold-session-6ad69b845904f",
+        "password": "UfvOGZ7uOJ4Z9Uk0",
+        "name": "19 October 22-36 - residential,mobile,corporate - DE",
+        "is_unlimited": false
+      },
+      {
+        "host": "arich.srvgdx.com",
+        "port": 9999,
+        "ip": "185.184.192.44",
+        "id": 242544823,
+        "login": "csotlhfuol-pool-res.mobile.corp-country-FR-mode-hold-session-6ad69b8457d9d",
+        "password": "UfvOGZ7uOJ4Z9Uk0",
+        "name": "19 October 22-36 - residential,mobile,corporate - FR",
+        "is_unlimited": false
+      },
+      {
+        "host": "wasat.srvgdx.com",
+        "port": 9999,
+        "ip": "45.14.135.182",
+        "id": 242544822,
+        "login": "csotlhfuol-pool-res.mobile.corp-country-UA-mode-hold-session-6ad69b8456b05",
+        "password": "UfvOGZ7uOJ4Z9Uk0",
+        "name": "19 October 22-36 - residential,mobile,corporate - UA",
+        "is_unlimited": false
+      },
+      {
+        "host": "rappai.srvgdx.com",
+        "port": 9999,
+        "ip": "212.8.249.142",
+        "id": 242544821,
+        "login": "csotlhfuol-pool-res.mobile.corp-country-VN-mode-hold-session-6ad69b8455836",
+        "password": "UfvOGZ7uOJ4Z9Uk0",
+        "name": "19 October 22-36 - residential,mobile,corporate - VN",
+        "is_unlimited": false
+      },
+      {
+        "host": "adhara.srvgdx.com",
+        "port": 9999,
+        "ip": "185.185.51.69",
+        "id": 242544820,
+        "login": "csotlhfuol-pool-res.mobile.corp-country-BR-mode-hold-session-6ad69b8454568",
+        "password": "UfvOGZ7uOJ4Z9Uk0",
+        "name": "19 October 22-36 - residential,mobile,corporate - BR",
+        "is_unlimited": false
+      },
+      {
+        "host": "toas.srvgdx.com",
+        "port": 9999,
+        "ip": "82.38.66.153",
+        "id": 242544819,
+        "login": "csotlhfuol-pool-res.mobile.corp-country-RU-mode-hold-session-6ad69b8453244",
+        "password": "UfvOGZ7uOJ4Z9Uk0",
+        "name": "19 October 22-36 - residential,mobile,corporate - RU",
+        "is_unlimited": false
+      },
+      {
+        "host": "lich.srvgdx.com",
+        "port": 9999,
+        "ip": "190.2.141.31",
+        "id": 242544818,
+        "login": "csotlhfuol-pool-res.mobile.corp-country-US-mode-hold-session-6ad69b8451191",
+        "password": "UfvOGZ7uOJ4Z9Uk0",
+        "name": "19 October 22-36 - residential,mobile,corporate - US",
+        "is_unlimited": false
+      }
+    ],
+    "primary": "190.2.141.31:9999:csotlhfuol-pool-res.mobile.corp-country-CL-mode-hold-session-6ad69b845c4f4:UfvOGZ7uOJ4Z9Uk0"
+  },
+  {
+    "id": "6d41b0263deb4bee85ae33394a8c22b2",
+    "email": "ads-power-user1792449517238@sx.org",
+    "token": "2462203|jX5n5WbeRqhLtTB7PpXaD7YkIVYbqQnG0ilfT0vZ12162144",
+    "session_id": "687daa05d9e44fa2adc62221233a66d6",
+    "auth_code": "nsvhxbdryx",
+    "claimed_at": 1792449519.9424827,
+    "proxies": [
+      {
+        "host": "lich.srvgdx.com",
+        "port": 9999,
+        "ip": "190.2.141.31",
+        "id": 242544867,
+        "login": "ruovtplkwi-pool-res.mobile.corp-country-CL-mode-hold-session-6ad69beeafbc1",
+        "password": "FPTyiO6QjhJrATZ9",
+        "name": "19 October 22-38 - residential,mobile,corporate - CL",
+        "is_unlimited": false
+      },
+      {
+        "host": "suhail.srvgdx.com",
+        "port": 9999,
+        "ip": "185.180.220.99",
+        "id": 242544866,
+        "login": "ruovtplkwi-pool-res.mobile.corp-country-GB-mode-hold-session-6ad69beeae7bc",
+        "password": "FPTyiO6QjhJrATZ9",
+        "name": "19 October 22-38 - residential,mobile,corporate - GB",
+        "is_unlimited": false
+      },
+      {
+        "host": "kochab.srvgdx.com",
+        "port": 9999,
+        "ip": "190.2.143.20",
+        "id": 242544865,
+        "login": "ruovtplkwi-pool-res.mobile.corp-country-AR-mode-hold-session-6ad69beead34a",
+        "password": "FPTyiO6QjhJrATZ9",
+        "name": "19 October 22-38 - residential,mobile,corporate - AR",
+        "is_unlimited": false
+      },
+      {
+        "host": "rappai.srvgdx.com",
+        "port": 9999,
+        "ip": "212.8.249.142",
+        "id": 242544864,
+        "login": "ruovtplkwi-pool-res.mobile.corp-country-DE-mode-hold-session-6ad69beeabf46",
+        "password": "FPTyiO6QjhJrATZ9",
+        "name": "19 October 22-38 - residential,mobile,corporate - DE",
+        "is_unlimited": false
+      },
+      {
+        "host": "sika.srvgdx.com",
+        "port": 9999,
+        "ip": "185.132.177.174",
+        "id": 242544863,
+        "login": "ruovtplkwi-pool-res.mobile.corp-country-FR-mode-hold-session-6ad69beeaab06",
+        "password": "FPTyiO6QjhJrATZ9",
+        "name": "19 October 22-38 - residential,mobile,corporate - FR",
+        "is_unlimited": false
+      },
+      {
+        "host": "rukbat.srvgdx.com",
+        "port": 9999,
+        "ip": "190.2.141.12",
+        "id": 242544862,
+        "login": "ruovtplkwi-pool-res.mobile.corp-country-UA-mode-hold-session-6ad69beea95a1",
+        "password": "FPTyiO6QjhJrATZ9",
+        "name": "19 October 22-38 - residential,mobile,corporate - UA",
+        "is_unlimited": false
+      },
+      {
+        "host": "toas.srvgdx.com",
+        "port": 9999,
+        "ip": "82.38.66.153",
+        "id": 242544861,
+        "login": "ruovtplkwi-pool-res.mobile.corp-country-VN-mode-hold-session-6ad69beea809f",
+        "password": "FPTyiO6QjhJrATZ9",
+        "name": "19 October 22-38 - residential,mobile,corporate - VN",
+        "is_unlimited": false
+      },
+      {
+        "host": "wasat.srvgdx.com",
+        "port": 9999,
+        "ip": "45.14.135.182",
+        "id": 242544860,
+        "login": "ruovtplkwi-pool-res.mobile.corp-country-BR-mode-hold-session-6ad69beea6af4",
+        "password": "FPTyiO6QjhJrATZ9",
+        "name": "19 October 22-38 - residential,mobile,corporate - BR",
+        "is_unlimited": false
+      },
+      {
+        "host": "phact.srvgdx.com",
+        "port": 9999,
+        "ip": "62.112.8.26",
+        "id": 242544859,
+        "login": "ruovtplkwi-pool-res.mobile.corp-country-RU-mode-hold-session-6ad69beea54a9",
+        "password": "FPTyiO6QjhJrATZ9",
+        "name": "19 October 22-38 - residential,mobile,corporate - RU",
+        "is_unlimited": false
+      },
+      {
+        "host": "phact.srvgdx.com",
+        "port": 9999,
+        "ip": "62.112.8.26",
+        "id": 242544858,
+        "login": "ruovtplkwi-pool-res.mobile.corp-country-US-mode-hold-session-6ad69beea3537",
+        "password": "FPTyiO6QjhJrATZ9",
+        "name": "19 October 22-38 - residential,mobile,corporate - US",
+        "is_unlimited": false
+      }
+    ],
+    "primary": "190.2.141.31:9999:ruovtplkwi-pool-res.mobile.corp-country-CL-mode-hold-session-6ad69beeafbc1:FPTyiO6QjhJrATZ9"
+  },
+  {
+    "id": "b93ef8536f2942608bcf39d6fd4fc82d",
+    "email": "ads-power-user1792449628916@sx.org",
+    "token": "2462204|PPQLY9m24ZJmyhUrw8y37Co7XPKk8hckNxHBytvH20062bb3",
+    "session_id": "f2a3ea369f58426e8cc61d3610e13a11",
+    "auth_code": "hbfbn7ndzf",
+    "claimed_at": 1792449631.0448744,
+    "proxies": [
+      {
+        "host": "niki.srvgdx.com",
+        "port": 9999,
+        "ip": "212.8.248.113",
+        "id": 242544964,
+        "login": "oa2jxhuj3g-pool-res.mobile.corp-country-CL-mode-hold-session-6ad69c5dce0d3",
+        "password": "muQUpjDNMrL5bdKQ",
+        "name": "19 October 22-40 - residential,mobile,corporate - CL",
+        "is_unlimited": false
+      },
+      {
+        "host": "sika.srvgdx.com",
+        "port": 9999,
+        "ip": "185.132.177.174",
+        "id": 242544963,
+        "login": "oa2jxhuj3g-pool-res.mobile.corp-country-GB-mode-hold-session-6ad69c5dcc986",
+        "password": "muQUpjDNMrL5bdKQ",
+        "name": "19 October 22-40 - residential,mobile,corporate - GB",
+        "is_unlimited": false
+      },
+      {
+        "host": "meissa.srvgdx.com",
+        "port": 9999,
+        "ip": "185.100.235.113",
+        "id": 242544962,
+        "login": "oa2jxhuj3g-pool-res.mobile.corp-country-AR-mode-hold-session-6ad69c5dcb1d8",
+        "password": "muQUpjDNMrL5bdKQ",
+        "name": "19 October 22-40 - residential,mobile,corporate - AR",
+        "is_unlimited": false
+      },
+      {
+        "host": "rukbat.srvgdx.com",
+        "port": 9999,
+        "ip": "190.2.141.12",
+        "id": 242544961,
+        "login": "oa2jxhuj3g-pool-res.mobile.corp-country-FR-mode-hold-session-6ad69c5dc99d7",
+        "password": "muQUpjDNMrL5bdKQ",
+        "name": "19 October 22-40 - residential,mobile,corporate - FR",
+        "is_unlimited": false
+      },
+      {
+        "host": "rappai.srvgdx.com",
+        "port": 9999,
+        "ip": "212.8.249.142",
+        "id": 242544960,
+        "login": "oa2jxhuj3g-pool-res.mobile.corp-country-DE-mode-hold-session-6ad69c5dc81a8",
+        "password": "muQUpjDNMrL5bdKQ",
+        "name": "19 October 22-40 - residential,mobile,corporate - DE",
+        "is_unlimited": false
+      },
+      {
+        "host": "arich.srvgdx.com",
+        "port": 9999,
+        "ip": "185.184.192.44",
+        "id": 242544959,
+        "login": "oa2jxhuj3g-pool-res.mobile.corp-country-UA-mode-hold-session-6ad69c5dc69d5",
+        "password": "muQUpjDNMrL5bdKQ",
+        "name": "19 October 22-40 - residential,mobile,corporate - UA",
+        "is_unlimited": false
+      },
+      {
+        "host": "lich.srvgdx.com",
+        "port": 9999,
+        "ip": "190.2.141.31",
+        "id": 242544958,
+        "login": "oa2jxhuj3g-pool-res.mobile.corp-country-VN-mode-hold-session-6ad69c5dc4f0c",
+        "password": "muQUpjDNMrL5bdKQ",
+        "name": "19 October 22-40 - residential,mobile,corporate - VN",
+        "is_unlimited": false
+      },
+      {
+        "host": "lich.srvgdx.com",
+        "port": 9999,
+        "ip": "190.2.141.31",
+        "id": 242544957,
+        "login": "oa2jxhuj3g-pool-res.mobile.corp-country-BR-mode-hold-session-6ad69c5dc3876",
+        "password": "muQUpjDNMrL5bdKQ",
+        "name": "19 October 22-40 - residential,mobile,corporate - BR",
+        "is_unlimited": false
+      },
+      {
+        "host": "kochab.srvgdx.com",
+        "port": 9999,
+        "ip": "190.2.143.20",
+        "id": 242544956,
+        "login": "oa2jxhuj3g-pool-res.mobile.corp-country-RU-mode-hold-session-6ad69c5dc20ec",
+        "password": "muQUpjDNMrL5bdKQ",
+        "name": "19 October 22-40 - residential,mobile,corporate - RU",
+        "is_unlimited": false
+      },
+      {
+        "host": "phact.srvgdx.com",
+        "port": 9999,
+        "ip": "62.112.8.26",
+        "id": 242544955,
+        "login": "oa2jxhuj3g-pool-res.mobile.corp-country-US-mode-hold-session-6ad69c5dbfc2b",
+        "password": "muQUpjDNMrL5bdKQ",
+        "name": "19 October 22-40 - residential,mobile,corporate - US",
+        "is_unlimited": false
+      }
+    ],
+    "primary": "212.8.248.113:9999:oa2jxhuj3g-pool-res.mobile.corp-country-CL-mode-hold-session-6ad69c5dce0d3:muQUpjDNMrL5bdKQ"
   }
 ]
