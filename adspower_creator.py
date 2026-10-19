@@ -11,6 +11,7 @@ import os
 import sys
 import json
 import base64
+import uuid
 import threading
 import tempfile
 import shutil
@@ -227,6 +228,63 @@ async def solve_geetest_slide(page) -> bool:
     await page.wait_for_timeout(600)
     return True
 
+PROXY_USAGE_TRACKER = {}
+PROXY_TRACK_LOCK = threading.Lock()
+
+def get_worker_proxy(worker_id: int) -> dict | None:
+    """
+    Returns a proxy from proxy.txt with STRICT limit:
+    Each proxy is used for at most 2 session changes (2 accounts).
+    If someone runs 100 threads, 50 proxies will be allocated (each used 2 times).
+    Prevents SX.org account suspension from excessive session changes.
+    """
+    proxy_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "proxy.txt")
+    if not os.path.exists(proxy_file):
+        return None
+    try:
+        with open(proxy_file, "r", encoding="utf-8") as f:
+            lines = [l.strip() for l in f if l.strip() and not l.strip().startswith("#")]
+        if not lines:
+            return None
+
+        with PROXY_TRACK_LOCK:
+            # Filter proxies that have been used LESS than 2 times
+            available = [l for l in lines if PROXY_USAGE_TRACKER.get(l, 0) < 2]
+            if not available:
+                # If all reached 2 sessions, pick the least used
+                available = sorted(lines, key=lambda l: PROXY_USAGE_TRACKER.get(l, 0))
+
+            selected = available[0]
+            current_uses = PROXY_USAGE_TRACKER.get(selected, 0) + 1
+            PROXY_USAGE_TRACKER[selected] = current_uses
+
+        parts = selected.split(":")
+        if len(parts) >= 4:
+            ip, port, user, pwd = parts[0], parts[1], parts[2], parts[3]
+            # Change session at most 2 times per proxy (s1 or s2)
+            sess_id = f"s{current_uses}_{uuid.uuid4().hex[:6]}"
+            if "-session-" in user:
+                user = re.sub(r'-session-[a-zA-Z0-9_]+', f'-session-{sess_id}', user)
+            else:
+                user = f"{user}-session-{sess_id}"
+
+            idx = lines.index(selected) + 1
+            print(f"[*] [Thread {worker_id}] Allocated Proxy #{idx}/{len(lines)} | Session Use: {current_uses}/2 max | Host: {ip}:{port}")
+            return {
+                "server": f"http://{ip}:{port}",
+                "username": user,
+                "password": pwd,
+                "raw": selected
+            }
+        elif len(parts) >= 2:
+            return {
+                "server": f"http://{parts[0]}:{parts[1]}",
+                "raw": selected
+            }
+    except Exception as e:
+        print(f"[*] [Thread {worker_id}] Proxy selection error: {e}")
+    return None
+
 async def register_account(headless: bool = False, worker_id: int = 1) -> dict | None:
     email = generate_desigroup_email()
     password = generate_random_password()
@@ -243,6 +301,7 @@ async def register_account(headless: bool = False, worker_id: int = 1) -> dict |
         "cookies": {},
         "send_code_error": None,
         "code_sent_success": False,
+        "rate_limited_1008": False,
         "created_at": time.strftime("%Y-%m-%d %H:%M:%S")
     }
     
@@ -265,15 +324,23 @@ async def register_account(headless: bool = False, worker_id: int = 1) -> dict |
     if headless:
         launch_args.append("--headless=new")
 
+    launch_kwargs = {
+        "user_data_dir": user_data_dir,
+        "headless": False,
+        "args": launch_args,
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        "viewport": {"width": 1280, "height": 800},
+        "locale": "en-US",
+    }
+
+    # Automatically attach a rotating residential proxy IP from live pool if available
+    worker_proxy = get_worker_proxy(worker_id)
+    if worker_proxy:
+        launch_kwargs["proxy"] = worker_proxy
+        print(f"[*] [Thread {worker_id}] Using rotating residential proxy IP: {worker_proxy['server']}")
+
     async with async_playwright() as p:
-        context = await p.chromium.launch_persistent_context(
-            user_data_dir=user_data_dir,
-            headless=False,
-            args=launch_args,
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-            viewport={"width": 1280, "height": 800},
-            locale="en-US",
-        )
+        context = await p.chromium.launch_persistent_context(**launch_kwargs)
         await context.add_init_script("""
             Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
             window.chrome = { runtime: {} };
@@ -290,6 +357,10 @@ async def register_account(headless: bool = False, worker_id: int = 1) -> dict |
                     print(f"\n[Thread {worker_id}] [SEND REG CODE RESP] {res_json}")
                     if res_json.get("code") == 0:
                         captured["code_sent_success"] = True
+                        captured["send_code_error"] = None
+                    elif res_json.get("code") == 1008:
+                        captured["rate_limited_1008"] = True
+                        print(f"[!] [Thread {worker_id}] AdsPower rate limit (1008) hit. Will cooldown 25s & auto-retry...")
                     else:
                         captured["send_code_error"] = res_json.get("msg", "Error")
                 except Exception as ex:
@@ -360,8 +431,13 @@ async def register_account(headless: bool = False, worker_id: int = 1) -> dict |
         # 2. Click "Get verification code" and retry captcha until code is sent
         print(f"[*] [Thread {worker_id}] Requesting verification code...")
         captcha_cycles = 0
-        while not captured.get("code_sent_success") and not captured.get("send_code_error") and captcha_cycles < 10:
+        while not captured.get("code_sent_success") and not captured.get("send_code_error") and captcha_cycles < 12:
             captcha_cycles += 1
+            if captured.get("rate_limited_1008"):
+                print(f"[*] [Thread {worker_id}] 1008 cooldown active: waiting 25s before retry...")
+                await asyncio.sleep(25)
+                captured["rate_limited_1008"] = False
+
             get_code_btn = page.locator("button:has-text('Get verification code')")
             try:
                 btn_text = await get_code_btn.inner_text()
@@ -425,6 +501,15 @@ async def register_account(headless: bool = False, worker_id: int = 1) -> dict |
             print(f"\n[!] Send Code Rejected: {captured['send_code_error']}")
             print("[!] REASON FOR 'Unusual behavior, unable to register or login':")
             print("    -> AdsPower server rate-limited the IP.")
+            err_str = str(captured['send_code_error']).lower()
+            if any(k in err_str for k in ("frequent", "limit", "unusual", "1008")):
+                print("[!] Writing RATE_LIMITED.flag so workflow triggers fresh Runner Main IP...")
+                flag_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "RATE_LIMITED.flag")
+                try:
+                    with open(flag_path, "w", encoding="utf-8") as f:
+                        f.write("rate_limited\n")
+                except Exception:
+                    pass
             await context.close()
             try: shutil.rmtree(user_data_dir, ignore_errors=True)
             except Exception: pass
@@ -602,6 +687,12 @@ async def run_24h_creator_loop(target_buffer: int = 2, headless: bool = True, co
 
     async def single_worker(worker_id: int):
         async with sem:
+            # Stagger startup by 7 seconds per thread to eliminate concurrent rate-limiting
+            stagger = (worker_id - 1) * 7
+            if stagger > 0:
+                print(f"[*] [Thread #{worker_id}] Staggering start by {stagger}s to prevent IP rate-limiting (1008)...")
+                await asyncio.sleep(stagger)
+
             now_str = time.strftime("%H:%M:%S")
             print(f"[{now_str}] [*] [Thread #{worker_id}] Starting browser to create and claim proxy...")
             data = await register_account(headless=headless, worker_id=worker_id)
@@ -621,6 +712,12 @@ async def run_24h_creator_loop(target_buffer: int = 2, headless: bool = True, co
             print(f"\n[{now_str}] [*] [Cycle #{cycle}] Spawning {concurrency} browser thread(s) for continuous account creation...")
             tasks = [single_worker(i + 1) for i in range(concurrency)]
             await asyncio.gather(*tasks, return_exceptions=True)
+
+            flag_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "RATE_LIMITED.flag")
+            if os.path.exists(flag_file):
+                print("\n[!] AdsPower rate limit detected on current VPS main IP. Exiting to rotate RDP/VPS Main IP...")
+                break
+
             # Brief pause between creation cycles
             await asyncio.sleep(3)
         except KeyboardInterrupt:
@@ -634,6 +731,10 @@ async def run_24h_creator_loop(target_buffer: int = 2, headless: bool = True, co
 
 async def worker_job(sem: asyncio.Semaphore, idx: int, total_count: int, headless: bool = False):
     async with sem:
+        stagger = (idx - 1) * 7
+        if stagger > 0:
+            print(f"[*] [Thread #{idx}] Staggering start by {stagger}s to prevent IP rate-limiting (1008)...")
+            await asyncio.sleep(stagger)
         print(f"\n>>> [Thread {idx}] Starting Account {idx} of {total_count} <<<")
         data = await register_account(headless=headless, worker_id=idx)
         if data and data.get("cpl"):
