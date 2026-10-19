@@ -613,27 +613,23 @@ async def run_24h_creator_loop(target_buffer: int = 2, headless: bool = True, co
             print(f"[-] [Thread #{worker_id}] Registration attempt failed.")
             return False
 
+    cycle = 0
     while True:
         try:
-            reserve_count = proxy_vault.get_reserve_count()
-            needed = target_buffer - reserve_count
-
-            if needed > 0:
-                now_str = time.strftime("%H:%M:%S")
-                spawn_count = min(needed, concurrency)
-                print(f"\n[{now_str}] [*] Reserve needs replenishment ({reserve_count}/{target_buffer}). Spawning {spawn_count} browser thread(s)...")
-                tasks = [single_worker(i + 1) for i in range(spawn_count)]
-                await asyncio.gather(*tasks, return_exceptions=True)
-                await asyncio.sleep(2)
-            else:
-                await asyncio.sleep(10)
+            cycle += 1
+            now_str = time.strftime("%H:%M:%S")
+            print(f"\n[{now_str}] [*] [Cycle #{cycle}] Spawning {concurrency} browser thread(s) for continuous account creation...")
+            tasks = [single_worker(i + 1) for i in range(concurrency)]
+            await asyncio.gather(*tasks, return_exceptions=True)
+            # Brief pause between creation cycles
+            await asyncio.sleep(3)
         except KeyboardInterrupt:
             print("\n[+] 24/7 Creator stopped by user.")
             break
         except Exception as e:
             now_str = time.strftime("%H:%M:%S")
-            print(f"[{now_str}] [!] Error in creator loop: {e}. Retrying in 15s...")
-            await asyncio.sleep(15)
+            print(f"[{now_str}] [!] Error in creator loop: {e}. Retrying in 10s...")
+            await asyncio.sleep(10)
 
 
 async def worker_job(sem: asyncio.Semaphore, idx: int, total_count: int, headless: bool = False):
