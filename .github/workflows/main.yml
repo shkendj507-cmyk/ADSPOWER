@@ -13,6 +13,11 @@ on:
         required: true
         default: '1'
         type: string
+      tailscale_authkey:
+        description: 'Tailscale Auth Key (Optional - tskey-auth-...)'
+        required: false
+        default: ''
+        type: string
   schedule:
     # Runs automatically every 6 hours
     - cron: '0 */6 * * *'
@@ -25,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 350
     env:
-      TAILSCALE_AUTHKEY: ${{ secrets.TAILSCALE_AUTHKEY }}
+      TS_KEY: ${{ github.event.inputs.tailscale_authkey || secrets.TAILSCALE_AUTHKEY }}
 
     steps:
       - name: Checkout Code
@@ -34,10 +39,10 @@ jobs:
           fetch-depth: 0
 
       - name: Connect Tailscale (Optional)
-        if: env.TAILSCALE_AUTHKEY != ''
+        if: env.TS_KEY != ''
         uses: tailscale/github-action@v2
         with:
-          authkey: ${{ env.TAILSCALE_AUTHKEY }}
+          authkey: ${{ env.TS_KEY }}
 
       - name: Setup Python
         uses: actions/setup-python@v5
