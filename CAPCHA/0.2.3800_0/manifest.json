@@ -1,0 +1,46 @@
+{
+   "action": {
+      "default_icon": "icon/16.png",
+      "default_popup": "popup.html",
+      "default_title": "Captcha Plugin: ReCaptcha Solver by Raptor"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "eventhook/loader.js" ],
+      "matches": [ "*://*.google.com/recaptcha/*", "*://*.recaptcha.net/recaptcha/*" ],
+      "run_at": "document_start",
+      "world": "MAIN"
+   }, {
+      "all_frames": true,
+      "js": [ "eventhook.js", "captcha/recaptcha.js" ],
+      "matches": [ "*://*.google.com/recaptcha/*", "*://*.recaptcha.net/recaptcha/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+   },
+   "default_locale": "en",
+   "description": "Automatically solves ReCaptcha images using a built-in neural network. Completely free. No registration or key purchase required.",
+   "host_permissions": [ "*://*.google.com/recaptcha/*" ],
+   "icons": {
+      "128": "icon/128.png",
+      "16": "icon/16.png",
+      "32": "icon/32.png",
+      "48": "icon/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqF1qvYUc28nrvtHNsscd+tUvNpzoLj8OBF2J1966Lc0VWV1XJNvtj3PXaW+MKCunx1Ya41vHA+wy/KjFaVj/BC8oxYg3ovpTP0heASSwYx8DLbz7BLM19XEU4ZXFM9euR0TvpAJebuj8mC/buHozEBr7fKYRKcwZxF2uksC3IeB+UsMaZjnmaUa4CoLFvNXzHf5pCK/79dOTCT9xooa3nLgi8J46Ygj4YdVFWC6nnXTCRxXttTpIQhI1HZVDaRtAMWxsURyWWNJbQyIrqYUVbEZ9uUGYDNso822EeTk7vD12/olqQcJoP29DPFuZWwlesCVWEpDcRRiO9+ShJL8B5QIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "111",
+   "name": "Free AI ReCaptcha Solver by Raptor (Captcha Plugin)",
+   "permissions": [ "alarms", "declarativeNetRequest", "idle", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.2.3800",
+   "version_name": "v0.2.3800",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "models/type.onnx", "models/grid.onnx", "models/grid.meta.json", "models/motorcycles_b1.onnx", "models/motorcycles_b1.meta.json", "lib/sql-wasm.wasm", "lib/sql-wasm.js", "lib/sql-wasm-wrapper.js", "lib/sql-wasm.mjs", "db/captcha.sqlite", "background_sqlite.js", "captcha/phash-browser.js", "libs/onnxruntime-web/**", "captcha/libs/onnxruntime-web/**", "captcha/recaptcha_ai.js" ]
+   } ]
+}
