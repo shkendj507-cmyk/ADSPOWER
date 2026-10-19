@@ -57,17 +57,12 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Boost Total Memory to 17GB (7GB RAM + 10GB Fast NVMe Swap)
-      - name: Expand Virtual RAM to 17GB
+      # Display System Memory info
+      - name: System Memory Info
         run: |
-          echo "Current RAM:"
+          echo "=== SYSTEM MEMORY ==="
           free -h
-          sudo fallocate -l 10G /swapfile || sudo dd if=/dev/zero of=/swapfile bs=1M count=10240
-          sudo chmod 600 /swapfile
-          sudo mkswap /swapfile
-          sudo swapon /swapfile
-          echo "=== EXPANDED RAM & SWAP (17GB TOTAL) ==="
-          free -h
+          echo ""
 
       # Set Password for 'runner' and 'root' user
       - name: Setup User & Password for Remote Login
