@@ -1,0 +1,83 @@
+name: AdsPower Link & Proxy Creator
+
+on:
+  workflow_dispatch:
+    inputs:
+      accounts:
+        description: 'Number of accounts to create'
+        required: true
+        default: '5'
+        type: string
+      concurrency:
+        description: 'Concurrent browser threads'
+        required: true
+        default: '1'
+        type: string
+  schedule:
+    # Optional: runs automatically every 6 hours (uncomment or leave as is)
+    - cron: '0 */6 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  create-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Connect Tailscale (Optional)
+        if: "${{ secrets.TAILSCALE_AUTHKEY != '' }}"
+        uses: tailscale/github-action@v2
+        with:
+          authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies & Playwright
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          playwright install chromium --with-deps
+
+      - name: Check Outgoing IP Info
+        run: |
+          echo "=== RUNNER IP & LOCATION ==="
+          curl -s https://ipinfo.io/json || true
+          echo ""
+
+      - name: Run AdsPower Creator
+        run: |
+          ACCOUNTS="${{ github.event.inputs.accounts || '5' }}"
+          THREADS="${{ github.event.inputs.concurrency || '1' }}"
+          echo "Creating $ACCOUNTS account(s) using $THREADS thread(s)..."
+          python adspower_creator.py --headless $ACCOUNTS $THREADS
+
+      - name: Commit and Push links.txt to Repo
+        if: always()
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
+          git add links.txt proxy.txt proxies.txt claimed_proxies.json session.json 2>/dev/null || true
+          git commit -m "Auto-update links.txt & proxies [skip ci]" || echo "No changes to commit"
+          git push origin main || echo "Push failed or nothing to push"
+
+      - name: Upload links.txt as Downloadable Artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: generated-links-and-proxies
+          path: |
+            links.txt
+            proxy.txt
+            claimed_proxies.json
