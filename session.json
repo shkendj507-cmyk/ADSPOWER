@@ -1,975 +1,6 @@
 {
   "sessions": [
     {
-      "email": "ads-power-user1792608086152@sx.org",
-      "token": "2467597|anCFd4VHymidaucG5LU0xsDKUPVYjwJGtVFB4JNW83297393",
-      "session_id": "fcbad582be9e412fbda4542f586d56a0",
-      "x_auth_code": "k2dhsfcn9v",
-      "activated_at": "2026-10-21 18:41:28",
-      "proxies": [
-        "185.185.51.69:9999:z4issyxval-pool-res.mobile.corp-country-CA-mode-hold-session-6ad9075800ae5:kQNuEWMibcksXFQy",
-        "185.184.192.44:9999:z4issyxval-pool-res.mobile.corp-country-CN-mode-hold-session-6ad90757f3986:kQNuEWMibcksXFQy",
-        "185.184.192.44:9999:z4issyxval-pool-res.mobile.corp-country-DE-mode-hold-session-6ad90757f26e2:kQNuEWMibcksXFQy",
-        "185.185.51.243:9999:z4issyxval-pool-res.mobile.corp-country-FR-mode-hold-session-6ad90757f13bd:kQNuEWMibcksXFQy",
-        "212.8.248.113:9999:z4issyxval-pool-res.mobile.corp-country-AR-mode-hold-session-6ad90757f0055:kQNuEWMibcksXFQy",
-        "185.100.235.113:9999:z4issyxval-pool-res.mobile.corp-country-UA-mode-hold-session-6ad90757eee8a:kQNuEWMibcksXFQy",
-        "212.8.248.113:9999:z4issyxval-pool-res.mobile.corp-country-VN-mode-hold-session-6ad90757edb74:kQNuEWMibcksXFQy",
-        "45.14.135.182:9999:z4issyxval-pool-res.mobile.corp-country-BR-mode-hold-session-6ad90757ec8e6:kQNuEWMibcksXFQy",
-        "190.2.141.31:9999:z4issyxval-pool-res.mobile.corp-country-RU-mode-hold-session-6ad90757eb6a5:kQNuEWMibcksXFQy",
-        "185.185.51.243:9999:z4issyxval-pool-res.mobile.corp-country-US-mode-hold-session-6ad90757e96b5:kQNuEWMibcksXFQy"
-      ]
-    },
-    {
-      "email": "ads-power-user1792608158140@sx.org",
-      "token": "2467602|ZaB5gOICAAUH85IkVP6Iz16S1Rz1bTu9vMhEwMvw7760702e",
-      "session_id": "30e9fb38a8364d2287680fc4f8a5ea71",
-      "x_auth_code": "jm5r7ajpz1",
-      "activated_at": "2026-10-21 18:42:40",
-      "proxies": [
-        "212.8.252.6:9999:zyctoysjy5-pool-res.mobile.corp-country-CA-mode-hold-session-6ad9079fe0ac6:1gvDow10AavWwDCm",
-        "45.14.135.182:9999:zyctoysjy5-pool-res.mobile.corp-country-CN-mode-hold-session-6ad9079fdf855:1gvDow10AavWwDCm",
-        "62.112.8.26:9999:zyctoysjy5-pool-res.mobile.corp-country-DE-mode-hold-session-6ad9079fde4a2:1gvDow10AavWwDCm",
-        "212.8.248.20:9999:zyctoysjy5-pool-res.mobile.corp-country-FR-mode-hold-session-6ad9079fdccca:1gvDow10AavWwDCm",
-        "212.8.248.113:9999:zyctoysjy5-pool-res.mobile.corp-country-AR-mode-hold-session-6ad9079fdb140:1gvDow10AavWwDCm",
-        "82.38.66.153:9999:zyctoysjy5-pool-res.mobile.corp-country-UA-mode-hold-session-6ad9079fd94a8:1gvDow10AavWwDCm",
-        "212.8.248.20:9999:zyctoysjy5-pool-res.mobile.corp-country-VN-mode-hold-session-6ad9079fd78ed:1gvDow10AavWwDCm",
-        "190.2.143.20:9999:zyctoysjy5-pool-res.mobile.corp-country-BR-mode-hold-session-6ad9079fd5c88:1gvDow10AavWwDCm",
-        "190.2.143.20:9999:zyctoysjy5-pool-res.mobile.corp-country-RU-mode-hold-session-6ad9079fd401a:1gvDow10AavWwDCm",
-        "185.132.177.174:9999:zyctoysjy5-pool-res.mobile.corp-country-US-mode-hold-session-6ad9079fd10a5:1gvDow10AavWwDCm"
-      ]
-    },
-    {
-      "email": "ads-power-user1792608212157@sx.org",
-      "token": "2467605|7GaaVFIeDMuFW3HagApatCxFTNUT8HWvWIpgPHdXc778e63b",
-      "session_id": "c6c2fa7db1b0482b86de25bd3f6966d7",
-      "x_auth_code": "jfj11a8jr1",
-      "activated_at": "2026-10-21 18:43:34",
-      "proxies": [
-        "190.2.141.12:9999:7aoxyk3roo-pool-res.mobile.corp-country-CA-mode-hold-session-6ad907d59c929:rBtLcbE2K0iVm9tv",
-        "212.8.249.142:9999:7aoxyk3roo-pool-res.mobile.corp-country-CN-mode-hold-session-6ad907d59b499:rBtLcbE2K0iVm9tv",
-        "212.8.249.142:9999:7aoxyk3roo-pool-res.mobile.corp-country-DE-mode-hold-session-6ad907d59a109:rBtLcbE2K0iVm9tv",
-        "190.2.143.20:9999:7aoxyk3roo-pool-res.mobile.corp-country-FR-mode-hold-session-6ad907d598d98:rBtLcbE2K0iVm9tv",
-        "190.2.141.12:9999:7aoxyk3roo-pool-res.mobile.corp-country-AR-mode-hold-session-6ad907d5979b9:rBtLcbE2K0iVm9tv",
-        "190.2.143.20:9999:7aoxyk3roo-pool-res.mobile.corp-country-UA-mode-hold-session-6ad907d5965b9:rBtLcbE2K0iVm9tv",
-        "185.132.177.174:9999:7aoxyk3roo-pool-res.mobile.corp-country-VN-mode-hold-session-6ad907d5950a8:rBtLcbE2K0iVm9tv",
-        "185.180.220.99:9999:7aoxyk3roo-pool-res.mobile.corp-country-BR-mode-hold-session-6ad907d593f36:rBtLcbE2K0iVm9tv",
-        "212.8.248.20:9999:7aoxyk3roo-pool-res.mobile.corp-country-RU-mode-hold-session-6ad907d592ad5:rBtLcbE2K0iVm9tv",
-        "212.8.248.20:9999:7aoxyk3roo-pool-res.mobile.corp-country-US-mode-hold-session-6ad907d590921:rBtLcbE2K0iVm9tv"
-      ]
-    },
-    {
-      "email": "ads-power-user1792608337133@sx.org",
-      "token": "2467607|hWjkN6kzyzciDZhO0GkmvgKK43LeEqSBoFDRNtvQ33df4c35",
-      "session_id": "41349ab380a74575a005b0b8319b06fb",
-      "x_auth_code": "hcw4evnfhz",
-      "activated_at": "2026-10-21 18:45:39",
-      "proxies": [
-        "185.180.220.99:9999:rup5istlx1-pool-res.mobile.corp-country-CA-mode-hold-session-6ad9085291806:hPVWEr5piGL6Ds2l",
-        "212.8.252.6:9999:rup5istlx1-pool-res.mobile.corp-country-CN-mode-hold-session-6ad9085290716:hPVWEr5piGL6Ds2l",
-        "190.2.141.31:9999:rup5istlx1-pool-res.mobile.corp-country-DE-mode-hold-session-6ad908528f671:hPVWEr5piGL6Ds2l",
-        "185.184.192.44:9999:rup5istlx1-pool-res.mobile.corp-country-FR-mode-hold-session-6ad908528e582:hPVWEr5piGL6Ds2l",
-        "212.8.248.113:9999:rup5istlx1-pool-res.mobile.corp-country-AR-mode-hold-session-6ad908528d479:hPVWEr5piGL6Ds2l",
-        "212.8.252.6:9999:rup5istlx1-pool-res.mobile.corp-country-UA-mode-hold-session-6ad908528c49b:hPVWEr5piGL6Ds2l",
-        "185.185.51.243:9999:rup5istlx1-pool-res.mobile.corp-country-VN-mode-hold-session-6ad908528b41e:hPVWEr5piGL6Ds2l",
-        "62.112.8.26:9999:rup5istlx1-pool-res.mobile.corp-country-BR-mode-hold-session-6ad908528a358:hPVWEr5piGL6Ds2l",
-        "185.185.51.243:9999:rup5istlx1-pool-res.mobile.corp-country-RU-mode-hold-session-6ad9085289205:hPVWEr5piGL6Ds2l",
-        "212.8.252.6:9999:rup5istlx1-pool-res.mobile.corp-country-US-mode-hold-session-6ad90852874cd:hPVWEr5piGL6Ds2l"
-      ]
-    },
-    {
-      "email": "ads-power-user1792608406507@sx.org",
-      "token": "2467608|pWfnrctJdCK0kPiYKZcGfELg4u6eCT9sykkMoqLof4130ded",
-      "session_id": "b8454e9f3f154a3abbc0028c0f735905",
-      "x_auth_code": "jjajrzy71j",
-      "activated_at": "2026-10-21 18:46:48",
-      "proxies": [
-        "185.100.235.113:9999:ztea3w6prv-pool-res.mobile.corp-country-CA-mode-hold-session-6ad90897b7691:PKFv6syb9FqCv27T",
-        "185.185.51.69:9999:ztea3w6prv-pool-res.mobile.corp-country-CN-mode-hold-session-6ad90897b662d:PKFv6syb9FqCv27T",
-        "190.2.141.31:9999:ztea3w6prv-pool-res.mobile.corp-country-DE-mode-hold-session-6ad90897b5444:PKFv6syb9FqCv27T",
-        "190.2.143.20:9999:ztea3w6prv-pool-res.mobile.corp-country-FR-mode-hold-session-6ad90897b429f:PKFv6syb9FqCv27T",
-        "82.38.66.153:9999:ztea3w6prv-pool-res.mobile.corp-country-AR-mode-hold-session-6ad90897b3124:PKFv6syb9FqCv27T",
-        "190.2.141.31:9999:ztea3w6prv-pool-res.mobile.corp-country-UA-mode-hold-session-6ad90897b1fa2:PKFv6syb9FqCv27T",
-        "190.2.141.12:9999:ztea3w6prv-pool-res.mobile.corp-country-VN-mode-hold-session-6ad90897b0d0d:PKFv6syb9FqCv27T",
-        "185.184.192.44:9999:ztea3w6prv-pool-res.mobile.corp-country-BR-mode-hold-session-6ad90897afbfe:PKFv6syb9FqCv27T",
-        "185.185.51.69:9999:ztea3w6prv-pool-res.mobile.corp-country-RU-mode-hold-session-6ad90897ae9d9:PKFv6syb9FqCv27T",
-        "62.112.8.26:9999:ztea3w6prv-pool-res.mobile.corp-country-US-mode-hold-session-6ad90897ac9c6:PKFv6syb9FqCv27T"
-      ]
-    },
-    {
-      "email": "ads-power-user1792608415571@sx.org",
-      "token": "2467609|Cx9m1Udp9CgEgdexbNHaOm2W1ukakEdu7DsXrjjF589cc735",
-      "session_id": "bd7bb8137b7d4f64b0f32df3b8cc5439",
-      "x_auth_code": "pcffevxanh",
-      "activated_at": "2026-10-21 18:46:57",
-      "proxies": [
-        "82.38.66.153:9999:renyii04er-pool-res.mobile.corp-country-CA-mode-hold-session-6ad908a1001cf:C0Zb99xTeEfCS5Ed",
-        "185.132.177.174:9999:renyii04er-pool-res.mobile.corp-country-CN-mode-hold-session-6ad908a0f3348:C0Zb99xTeEfCS5Ed",
-        "185.132.177.174:9999:renyii04er-pool-res.mobile.corp-country-DE-mode-hold-session-6ad908a0f22a5:C0Zb99xTeEfCS5Ed",
-        "190.2.143.20:9999:renyii04er-pool-res.mobile.corp-country-FR-mode-hold-session-6ad908a0f0f82:C0Zb99xTeEfCS5Ed",
-        "190.2.143.20:9999:renyii04er-pool-res.mobile.corp-country-AR-mode-hold-session-6ad908a0efbab:C0Zb99xTeEfCS5Ed",
-        "185.180.220.99:9999:renyii04er-pool-res.mobile.corp-country-UA-mode-hold-session-6ad908a0ee9e8:C0Zb99xTeEfCS5Ed",
-        "45.14.135.182:9999:renyii04er-pool-res.mobile.corp-country-VN-mode-hold-session-6ad908a0ed648:C0Zb99xTeEfCS5Ed",
-        "212.8.252.6:9999:renyii04er-pool-res.mobile.corp-country-BR-mode-hold-session-6ad908a0ec29a:C0Zb99xTeEfCS5Ed",
-        "190.2.143.20:9999:renyii04er-pool-res.mobile.corp-country-RU-mode-hold-session-6ad908a0eae43:C0Zb99xTeEfCS5Ed",
-        "212.8.248.20:9999:renyii04er-pool-res.mobile.corp-country-US-mode-hold-session-6ad908a0e903c:C0Zb99xTeEfCS5Ed"
-      ]
-    },
-    {
-      "email": "ads-power-user1792611171538@sx.org",
-      "token": "2467655|sx1UJKPUvhFujQwcs5aLnKNjUJyEbqUlVqI3VkWz0d110183",
-      "session_id": "39fc0089dc0e4cbdbe33e7c62cd19780",
-      "x_auth_code": "ez7n9hof6f",
-      "activated_at": "2026-10-21 19:32:53",
-      "proxies": [
-        "190.2.143.20:9999:wmvlyaa99y-pool-res.mobile.corp-country-CA-mode-hold-session-6ad913645ea8a:t8D4W6G4SCT1EPgw",
-        "82.38.66.153:9999:wmvlyaa99y-pool-res.mobile.corp-country-CN-mode-hold-session-6ad913645d73b:t8D4W6G4SCT1EPgw",
-        "62.112.8.26:9999:wmvlyaa99y-pool-res.mobile.corp-country-DE-mode-hold-session-6ad913645c40d:t8D4W6G4SCT1EPgw",
-        "212.8.252.6:9999:wmvlyaa99y-pool-res.mobile.corp-country-AR-mode-hold-session-6ad913645b16d:t8D4W6G4SCT1EPgw",
-        "185.185.51.69:9999:wmvlyaa99y-pool-res.mobile.corp-country-FR-mode-hold-session-6ad9136459e9d:t8D4W6G4SCT1EPgw",
-        "62.112.8.26:9999:wmvlyaa99y-pool-res.mobile.corp-country-UA-mode-hold-session-6ad9136458b2e:t8D4W6G4SCT1EPgw",
-        "185.184.192.44:9999:wmvlyaa99y-pool-res.mobile.corp-country-VN-mode-hold-session-6ad913645776f:t8D4W6G4SCT1EPgw",
-        "185.100.235.113:9999:wmvlyaa99y-pool-res.mobile.corp-country-BR-mode-hold-session-6ad913645645f:t8D4W6G4SCT1EPgw",
-        "45.14.135.182:9999:wmvlyaa99y-pool-res.mobile.corp-country-RU-mode-hold-session-6ad9136454f15:t8D4W6G4SCT1EPgw",
-        "185.180.220.99:9999:wmvlyaa99y-pool-res.mobile.corp-country-US-mode-hold-session-6ad9136452e6b:t8D4W6G4SCT1EPgw"
-      ]
-    },
-    {
-      "email": "ads-power-user1792611244664@sx.org",
-      "token": "2467657|F9f1132u2uoN3eU4C1dff1vHhqEYEYOd4vuvH4xxcbd6a376",
-      "session_id": "aaaad99fe72544e39d2235ea072466e0",
-      "x_auth_code": "qn83fhache",
-      "activated_at": "2026-10-21 19:34:06",
-      "proxies": [
-        "212.8.249.142:9999:se1zsgpjf5-pool-res.mobile.corp-country-CA-mode-hold-session-6ad913addf93f:KSYQ1YGFtc29N9bl",
-        "190.2.141.12:9999:se1zsgpjf5-pool-res.mobile.corp-country-CN-mode-hold-session-6ad913adde45f:KSYQ1YGFtc29N9bl",
-        "185.184.192.44:9999:se1zsgpjf5-pool-res.mobile.corp-country-DE-mode-hold-session-6ad913addd022:KSYQ1YGFtc29N9bl",
-        "62.112.8.26:9999:se1zsgpjf5-pool-res.mobile.corp-country-AR-mode-hold-session-6ad913addbb84:KSYQ1YGFtc29N9bl",
-        "185.184.192.44:9999:se1zsgpjf5-pool-res.mobile.corp-country-FR-mode-hold-session-6ad913adda744:KSYQ1YGFtc29N9bl",
-        "190.2.143.20:9999:se1zsgpjf5-pool-res.mobile.corp-country-UA-mode-hold-session-6ad913add939b:KSYQ1YGFtc29N9bl",
-        "185.132.177.174:9999:se1zsgpjf5-pool-res.mobile.corp-country-VN-mode-hold-session-6ad913add7f7e:KSYQ1YGFtc29N9bl",
-        "212.8.248.20:9999:se1zsgpjf5-pool-res.mobile.corp-country-BR-mode-hold-session-6ad913add6b95:KSYQ1YGFtc29N9bl",
-        "190.2.143.20:9999:se1zsgpjf5-pool-res.mobile.corp-country-RU-mode-hold-session-6ad913add570b:KSYQ1YGFtc29N9bl",
-        "190.2.143.20:9999:se1zsgpjf5-pool-res.mobile.corp-country-US-mode-hold-session-6ad913add3409:KSYQ1YGFtc29N9bl"
-      ]
-    },
-    {
-      "email": "ads-power-user1792611268420@sx.org",
-      "token": "2467659|oDE8PpDUlQtfhBkPdyVK16EOz9RAr0OKb0z9beGabb01c88f",
-      "session_id": "b0d1d7356f6d40339d40fd23d41ac8da",
-      "x_auth_code": "jbw1ja9rcf",
-      "activated_at": "2026-10-21 19:34:30",
-      "proxies": [
-        "190.2.141.12:9999:2tnxjkleuo-pool-res.mobile.corp-country-CA-mode-hold-session-6ad913c5c19f9:yczd5pJclCukHDZV",
-        "212.8.252.6:9999:2tnxjkleuo-pool-res.mobile.corp-country-CN-mode-hold-session-6ad913c5c06e8:yczd5pJclCukHDZV",
-        "45.14.135.182:9999:2tnxjkleuo-pool-res.mobile.corp-country-DE-mode-hold-session-6ad913c5bf49f:yczd5pJclCukHDZV",
-        "212.8.248.20:9999:2tnxjkleuo-pool-res.mobile.corp-country-AR-mode-hold-session-6ad913c5be187:yczd5pJclCukHDZV",
-        "185.132.177.174:9999:2tnxjkleuo-pool-res.mobile.corp-country-FR-mode-hold-session-6ad913c5bcf44:yczd5pJclCukHDZV",
-        "190.2.141.31:9999:2tnxjkleuo-pool-res.mobile.corp-country-UA-mode-hold-session-6ad913c5bbd22:yczd5pJclCukHDZV",
-        "185.185.51.69:9999:2tnxjkleuo-pool-res.mobile.corp-country-VN-mode-hold-session-6ad913c5baa82:yczd5pJclCukHDZV",
-        "185.185.51.69:9999:2tnxjkleuo-pool-res.mobile.corp-country-BR-mode-hold-session-6ad913c5b97ba:yczd5pJclCukHDZV",
-        "185.185.51.243:9999:2tnxjkleuo-pool-res.mobile.corp-country-RU-mode-hold-session-6ad913c5b84fe:yczd5pJclCukHDZV",
-        "45.14.135.182:9999:2tnxjkleuo-pool-res.mobile.corp-country-US-mode-hold-session-6ad913c5b64db:yczd5pJclCukHDZV"
-      ]
-    },
-    {
-      "email": "ads-power-user1792611309908@sx.org",
-      "token": "2467661|JsetR4c4CWO7rFaPnms9CMXGVaO9W6PBQgcmCsjD3e2a5786",
-      "session_id": "baa64d13d6c34360bc83c56e8c07d450",
-      "x_auth_code": "njrju1cnf1",
-      "activated_at": "2026-10-21 19:35:11",
-      "proxies": [
-        "190.2.143.20:9999:coow6gmdkq-pool-res.mobile.corp-country-CA-mode-hold-session-6ad913ef167fe:lV9fSkToiMkQfXUU",
-        "185.185.51.69:9999:coow6gmdkq-pool-res.mobile.corp-country-CN-mode-hold-session-6ad913ef1554a:lV9fSkToiMkQfXUU",
-        "185.185.51.69:9999:coow6gmdkq-pool-res.mobile.corp-country-DE-mode-hold-session-6ad913ef141ff:lV9fSkToiMkQfXUU",
-        "185.184.192.44:9999:coow6gmdkq-pool-res.mobile.corp-country-AR-mode-hold-session-6ad913ef12ef3:lV9fSkToiMkQfXUU",
-        "185.100.235.113:9999:coow6gmdkq-pool-res.mobile.corp-country-FR-mode-hold-session-6ad913ef11bd0:lV9fSkToiMkQfXUU",
-        "212.8.248.20:9999:coow6gmdkq-pool-res.mobile.corp-country-UA-mode-hold-session-6ad913ef10809:lV9fSkToiMkQfXUU",
-        "185.132.177.174:9999:coow6gmdkq-pool-res.mobile.corp-country-VN-mode-hold-session-6ad913ef0f46b:lV9fSkToiMkQfXUU",
-        "45.14.135.182:9999:coow6gmdkq-pool-res.mobile.corp-country-BR-mode-hold-session-6ad913ef0e0b8:lV9fSkToiMkQfXUU",
-        "190.2.141.31:9999:coow6gmdkq-pool-res.mobile.corp-country-RU-mode-hold-session-6ad913ef0cc1a:lV9fSkToiMkQfXUU",
-        "185.184.192.44:9999:coow6gmdkq-pool-res.mobile.corp-country-US-mode-hold-session-6ad913ef0ac91:lV9fSkToiMkQfXUU"
-      ]
-    },
-    {
-      "email": "ads-power-user1792611322651@sx.org",
-      "token": "2467663|01cgeK1lohn12wgPYoeVYeDR675jm1rXous61eKW7843533b",
-      "session_id": "c156a985a96d44ccad0e3f49b35f9039",
-      "x_auth_code": "3jd1lnrtjf",
-      "activated_at": "2026-10-21 19:35:24",
-      "proxies": [
-        "185.100.235.113:9999:tcsgwnujmj-pool-res.mobile.corp-country-CA-mode-hold-session-6ad913fbaa053:R7uplVjp4qA4akcC",
-        "45.14.135.182:9999:tcsgwnujmj-pool-res.mobile.corp-country-CN-mode-hold-session-6ad913fba8d41:R7uplVjp4qA4akcC",
-        "212.8.248.113:9999:tcsgwnujmj-pool-res.mobile.corp-country-DE-mode-hold-session-6ad913fba7a86:R7uplVjp4qA4akcC",
-        "185.180.220.99:9999:tcsgwnujmj-pool-res.mobile.corp-country-AR-mode-hold-session-6ad913fba66b3:R7uplVjp4qA4akcC",
-        "212.8.249.142:9999:tcsgwnujmj-pool-res.mobile.corp-country-FR-mode-hold-session-6ad913fba5333:R7uplVjp4qA4akcC",
-        "212.8.252.6:9999:tcsgwnujmj-pool-res.mobile.corp-country-UA-mode-hold-session-6ad913fba3fc4:R7uplVjp4qA4akcC",
-        "212.8.248.20:9999:tcsgwnujmj-pool-res.mobile.corp-country-VN-mode-hold-session-6ad913fba2cf5:R7uplVjp4qA4akcC",
-        "212.8.249.142:9999:tcsgwnujmj-pool-res.mobile.corp-country-BR-mode-hold-session-6ad913fba1aa3:R7uplVjp4qA4akcC",
-        "185.180.220.99:9999:tcsgwnujmj-pool-res.mobile.corp-country-RU-mode-hold-session-6ad913fba05d2:R7uplVjp4qA4akcC",
-        "212.8.248.113:9999:tcsgwnujmj-pool-res.mobile.corp-country-US-mode-hold-session-6ad913fb9e555:R7uplVjp4qA4akcC"
-      ]
-    },
-    {
-      "email": "ads-power-user1792613099395@sx.org",
-      "token": "2467689|cssL8tTNJBKU9VCLXqmrkuGP3apXK2yPme2fOnhid0ccd297",
-      "session_id": "3fdc8b5efe32409d82db5a8dce6f32d5",
-      "x_auth_code": "kfh75nfvo3",
-      "activated_at": "2026-10-21 20:05:01",
-      "proxies": [
-        "185.184.192.44:9999:pulq3ssqtg-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91aecb0055:mWzilovr73FHGvOZ",
-        "212.8.248.113:9999:pulq3ssqtg-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91aecaecf0:mWzilovr73FHGvOZ",
-        "62.112.8.26:9999:pulq3ssqtg-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91aecad854:mWzilovr73FHGvOZ",
-        "185.185.51.69:9999:pulq3ssqtg-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91aecac3fd:mWzilovr73FHGvOZ",
-        "212.8.249.142:9999:pulq3ssqtg-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91aecaaf7c:mWzilovr73FHGvOZ",
-        "82.38.66.153:9999:pulq3ssqtg-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91aeca9b39:mWzilovr73FHGvOZ",
-        "185.180.220.99:9999:pulq3ssqtg-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91aeca867a:mWzilovr73FHGvOZ",
-        "185.184.192.44:9999:pulq3ssqtg-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91aeca7187:mWzilovr73FHGvOZ",
-        "212.8.248.20:9999:pulq3ssqtg-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91aeca5fbf:mWzilovr73FHGvOZ",
-        "212.8.252.6:9999:pulq3ssqtg-pool-res.mobile.corp-country-US-mode-hold-session-6ad91aeca4281:mWzilovr73FHGvOZ"
-      ]
-    },
-    {
-      "email": "ads-power-user1792613128292@sx.org",
-      "token": "2467690|l1eBGf4pLi6ViPkLqGymCbLUICEoJwXuZ3h2fYKh0a62fc5c",
-      "session_id": "13487add137645ee9415f4db1ba9d63f",
-      "x_auth_code": "nnhf3fxnc1",
-      "activated_at": "2026-10-21 20:05:30",
-      "proxies": [
-        "185.184.192.44:9999:glc764yktb-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91b09dc96b:eIcw8EoDakNJxqT6",
-        "185.185.51.243:9999:glc764yktb-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91b09db494:eIcw8EoDakNJxqT6",
-        "212.8.252.6:9999:glc764yktb-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91b09da0a5:eIcw8EoDakNJxqT6",
-        "185.185.51.69:9999:glc764yktb-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91b09d8cf5:eIcw8EoDakNJxqT6",
-        "45.14.135.182:9999:glc764yktb-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91b09d77ad:eIcw8EoDakNJxqT6",
-        "212.8.248.20:9999:glc764yktb-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91b09d63ff:eIcw8EoDakNJxqT6",
-        "185.100.235.113:9999:glc764yktb-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91b09d50d8:eIcw8EoDakNJxqT6",
-        "212.8.249.142:9999:glc764yktb-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91b09d3dbb:eIcw8EoDakNJxqT6",
-        "212.8.248.20:9999:glc764yktb-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91b09d29c0:eIcw8EoDakNJxqT6",
-        "82.38.66.153:9999:glc764yktb-pool-res.mobile.corp-country-US-mode-hold-session-6ad91b09d0809:eIcw8EoDakNJxqT6"
-      ]
-    },
-    {
-      "email": "ads-power-user1792613200947@sx.org",
-      "token": "2467692|pj3QHfjMnYTzataTeVOrCJtCQ29XVfZqnk6dVwxdc7658eeb",
-      "session_id": "de3306a9d5e84599bc7fc8dba3d09856",
-      "x_auth_code": "rfsnhu44wf",
-      "activated_at": "2026-10-21 20:06:42",
-      "proxies": [
-        "190.2.143.20:9999:gzoqdin5bv-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91b522fd7d:ztkljqsurBRWCyuh",
-        "82.38.66.153:9999:gzoqdin5bv-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91b522ec41:ztkljqsurBRWCyuh",
-        "82.38.66.153:9999:gzoqdin5bv-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91b522da19:ztkljqsurBRWCyuh",
-        "190.2.141.31:9999:gzoqdin5bv-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91b522c75d:ztkljqsurBRWCyuh",
-        "185.185.51.243:9999:gzoqdin5bv-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91b522b49c:ztkljqsurBRWCyuh",
-        "212.8.248.113:9999:gzoqdin5bv-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91b522a30a:ztkljqsurBRWCyuh",
-        "185.184.192.44:9999:gzoqdin5bv-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91b52290f3:ztkljqsurBRWCyuh",
-        "185.180.220.99:9999:gzoqdin5bv-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91b5227e7f:ztkljqsurBRWCyuh",
-        "185.185.51.243:9999:gzoqdin5bv-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91b5226c97:ztkljqsurBRWCyuh",
-        "185.100.235.113:9999:gzoqdin5bv-pool-res.mobile.corp-country-US-mode-hold-session-6ad91b5224ca0:ztkljqsurBRWCyuh"
-      ]
-    },
-    {
-      "email": "ads-power-user1792613249340@sx.org",
-      "token": "2467693|YtjIQAi9kjP2S3m8x269ixRC3ikEeyyOrrm0mjMG6872d174",
-      "session_id": "96704a6b513d4bdb8c37e4d20b4bc2b7",
-      "x_auth_code": "nf3fnhz05j",
-      "activated_at": "2026-10-21 20:07:32",
-      "proxies": [
-        "212.8.248.113:9999:aiyxsjtmkt-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91b8328aa3:0hF3RXo7a4JKgwXr",
-        "45.14.135.182:9999:aiyxsjtmkt-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91b8327862:0hF3RXo7a4JKgwXr",
-        "82.38.66.153:9999:aiyxsjtmkt-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91b83266e0:0hF3RXo7a4JKgwXr",
-        "185.100.235.113:9999:aiyxsjtmkt-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91b832543f:0hF3RXo7a4JKgwXr",
-        "185.180.220.99:9999:aiyxsjtmkt-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91b83241b4:0hF3RXo7a4JKgwXr",
-        "212.8.248.113:9999:aiyxsjtmkt-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91b8322f08:0hF3RXo7a4JKgwXr",
-        "185.184.192.44:9999:aiyxsjtmkt-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91b8321bac:0hF3RXo7a4JKgwXr",
-        "212.8.248.20:9999:aiyxsjtmkt-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91b8320868:0hF3RXo7a4JKgwXr",
-        "190.2.143.20:9999:aiyxsjtmkt-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91b831f34f:0hF3RXo7a4JKgwXr",
-        "185.185.51.69:9999:aiyxsjtmkt-pool-res.mobile.corp-country-US-mode-hold-session-6ad91b831d374:0hF3RXo7a4JKgwXr"
-      ]
-    },
-    {
-      "email": "ads-power-user1792613308303@sx.org",
-      "token": "2467694|hY2eKbultE23pEpinKC14Qy20lXBrRFiZMEIm8yv62a8286b",
-      "session_id": "b0c43751ab1e4b7cb750e247b9eb0b9c",
-      "x_auth_code": "ffpfmznm6h",
-      "activated_at": "2026-10-21 20:08:30",
-      "proxies": [
-        "45.14.135.182:9999:e94erjbasb-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91bbe37899:4U0vqrUqnAjJQZTy",
-        "185.185.51.243:9999:e94erjbasb-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91bbe35e85:4U0vqrUqnAjJQZTy",
-        "190.2.141.31:9999:e94erjbasb-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91bbe34ae7:4U0vqrUqnAjJQZTy",
-        "212.8.248.113:9999:e94erjbasb-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91bbe3369e:4U0vqrUqnAjJQZTy",
-        "190.2.143.20:9999:e94erjbasb-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91bbe321d2:4U0vqrUqnAjJQZTy",
-        "185.185.51.243:9999:e94erjbasb-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91bbe30d60:4U0vqrUqnAjJQZTy",
-        "212.8.249.142:9999:e94erjbasb-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91bbe2fa25:4U0vqrUqnAjJQZTy",
-        "45.14.135.182:9999:e94erjbasb-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91bbe2e76d:4U0vqrUqnAjJQZTy",
-        "190.2.143.20:9999:e94erjbasb-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91bbe2d2f8:4U0vqrUqnAjJQZTy",
-        "190.2.141.31:9999:e94erjbasb-pool-res.mobile.corp-country-US-mode-hold-session-6ad91bbe2b124:4U0vqrUqnAjJQZTy"
-      ]
-    },
-    {
-      "email": "ads-power-user1792613411592@sx.org",
-      "token": "2467697|SFVm2i2CVegDAA43dlcYUw0eF9XLXYiyQZ2DndaKb6fe0f36",
-      "session_id": "b1fd398d3c964966b8a738c66691f19a",
-      "x_auth_code": "rerhc6h55r",
-      "activated_at": "2026-10-21 20:10:13",
-      "proxies": [
-        "190.2.143.20:9999:0b3jcdp6it-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91c249261d:aMIHwhO4MKnf41vm",
-        "190.2.143.20:9999:0b3jcdp6it-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91c2490f83:aMIHwhO4MKnf41vm",
-        "185.100.235.113:9999:0b3jcdp6it-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91c248fad1:aMIHwhO4MKnf41vm",
-        "212.8.248.20:9999:0b3jcdp6it-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91c248e49f:aMIHwhO4MKnf41vm",
-        "45.14.135.182:9999:0b3jcdp6it-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91c248d12d:aMIHwhO4MKnf41vm",
-        "212.8.252.6:9999:0b3jcdp6it-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91c248bd55:aMIHwhO4MKnf41vm",
-        "185.185.51.243:9999:0b3jcdp6it-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91c248a983:aMIHwhO4MKnf41vm",
-        "185.184.192.44:9999:0b3jcdp6it-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91c24895e2:aMIHwhO4MKnf41vm",
-        "45.14.135.182:9999:0b3jcdp6it-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91c24881f8:aMIHwhO4MKnf41vm",
-        "212.8.249.142:9999:0b3jcdp6it-pool-res.mobile.corp-country-US-mode-hold-session-6ad91c2485f85:aMIHwhO4MKnf41vm"
-      ]
-    },
-    {
-      "email": "ads-power-user1792613686779@sx.org",
-      "token": "2467699|v1l3tmO8ejDKQfBRpqvw0he6rycRGKN6w0eNYFPw23dc3c54",
-      "session_id": "6bc7b510519a4a4daef86ac26a66fa25",
-      "x_auth_code": "cfo3zvnfhz",
-      "activated_at": "2026-10-21 20:14:48",
-      "proxies": [
-        "185.184.192.44:9999:emykurj826-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91d3769b04:o6QJPbXowWYr1ok7",
-        "212.8.248.113:9999:emykurj826-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91d37687d3:o6QJPbXowWYr1ok7",
-        "62.112.8.26:9999:emykurj826-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91d3767328:o6QJPbXowWYr1ok7",
-        "62.112.8.26:9999:emykurj826-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91d3765e6b:o6QJPbXowWYr1ok7",
-        "62.112.8.26:9999:emykurj826-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91d3764a47:o6QJPbXowWYr1ok7",
-        "212.8.248.113:9999:emykurj826-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91d376363b:o6QJPbXowWYr1ok7",
-        "212.8.248.20:9999:emykurj826-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91d3762387:o6QJPbXowWYr1ok7",
-        "212.8.249.142:9999:emykurj826-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91d3761087:o6QJPbXowWYr1ok7",
-        "190.2.143.20:9999:emykurj826-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91d375fcd3:o6QJPbXowWYr1ok7",
-        "190.2.141.31:9999:emykurj826-pool-res.mobile.corp-country-US-mode-hold-session-6ad91d375dc9e:o6QJPbXowWYr1ok7"
-      ]
-    },
-    {
-      "email": "ads-power-user1792613741746@sx.org",
-      "token": "2467700|levbJsx3puZZiQiCrGbcLbnKJbk8NtL0pLZ1chO03c1a6f0b",
-      "session_id": "cea1748864d8468a85b3edce3efefa8a",
-      "x_auth_code": "fs838ffnhd",
-      "activated_at": "2026-10-21 20:15:43",
-      "proxies": [
-        "45.14.135.182:9999:tiglmoiany-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91d6e97cba:ymuBPRyQuhEO5EOv",
-        "45.14.135.182:9999:tiglmoiany-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91d6e968e1:ymuBPRyQuhEO5EOv",
-        "212.8.248.20:9999:tiglmoiany-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91d6e9559e:ymuBPRyQuhEO5EOv",
-        "185.180.220.99:9999:tiglmoiany-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91d6e941fc:ymuBPRyQuhEO5EOv",
-        "45.14.135.182:9999:tiglmoiany-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91d6e92e47:ymuBPRyQuhEO5EOv",
-        "212.8.248.113:9999:tiglmoiany-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91d6e91ab7:ymuBPRyQuhEO5EOv",
-        "190.2.141.31:9999:tiglmoiany-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91d6e90760:ymuBPRyQuhEO5EOv",
-        "212.8.248.113:9999:tiglmoiany-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91d6e8f3cc:ymuBPRyQuhEO5EOv",
-        "185.185.51.243:9999:tiglmoiany-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91d6e8e08d:ymuBPRyQuhEO5EOv",
-        "62.112.8.26:9999:tiglmoiany-pool-res.mobile.corp-country-US-mode-hold-session-6ad91d6e8bf1b:ymuBPRyQuhEO5EOv"
-      ]
-    },
-    {
-      "email": "ads-power-user1792613758573@sx.org",
-      "token": "2467702|Ay6uJTWqAjQ8efibLZHmuDCHfCCENlnljnEfK39r843cde60",
-      "session_id": "07be704f515344f884554107a8af2fc3",
-      "x_auth_code": "1vffhxfnve",
-      "activated_at": "2026-10-21 20:16:00",
-      "proxies": [
-        "190.2.141.31:9999:0szivmzfkb-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91d7f642b4:WEezbaSJF3Ce47DB",
-        "212.8.252.6:9999:0szivmzfkb-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91d7f62e1d:WEezbaSJF3Ce47DB",
-        "82.38.66.153:9999:0szivmzfkb-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91d7f618db:WEezbaSJF3Ce47DB",
-        "62.112.8.26:9999:0szivmzfkb-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91d7f602b1:WEezbaSJF3Ce47DB",
-        "185.100.235.113:9999:0szivmzfkb-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91d7f5ee6b:WEezbaSJF3Ce47DB",
-        "82.38.66.153:9999:0szivmzfkb-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91d7f5da18:WEezbaSJF3Ce47DB",
-        "185.100.235.113:9999:0szivmzfkb-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91d7f5c3c9:WEezbaSJF3Ce47DB",
-        "185.184.192.44:9999:0szivmzfkb-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91d7f5af12:WEezbaSJF3Ce47DB",
-        "185.184.192.44:9999:0szivmzfkb-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91d7f598e7:WEezbaSJF3Ce47DB",
-        "45.14.135.182:9999:0szivmzfkb-pool-res.mobile.corp-country-US-mode-hold-session-6ad91d7f57516:WEezbaSJF3Ce47DB"
-      ]
-    },
-    {
-      "email": "ads-power-user1792613828957@sx.org",
-      "token": "2467705|bmTXWkTXCJqSn99JqEhd9ixTfQek9VPJE1RPDJDe3a58818e",
-      "session_id": "60753f8dc69d42faa15344616595e983",
-      "x_auth_code": "7ffhfzxanz",
-      "activated_at": "2026-10-21 20:17:10",
-      "proxies": [
-        "185.100.235.113:9999:udgj08wruo-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91dc62fb20:eK3GmZtK1qpsoLle",
-        "190.2.143.20:9999:udgj08wruo-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91dc62ea45:eK3GmZtK1qpsoLle",
-        "190.2.141.31:9999:udgj08wruo-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91dc62d752:eK3GmZtK1qpsoLle",
-        "185.132.177.174:9999:udgj08wruo-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91dc62c402:eK3GmZtK1qpsoLle",
-        "190.2.141.31:9999:udgj08wruo-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91dc62b0f6:eK3GmZtK1qpsoLle",
-        "185.132.177.174:9999:udgj08wruo-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91dc629e81:eK3GmZtK1qpsoLle",
-        "185.184.192.44:9999:udgj08wruo-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91dc628bc7:eK3GmZtK1qpsoLle",
-        "212.8.248.113:9999:udgj08wruo-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91dc6278a9:eK3GmZtK1qpsoLle",
-        "185.185.51.243:9999:udgj08wruo-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91dc6264df:eK3GmZtK1qpsoLle",
-        "185.180.220.99:9999:udgj08wruo-pool-res.mobile.corp-country-US-mode-hold-session-6ad91dc62445b:eK3GmZtK1qpsoLle"
-      ]
-    },
-    {
-      "email": "ads-power-user1792613849472@sx.org",
-      "token": "2467706|xtxMasT9fjTBTe4uZ47SDUO38OkncIcy4Y6ypT1r7dee271b",
-      "session_id": "3dfb34f8f56f4bff9e23ac609180546c",
-      "x_auth_code": "kgcbffbhfn",
-      "activated_at": "2026-10-21 20:17:31",
-      "proxies": [
-        "185.180.220.99:9999:ijhisxjdoi-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91ddad90c8:sUpnATXdiwJFlaI0",
-        "190.2.141.31:9999:ijhisxjdoi-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91ddad77cf:sUpnATXdiwJFlaI0",
-        "185.184.192.44:9999:ijhisxjdoi-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91ddad5e16:sUpnATXdiwJFlaI0",
-        "212.8.248.20:9999:ijhisxjdoi-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91ddad129d:sUpnATXdiwJFlaI0",
-        "185.180.220.99:9999:ijhisxjdoi-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91ddacf9cc:sUpnATXdiwJFlaI0",
-        "185.100.235.113:9999:ijhisxjdoi-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91ddace159:sUpnATXdiwJFlaI0",
-        "212.8.248.20:9999:ijhisxjdoi-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91ddacc7fb:sUpnATXdiwJFlaI0",
-        "185.185.51.243:9999:ijhisxjdoi-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91ddacaf2f:sUpnATXdiwJFlaI0",
-        "185.100.235.113:9999:ijhisxjdoi-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91ddac95cf:sUpnATXdiwJFlaI0",
-        "185.100.235.113:9999:ijhisxjdoi-pool-res.mobile.corp-country-US-mode-hold-session-6ad91ddac41f1:sUpnATXdiwJFlaI0"
-      ]
-    },
-    {
-      "email": "ads-power-user1792613963569@sx.org",
-      "token": "2467710|7nBu9Ku8hvtEW1b7V5WHe3t4r7odv3C2hjlWTZZN0718d2af",
-      "session_id": "9c1511e5007f47a9bdfe3cf02516bd8d",
-      "x_auth_code": "hlnbzhff5g",
-      "activated_at": "2026-10-21 20:19:25",
-      "proxies": [
-        "185.184.192.44:9999:ocpe2cfkeo-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91e4cdd7f3:ROm9xhN9yC7ehuJi",
-        "212.8.249.142:9999:ocpe2cfkeo-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91e4cdc360:ROm9xhN9yC7ehuJi",
-        "190.2.143.20:9999:ocpe2cfkeo-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91e4cdafc9:ROm9xhN9yC7ehuJi",
-        "185.132.177.174:9999:ocpe2cfkeo-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91e4cd9be0:ROm9xhN9yC7ehuJi",
-        "185.132.177.174:9999:ocpe2cfkeo-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91e4cd87e0:ROm9xhN9yC7ehuJi",
-        "212.8.248.113:9999:ocpe2cfkeo-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91e4cd73a5:ROm9xhN9yC7ehuJi",
-        "185.100.235.113:9999:ocpe2cfkeo-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91e4cd604c:ROm9xhN9yC7ehuJi",
-        "45.14.135.182:9999:ocpe2cfkeo-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91e4cd4c52:ROm9xhN9yC7ehuJi",
-        "185.180.220.99:9999:ocpe2cfkeo-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91e4cd380e:ROm9xhN9yC7ehuJi",
-        "190.2.141.31:9999:ocpe2cfkeo-pool-res.mobile.corp-country-US-mode-hold-session-6ad91e4cd15db:ROm9xhN9yC7ehuJi"
-      ]
-    },
-    {
-      "email": "ads-power-user1792614053606@sx.org",
-      "token": "2467712|SMcdZcyhvm5B0jGIP9UIhYnfKiGEnNtblpzw7ovva856a23d",
-      "session_id": "066fba39a80b473aa8bcac0ff4f156b4",
-      "x_auth_code": "0fjjixfvhn",
-      "activated_at": "2026-10-21 20:20:55",
-      "proxies": [
-        "185.184.192.44:9999:kutawldiur-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91ea6b3d78:vgZn7Ip7u3kqBlso",
-        "185.185.51.243:9999:kutawldiur-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91ea6b2c50:vgZn7Ip7u3kqBlso",
-        "185.185.51.243:9999:kutawldiur-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91ea6b1b44:vgZn7Ip7u3kqBlso",
-        "185.100.235.113:9999:kutawldiur-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91ea6b0a48:vgZn7Ip7u3kqBlso",
-        "185.184.192.44:9999:kutawldiur-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91ea6af75e:vgZn7Ip7u3kqBlso",
-        "185.180.220.99:9999:kutawldiur-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91ea6ae220:vgZn7Ip7u3kqBlso",
-        "185.100.235.113:9999:kutawldiur-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91ea6aceec:vgZn7Ip7u3kqBlso",
-        "62.112.8.26:9999:kutawldiur-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91ea6abd38:vgZn7Ip7u3kqBlso",
-        "212.8.248.113:9999:kutawldiur-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91ea6aaa93:vgZn7Ip7u3kqBlso",
-        "212.8.248.20:9999:kutawldiur-pool-res.mobile.corp-country-US-mode-hold-session-6ad91ea6a8aa4:vgZn7Ip7u3kqBlso"
-      ]
-    },
-    {
-      "email": "ads-power-user1792614073464@sx.org",
-      "token": "2467713|49XtvfnKeu3YHmQScqbrIrw4Tz2UYDAOQeFUbxfl3345ac87",
-      "session_id": "acfa4adb526f4694981e6d8b0499ccef",
-      "x_auth_code": "fjnn9zzjhf",
-      "activated_at": "2026-10-21 20:21:15",
-      "proxies": [
-        "185.100.235.113:9999:x5qcpnhnea-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91ebab6cda:oe4nxcLQpQhPnwjB",
-        "185.180.220.99:9999:x5qcpnhnea-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91ebab59bc:oe4nxcLQpQhPnwjB",
-        "185.185.51.69:9999:x5qcpnhnea-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91ebab4644:oe4nxcLQpQhPnwjB",
-        "185.185.51.243:9999:x5qcpnhnea-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91ebab325a:oe4nxcLQpQhPnwjB",
-        "185.185.51.243:9999:x5qcpnhnea-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91ebab1ebb:oe4nxcLQpQhPnwjB",
-        "190.2.143.20:9999:x5qcpnhnea-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91ebab0c14:oe4nxcLQpQhPnwjB",
-        "190.2.141.31:9999:x5qcpnhnea-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91ebaaf92e:oe4nxcLQpQhPnwjB",
-        "190.2.141.12:9999:x5qcpnhnea-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91ebaae59e:oe4nxcLQpQhPnwjB",
-        "185.132.177.174:9999:x5qcpnhnea-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91ebaad23d:oe4nxcLQpQhPnwjB",
-        "185.132.177.174:9999:x5qcpnhnea-pool-res.mobile.corp-country-US-mode-hold-session-6ad91ebaab241:oe4nxcLQpQhPnwjB"
-      ]
-    },
-    {
-      "email": "ads-power-user1792614310611@sx.org",
-      "token": "2467715|RldUFUti8183zKUNAS2nnQs0nnLixxN52ykc7qH6d5318ae7",
-      "session_id": "b0ee600a9dea469a9518e1b9da80363e",
-      "x_auth_code": "n7cnahf0fn",
-      "activated_at": "2026-10-21 20:25:12",
-      "proxies": [
-        "185.185.51.243:9999:r30verdtzo-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91fa839548:pbgvxLwhD8uBchkA",
-        "185.185.51.69:9999:r30verdtzo-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91fa838147:pbgvxLwhD8uBchkA",
-        "212.8.248.20:9999:r30verdtzo-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91fa836dd0:pbgvxLwhD8uBchkA",
-        "212.8.249.142:9999:r30verdtzo-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91fa835a3c:pbgvxLwhD8uBchkA",
-        "185.100.235.113:9999:r30verdtzo-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91fa834758:pbgvxLwhD8uBchkA",
-        "190.2.141.31:9999:r30verdtzo-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91fa8333b1:pbgvxLwhD8uBchkA",
-        "185.185.51.69:9999:r30verdtzo-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91fa831ee6:pbgvxLwhD8uBchkA",
-        "190.2.141.31:9999:r30verdtzo-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91fa830a01:pbgvxLwhD8uBchkA",
-        "62.112.8.26:9999:r30verdtzo-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91fa82f57e:pbgvxLwhD8uBchkA",
-        "185.100.235.113:9999:r30verdtzo-pool-res.mobile.corp-country-US-mode-hold-session-6ad91fa82d47d:pbgvxLwhD8uBchkA"
-      ]
-    },
-    {
-      "email": "ads-power-user1792614340298@sx.org",
-      "token": "2467716|ImuXCiQOVmF4j8Jd9yEhARZUG3tbImLOBod5fXWv8afdc1f4",
-      "session_id": "9c764d707631470ea567a35e8b99732b",
-      "x_auth_code": "fniohnjfkg",
-      "activated_at": "2026-10-21 20:25:42",
-      "proxies": [
-        "62.112.8.26:9999:anw6cluvof-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91fc59b35e:MAQ1iIfcQmyHUk6b",
-        "212.8.252.6:9999:anw6cluvof-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91fc599f3b:MAQ1iIfcQmyHUk6b",
-        "185.180.220.99:9999:anw6cluvof-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91fc598b54:MAQ1iIfcQmyHUk6b",
-        "185.184.192.44:9999:anw6cluvof-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91fc5977a7:MAQ1iIfcQmyHUk6b",
-        "62.112.8.26:9999:anw6cluvof-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91fc5963b4:MAQ1iIfcQmyHUk6b",
-        "82.38.66.153:9999:anw6cluvof-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91fc5950cc:MAQ1iIfcQmyHUk6b",
-        "212.8.248.20:9999:anw6cluvof-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91fc593d54:MAQ1iIfcQmyHUk6b",
-        "212.8.248.20:9999:anw6cluvof-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91fc592a01:MAQ1iIfcQmyHUk6b",
-        "190.2.143.20:9999:anw6cluvof-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91fc591694:MAQ1iIfcQmyHUk6b",
-        "212.8.249.142:9999:anw6cluvof-pool-res.mobile.corp-country-US-mode-hold-session-6ad91fc58f743:MAQ1iIfcQmyHUk6b"
-      ]
-    },
-    {
-      "email": "ads-power-user1792614383665@sx.org",
-      "token": "2467717|sJGstH7Mmv1tRbkjLVyf04HvivvwFM0o2KRTaH2Oc2cac7ee",
-      "session_id": "b7c1aa49ce774d909296f8e45a6d73bd",
-      "x_auth_code": "fjknfh5eon",
-      "activated_at": "2026-10-21 20:26:25",
-      "proxies": [
-        "185.184.192.44:9999:sdpiqr0xxr-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91ff080360:y4wGH526FMB0Iqi5",
-        "185.185.51.69:9999:sdpiqr0xxr-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91ff07f146:y4wGH526FMB0Iqi5",
-        "212.8.252.6:9999:sdpiqr0xxr-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91ff07deeb:y4wGH526FMB0Iqi5",
-        "212.8.249.142:9999:sdpiqr0xxr-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91ff07cc44:y4wGH526FMB0Iqi5",
-        "190.2.141.31:9999:sdpiqr0xxr-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91ff07b8d6:y4wGH526FMB0Iqi5",
-        "185.180.220.99:9999:sdpiqr0xxr-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91ff07a5e3:y4wGH526FMB0Iqi5",
-        "212.8.248.113:9999:sdpiqr0xxr-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91ff07928a:y4wGH526FMB0Iqi5",
-        "45.14.135.182:9999:sdpiqr0xxr-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91ff077f4b:y4wGH526FMB0Iqi5",
-        "212.8.252.6:9999:sdpiqr0xxr-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91ff076cc4:y4wGH526FMB0Iqi5",
-        "185.180.220.99:9999:sdpiqr0xxr-pool-res.mobile.corp-country-US-mode-hold-session-6ad91ff074d2c:y4wGH526FMB0Iqi5"
-      ]
-    },
-    {
-      "email": "ads-power-user1792614392508@sx.org",
-      "token": "2467718|sjdMl7qdhK2tTDE4B8GWetmW5kna5djP4FV1LocU1726c0da",
-      "session_id": "bfddb46cfea5499e821ff4148efcb141",
-      "x_auth_code": "fnuzkKbmvi",
-      "activated_at": "2026-10-21 20:26:34",
-      "proxies": [
-        "212.8.248.20:9999:7ydmblckwh-pool-res.mobile.corp-country-CA-mode-hold-session-6ad91ff9e3de4:YIqSnHsnMZCQFyGe",
-        "185.185.51.69:9999:7ydmblckwh-pool-res.mobile.corp-country-CN-mode-hold-session-6ad91ff9e2a39:YIqSnHsnMZCQFyGe",
-        "185.185.51.243:9999:7ydmblckwh-pool-res.mobile.corp-country-AR-mode-hold-session-6ad91ff9e16d5:YIqSnHsnMZCQFyGe",
-        "190.2.141.12:9999:7ydmblckwh-pool-res.mobile.corp-country-DE-mode-hold-session-6ad91ff9e0086:YIqSnHsnMZCQFyGe",
-        "212.8.248.20:9999:7ydmblckwh-pool-res.mobile.corp-country-FR-mode-hold-session-6ad91ff9dea0e:YIqSnHsnMZCQFyGe",
-        "185.180.220.99:9999:7ydmblckwh-pool-res.mobile.corp-country-UA-mode-hold-session-6ad91ff9dd3f8:YIqSnHsnMZCQFyGe",
-        "185.180.220.99:9999:7ydmblckwh-pool-res.mobile.corp-country-VN-mode-hold-session-6ad91ff9dbd1a:YIqSnHsnMZCQFyGe",
-        "212.8.249.142:9999:7ydmblckwh-pool-res.mobile.corp-country-BR-mode-hold-session-6ad91ff9da604:YIqSnHsnMZCQFyGe",
-        "62.112.8.26:9999:7ydmblckwh-pool-res.mobile.corp-country-RU-mode-hold-session-6ad91ff9d8ed6:YIqSnHsnMZCQFyGe",
-        "185.180.220.99:9999:7ydmblckwh-pool-res.mobile.corp-country-US-mode-hold-session-6ad91ff9d6b56:YIqSnHsnMZCQFyGe"
-      ]
-    },
-    {
-      "email": "ads-power-user1792614445233@sx.org",
-      "token": "2467719|CWDmIMZO8KNJOVmomR89nTIDRJfaCPzWzlJ80sHAe9eb18b4",
-      "session_id": "80e9e7d301fc4813bb70c4a3683ea308",
-      "x_auth_code": "pefn8rvufh",
-      "activated_at": "2026-10-21 20:27:27",
-      "proxies": [
-        "185.100.235.113:9999:bfu0ilk8y5-pool-res.mobile.corp-country-CA-mode-hold-session-6ad9202e3bb7c:p7qCLOFINzl7H1rd",
-        "185.185.51.243:9999:bfu0ilk8y5-pool-res.mobile.corp-country-CN-mode-hold-session-6ad9202e3a75e:p7qCLOFINzl7H1rd",
-        "190.2.141.12:9999:bfu0ilk8y5-pool-res.mobile.corp-country-AR-mode-hold-session-6ad9202e393aa:p7qCLOFINzl7H1rd",
-        "185.132.177.174:9999:bfu0ilk8y5-pool-res.mobile.corp-country-DE-mode-hold-session-6ad9202e380ff:p7qCLOFINzl7H1rd",
-        "62.112.8.26:9999:bfu0ilk8y5-pool-res.mobile.corp-country-FR-mode-hold-session-6ad9202e36e27:p7qCLOFINzl7H1rd",
-        "45.14.135.182:9999:bfu0ilk8y5-pool-res.mobile.corp-country-UA-mode-hold-session-6ad9202e35c37:p7qCLOFINzl7H1rd",
-        "185.180.220.99:9999:bfu0ilk8y5-pool-res.mobile.corp-country-VN-mode-hold-session-6ad9202e34a75:p7qCLOFINzl7H1rd",
-        "190.2.141.31:9999:bfu0ilk8y5-pool-res.mobile.corp-country-BR-mode-hold-session-6ad9202e337a2:p7qCLOFINzl7H1rd",
-        "185.185.51.69:9999:bfu0ilk8y5-pool-res.mobile.corp-country-RU-mode-hold-session-6ad9202e32489:p7qCLOFINzl7H1rd",
-        "185.180.220.99:9999:bfu0ilk8y5-pool-res.mobile.corp-country-US-mode-hold-session-6ad9202e304c9:p7qCLOFINzl7H1rd"
-      ]
-    },
-    {
-      "email": "ads-power-user1792614450983@sx.org",
-      "token": "2467720|P6dQoDulKNB8awF2VW7OymwMX2oftFgvYDevkSxtc0833da9",
-      "session_id": "530717b0f10242d6becbdf0d88fad472",
-      "x_auth_code": "ffindi3nhp",
-      "activated_at": "2026-10-21 20:27:32",
-      "proxies": [
-        "82.38.66.153:9999:9x6nozcgo6-pool-res.mobile.corp-country-CA-mode-hold-session-6ad9203429a4a:IhZqDKfH2lwalKn8",
-        "212.8.248.20:9999:9x6nozcgo6-pool-res.mobile.corp-country-CN-mode-hold-session-6ad9203428736:IhZqDKfH2lwalKn8",
-        "82.38.66.153:9999:9x6nozcgo6-pool-res.mobile.corp-country-AR-mode-hold-session-6ad920342740b:IhZqDKfH2lwalKn8",
-        "185.184.192.44:9999:9x6nozcgo6-pool-res.mobile.corp-country-DE-mode-hold-session-6ad92034260eb:IhZqDKfH2lwalKn8",
-        "190.2.141.31:9999:9x6nozcgo6-pool-res.mobile.corp-country-FR-mode-hold-session-6ad9203424d38:IhZqDKfH2lwalKn8",
-        "190.2.141.31:9999:9x6nozcgo6-pool-res.mobile.corp-country-UA-mode-hold-session-6ad9203423b98:IhZqDKfH2lwalKn8",
-        "185.180.220.99:9999:9x6nozcgo6-pool-res.mobile.corp-country-VN-mode-hold-session-6ad9203422a72:IhZqDKfH2lwalKn8",
-        "190.2.141.12:9999:9x6nozcgo6-pool-res.mobile.corp-country-BR-mode-hold-session-6ad9203421922:IhZqDKfH2lwalKn8",
-        "212.8.248.113:9999:9x6nozcgo6-pool-res.mobile.corp-country-RU-mode-hold-session-6ad92034205aa:IhZqDKfH2lwalKn8",
-        "45.14.135.182:9999:9x6nozcgo6-pool-res.mobile.corp-country-US-mode-hold-session-6ad920341e450:IhZqDKfH2lwalKn8"
-      ]
-    },
-    {
-      "email": "ads-power-user1792615002693@sx.org",
-      "token": "2467726|deLuqzHbngR9M5KUWVF7rBVXSVKfA4VsfY93pTGf3a39c228",
-      "session_id": "2626ebef1cfd4b0987a7b4f760a79b3b",
-      "x_auth_code": "qfhfyfmvhn",
-      "activated_at": "2026-10-21 20:36:44",
-      "proxies": [
-        "185.185.51.69:9999:wgi0hjddip-pool-res.mobile.corp-country-CA-mode-hold-session-6ad9225b5f278:oRsiyS6z9kUHrObr",
-        "185.185.51.69:9999:wgi0hjddip-pool-res.mobile.corp-country-CN-mode-hold-session-6ad9225b5e10d:oRsiyS6z9kUHrObr",
-        "190.2.141.12:9999:wgi0hjddip-pool-res.mobile.corp-country-AR-mode-hold-session-6ad9225b5cf12:oRsiyS6z9kUHrObr",
-        "45.14.135.182:9999:wgi0hjddip-pool-res.mobile.corp-country-DE-mode-hold-session-6ad9225b5bc82:oRsiyS6z9kUHrObr",
-        "190.2.143.20:9999:wgi0hjddip-pool-res.mobile.corp-country-FR-mode-hold-session-6ad9225b5a9e3:oRsiyS6z9kUHrObr",
-        "185.100.235.113:9999:wgi0hjddip-pool-res.mobile.corp-country-UA-mode-hold-session-6ad9225b596c0:oRsiyS6z9kUHrObr",
-        "45.14.135.182:9999:wgi0hjddip-pool-res.mobile.corp-country-VN-mode-hold-session-6ad9225b58144:oRsiyS6z9kUHrObr",
-        "185.180.220.99:9999:wgi0hjddip-pool-res.mobile.corp-country-BR-mode-hold-session-6ad9225b56d10:oRsiyS6z9kUHrObr",
-        "82.38.66.153:9999:wgi0hjddip-pool-res.mobile.corp-country-RU-mode-hold-session-6ad9225b55879:oRsiyS6z9kUHrObr",
-        "185.132.177.174:9999:wgi0hjddip-pool-res.mobile.corp-country-US-mode-hold-session-6ad9225b536a6:oRsiyS6z9kUHrObr"
-      ]
-    },
-    {
-      "email": "ads-power-user1792615508923@sx.org",
-      "token": "2467733|B0di9WwUlQJngL9CG26R0ZLOtwUDO206rAiDAdTs8c49cb73",
-      "session_id": "9880274b2d654f55b3c4560eee43db62",
-      "x_auth_code": "n5g76fv0zh",
-      "activated_at": "2026-10-21 20:45:11",
-      "proxies": [
-        "212.8.248.113:9999:9e2ekchwi0-pool-res.mobile.corp-country-CA-mode-hold-session-6ad92455d4a5d:hc2As6K4pFiiVMtO",
-        "185.100.235.113:9999:9e2ekchwi0-pool-res.mobile.corp-country-CN-mode-hold-session-6ad92455d3945:hc2As6K4pFiiVMtO",
-        "185.184.192.44:9999:9e2ekchwi0-pool-res.mobile.corp-country-AR-mode-hold-session-6ad92455d27e5:hc2As6K4pFiiVMtO",
-        "185.184.192.44:9999:9e2ekchwi0-pool-res.mobile.corp-country-DE-mode-hold-session-6ad92455d1740:hc2As6K4pFiiVMtO",
-        "185.132.177.174:9999:9e2ekchwi0-pool-res.mobile.corp-country-FR-mode-hold-session-6ad92455d0686:hc2As6K4pFiiVMtO",
-        "185.185.51.69:9999:9e2ekchwi0-pool-res.mobile.corp-country-UA-mode-hold-session-6ad92455cf528:hc2As6K4pFiiVMtO",
-        "185.185.51.243:9999:9e2ekchwi0-pool-res.mobile.corp-country-VN-mode-hold-session-6ad92455ce479:hc2As6K4pFiiVMtO",
-        "185.100.235.113:9999:9e2ekchwi0-pool-res.mobile.corp-country-BR-mode-hold-session-6ad92455cd2ee:hc2As6K4pFiiVMtO",
-        "185.132.177.174:9999:9e2ekchwi0-pool-res.mobile.corp-country-RU-mode-hold-session-6ad92455cc1ab:hc2As6K4pFiiVMtO",
-        "212.8.248.113:9999:9e2ekchwi0-pool-res.mobile.corp-country-US-mode-hold-session-6ad92455ca4a4:hc2As6K4pFiiVMtO"
-      ]
-    },
-    {
-      "email": "ads-power-user1792616043106@sx.org",
-      "token": "2467743|AHGA5RHCRHnUHpjorP1l43dVB4Do9oqRtejSA7b845db7bf2",
-      "session_id": "784ee9b503234d77bd80f78310fb87bd",
-      "x_auth_code": "f7n7fzhgku",
-      "activated_at": "2026-10-21 20:54:05",
-      "proxies": [
-        "212.8.249.142:9999:sajggpb5ef-pool-res.mobile.corp-country-CA-mode-hold-session-6ad9266c46877:3vZubvGWu9l87oMU",
-        "185.100.235.113:9999:sajggpb5ef-pool-res.mobile.corp-country-CN-mode-hold-session-6ad9266c45486:3vZubvGWu9l87oMU",
-        "190.2.141.12:9999:sajggpb5ef-pool-res.mobile.corp-country-AR-mode-hold-session-6ad9266c4405f:3vZubvGWu9l87oMU",
-        "212.8.249.142:9999:sajggpb5ef-pool-res.mobile.corp-country-DE-mode-hold-session-6ad9266c42df7:3vZubvGWu9l87oMU",
-        "185.132.177.174:9999:sajggpb5ef-pool-res.mobile.corp-country-FR-mode-hold-session-6ad9266c41a12:3vZubvGWu9l87oMU",
-        "190.2.143.20:9999:sajggpb5ef-pool-res.mobile.corp-country-UA-mode-hold-session-6ad9266c40589:3vZubvGWu9l87oMU",
-        "185.100.235.113:9999:sajggpb5ef-pool-res.mobile.corp-country-VN-mode-hold-session-6ad9266c3f2df:3vZubvGWu9l87oMU",
-        "185.185.51.243:9999:sajggpb5ef-pool-res.mobile.corp-country-BR-mode-hold-session-6ad9266c3de6d:3vZubvGWu9l87oMU",
-        "212.8.248.20:9999:sajggpb5ef-pool-res.mobile.corp-country-RU-mode-hold-session-6ad9266c3c99b:3vZubvGWu9l87oMU",
-        "185.180.220.99:9999:sajggpb5ef-pool-res.mobile.corp-country-US-mode-hold-session-6ad9266c3a7b2:3vZubvGWu9l87oMU"
-      ]
-    },
-    {
-      "email": "ads-power-user1792616052632@sx.org",
-      "token": "2467744|mNmTQxWh5eVsZcVtXejYBJqWc6jQC9ulx1Qm5lAf43376990",
-      "session_id": "b2f40c012acc44e0a554e92f986110ee",
-      "x_auth_code": "cnglzfvhpf",
-      "activated_at": "2026-10-21 20:54:14",
-      "proxies": [
-        "212.8.249.142:9999:akectrevvl-pool-res.mobile.corp-country-CA-mode-hold-session-6ad926756adda:v0OFwd4iLqfYdAQw",
-        "185.100.235.113:9999:akectrevvl-pool-res.mobile.corp-country-CN-mode-hold-session-6ad9267569a2b:v0OFwd4iLqfYdAQw",
-        "190.2.141.31:9999:akectrevvl-pool-res.mobile.corp-country-AR-mode-hold-session-6ad92675686ca:v0OFwd4iLqfYdAQw",
-        "190.2.141.31:9999:akectrevvl-pool-res.mobile.corp-country-DE-mode-hold-session-6ad926756735c:v0OFwd4iLqfYdAQw",
-        "185.100.235.113:9999:akectrevvl-pool-res.mobile.corp-country-FR-mode-hold-session-6ad9267565fba:v0OFwd4iLqfYdAQw",
-        "185.132.177.174:9999:akectrevvl-pool-res.mobile.corp-country-UA-mode-hold-session-6ad9267564bed:v0OFwd4iLqfYdAQw",
-        "190.2.141.31:9999:akectrevvl-pool-res.mobile.corp-country-VN-mode-hold-session-6ad926756386a:v0OFwd4iLqfYdAQw",
-        "45.14.135.182:9999:akectrevvl-pool-res.mobile.corp-country-BR-mode-hold-session-6ad92675624cf:v0OFwd4iLqfYdAQw",
-        "62.112.8.26:9999:akectrevvl-pool-res.mobile.corp-country-RU-mode-hold-session-6ad9267561088:v0OFwd4iLqfYdAQw",
-        "185.132.177.174:9999:akectrevvl-pool-res.mobile.corp-country-US-mode-hold-session-6ad926755ef2c:v0OFwd4iLqfYdAQw"
-      ]
-    },
-    {
-      "email": "ads-power-user1792616598407@sx.org",
-      "token": "2467752|BN6bLDVppehdcjFTMjhWmj2h4WUSTVN63QHHYWHc58a0d820",
-      "session_id": "d818cdd38eb746459850847e59a8ed25",
-      "x_auth_code": "6grpnfhaf1",
-      "activated_at": "2026-10-21 21:03:21",
-      "proxies": [
-        "82.38.66.153:9999:n6a78mrxbr-pool-res.mobile.corp-country-CA-mode-hold-session-6ad928983fb9d:QGdM3se8XAFrnLzw",
-        "185.185.51.243:9999:n6a78mrxbr-pool-res.mobile.corp-country-CN-mode-hold-session-6ad928983e8d8:QGdM3se8XAFrnLzw",
-        "82.38.66.153:9999:n6a78mrxbr-pool-res.mobile.corp-country-AR-mode-hold-session-6ad928983d651:QGdM3se8XAFrnLzw",
-        "62.112.8.26:9999:n6a78mrxbr-pool-res.mobile.corp-country-DE-mode-hold-session-6ad928983c444:QGdM3se8XAFrnLzw",
-        "212.8.248.113:9999:n6a78mrxbr-pool-res.mobile.corp-country-FR-mode-hold-session-6ad928983b2cf:QGdM3se8XAFrnLzw",
-        "185.100.235.113:9999:n6a78mrxbr-pool-res.mobile.corp-country-UA-mode-hold-session-6ad928983a108:QGdM3se8XAFrnLzw",
-        "190.2.143.20:9999:n6a78mrxbr-pool-res.mobile.corp-country-VN-mode-hold-session-6ad9289838f3f:QGdM3se8XAFrnLzw",
-        "45.14.135.182:9999:n6a78mrxbr-pool-res.mobile.corp-country-BR-mode-hold-session-6ad9289837d23:QGdM3se8XAFrnLzw",
-        "185.100.235.113:9999:n6a78mrxbr-pool-res.mobile.corp-country-RU-mode-hold-session-6ad9289836a91:QGdM3se8XAFrnLzw",
-        "45.14.135.182:9999:n6a78mrxbr-pool-res.mobile.corp-country-US-mode-hold-session-6ad9289834bd0:QGdM3se8XAFrnLzw"
-      ]
-    },
-    {
-      "email": "ads-power-user1792616678780@sx.org",
-      "token": "2467755|JyWrRFbRrPKUXluosD6X9r29Yeg0Jva7iKZtve8E43e11423",
-      "session_id": "c619e0dfe494423f829f97d648b3d90c",
-      "x_auth_code": "jdqhtnf5gc",
-      "activated_at": "2026-10-21 21:04:41",
-      "proxies": [
-        "190.2.143.20:9999:4collaqt7y-pool-res.mobile.corp-country-CA-mode-hold-session-6ad928e81e6f8:4JrsBgz5j3nS3smZ",
-        "185.184.192.44:9999:4collaqt7y-pool-res.mobile.corp-country-CN-mode-hold-session-6ad928e81d30a:4JrsBgz5j3nS3smZ",
-        "185.180.220.99:9999:4collaqt7y-pool-res.mobile.corp-country-AR-mode-hold-session-6ad928e81c012:4JrsBgz5j3nS3smZ",
-        "212.8.248.20:9999:4collaqt7y-pool-res.mobile.corp-country-DE-mode-hold-session-6ad928e81ac75:4JrsBgz5j3nS3smZ",
-        "185.132.177.174:9999:4collaqt7y-pool-res.mobile.corp-country-FR-mode-hold-session-6ad928e8198b8:4JrsBgz5j3nS3smZ",
-        "185.100.235.113:9999:4collaqt7y-pool-res.mobile.corp-country-UA-mode-hold-session-6ad928e81853d:4JrsBgz5j3nS3smZ",
-        "185.132.177.174:9999:4collaqt7y-pool-res.mobile.corp-country-VN-mode-hold-session-6ad928e81728a:4JrsBgz5j3nS3smZ",
-        "62.112.8.26:9999:4collaqt7y-pool-res.mobile.corp-country-BR-mode-hold-session-6ad928e815fd2:4JrsBgz5j3nS3smZ",
-        "185.132.177.174:9999:4collaqt7y-pool-res.mobile.corp-country-RU-mode-hold-session-6ad928e814c45:4JrsBgz5j3nS3smZ",
-        "190.2.143.20:9999:4collaqt7y-pool-res.mobile.corp-country-US-mode-hold-session-6ad928e812b77:4JrsBgz5j3nS3smZ"
-      ]
-    },
-    {
-      "email": "ads-power-user1792618137137@sx.org",
-      "token": "2467770|M4HrAQBBUBmSwDWZP5hptJVBJ5CqQbdV5XJDE6wo25b30863",
-      "session_id": "bb0dae54b5e44d9cbea77663a793cd22",
-      "x_auth_code": "hhfpvbgnqe",
-      "activated_at": "2026-10-21 21:28:59",
-      "proxies": [
-        "185.100.235.113:9999:ohtop0ik6x-pool-res.mobile.corp-country-CA-mode-hold-session-6ad92e9a44899:KK1ITcxDvEkmIUHf",
-        "62.112.8.26:9999:ohtop0ik6x-pool-res.mobile.corp-country-CN-mode-hold-session-6ad92e9a43685:KK1ITcxDvEkmIUHf",
-        "185.185.51.69:9999:ohtop0ik6x-pool-res.mobile.corp-country-AR-mode-hold-session-6ad92e9a42416:KK1ITcxDvEkmIUHf",
-        "190.2.141.31:9999:ohtop0ik6x-pool-res.mobile.corp-country-DE-mode-hold-session-6ad92e9a41033:KK1ITcxDvEkmIUHf",
-        "185.185.51.69:9999:ohtop0ik6x-pool-res.mobile.corp-country-FR-mode-hold-session-6ad92e9a3fd33:KK1ITcxDvEkmIUHf",
-        "212.8.248.20:9999:ohtop0ik6x-pool-res.mobile.corp-country-UA-mode-hold-session-6ad92e9a3eb59:KK1ITcxDvEkmIUHf",
-        "212.8.249.142:9999:ohtop0ik6x-pool-res.mobile.corp-country-VN-mode-hold-session-6ad92e9a3d983:KK1ITcxDvEkmIUHf",
-        "185.184.192.44:9999:ohtop0ik6x-pool-res.mobile.corp-country-BR-mode-hold-session-6ad92e9a3c792:KK1ITcxDvEkmIUHf",
-        "212.8.248.113:9999:ohtop0ik6x-pool-res.mobile.corp-country-RU-mode-hold-session-6ad92e9a3b551:KK1ITcxDvEkmIUHf",
-        "45.14.135.182:9999:ohtop0ik6x-pool-res.mobile.corp-country-US-mode-hold-session-6ad92e9a3978a:KK1ITcxDvEkmIUHf"
-      ]
-    },
-    {
-      "email": "ads-power-user1792618890842@sx.org",
-      "token": "2467775|XRyM23k5m5HCNjB7lNsb8uKaC26D3TdzqdibLAMt207cf045",
-      "session_id": "8f0030327bd44b16a40d4af5b7dc5af6",
-      "x_auth_code": "hqxjrnhyfe",
-      "activated_at": "2026-10-21 21:41:32",
-      "proxies": [
-        "185.185.51.243:9999:k8ch5zpctf-pool-res.mobile.corp-country-CA-mode-hold-session-6ad9318c0658d:erQdahFsQf81eclG",
-        "212.8.249.142:9999:k8ch5zpctf-pool-res.mobile.corp-country-CN-mode-hold-session-6ad9318c05288:erQdahFsQf81eclG",
-        "185.132.177.174:9999:k8ch5zpctf-pool-res.mobile.corp-country-AR-mode-hold-session-6ad9318c0400c:erQdahFsQf81eclG",
-        "185.180.220.99:9999:k8ch5zpctf-pool-res.mobile.corp-country-FR-mode-hold-session-6ad9318c02db9:erQdahFsQf81eclG",
-        "185.184.192.44:9999:k8ch5zpctf-pool-res.mobile.corp-country-DE-mode-hold-session-6ad9318c01b56:erQdahFsQf81eclG",
-        "190.2.143.20:9999:k8ch5zpctf-pool-res.mobile.corp-country-UA-mode-hold-session-6ad9318c008f1:erQdahFsQf81eclG",
-        "45.14.135.182:9999:k8ch5zpctf-pool-res.mobile.corp-country-VN-mode-hold-session-6ad9318bf39c2:erQdahFsQf81eclG",
-        "45.14.135.182:9999:k8ch5zpctf-pool-res.mobile.corp-country-BR-mode-hold-session-6ad9318bf2889:erQdahFsQf81eclG",
-        "190.2.143.20:9999:k8ch5zpctf-pool-res.mobile.corp-country-RU-mode-hold-session-6ad9318bf1672:erQdahFsQf81eclG",
-        "185.185.51.69:9999:k8ch5zpctf-pool-res.mobile.corp-country-US-mode-hold-session-6ad9318bef7fb:erQdahFsQf81eclG"
-      ]
-    },
-    {
-      "email": "ads-power-user1792618932363@sx.org",
-      "token": "2467776|xEcTiEI8KJymg2ppwxV7tySyOaCXJtq2HCkxGRRr405a97e3",
-      "session_id": "2819292bd72041edac9a81e2fcdb0d64",
-      "x_auth_code": "rrbrnfhemh",
-      "activated_at": "2026-10-21 21:42:14",
-      "proxies": [
-        "185.180.220.99:9999:gweqhshgld-pool-res.mobile.corp-country-CA-mode-hold-session-6ad931b632ccf:HbZhJvl2rKtjH00g",
-        "185.100.235.113:9999:gweqhshgld-pool-res.mobile.corp-country-CN-mode-hold-session-6ad931b631c08:HbZhJvl2rKtjH00g",
-        "190.2.141.12:9999:gweqhshgld-pool-res.mobile.corp-country-AR-mode-hold-session-6ad931b630b28:HbZhJvl2rKtjH00g",
-        "212.8.252.6:9999:gweqhshgld-pool-res.mobile.corp-country-FR-mode-hold-session-6ad931b62f792:HbZhJvl2rKtjH00g",
-        "185.180.220.99:9999:gweqhshgld-pool-res.mobile.corp-country-DE-mode-hold-session-6ad931b62e543:HbZhJvl2rKtjH00g",
-        "190.2.143.20:9999:gweqhshgld-pool-res.mobile.corp-country-UA-mode-hold-session-6ad931b62d2fd:HbZhJvl2rKtjH00g",
-        "185.185.51.243:9999:gweqhshgld-pool-res.mobile.corp-country-VN-mode-hold-session-6ad931b62c045:HbZhJvl2rKtjH00g",
-        "190.2.141.31:9999:gweqhshgld-pool-res.mobile.corp-country-BR-mode-hold-session-6ad931b62ae63:HbZhJvl2rKtjH00g",
-        "212.8.248.20:9999:gweqhshgld-pool-res.mobile.corp-country-RU-mode-hold-session-6ad931b629d85:HbZhJvl2rKtjH00g",
-        "62.112.8.26:9999:gweqhshgld-pool-res.mobile.corp-country-US-mode-hold-session-6ad931b62812d:HbZhJvl2rKtjH00g"
-      ]
-    },
-    {
-      "email": "ads-power-user1792619498911@sx.org",
-      "token": "2467782|hcbOQxMk6Qe4R4ywHArTXHEQzfwOz0nmtCE9weuZ24eb4270",
-      "session_id": "d13faef752de4964b54e0de0031ef14a",
-      "x_auth_code": "igqjnhb0fz",
-      "activated_at": "2026-10-21 21:51:40",
-      "proxies": [
-        "185.132.177.174:9999:kjpkgpm8de-pool-res.mobile.corp-country-CA-mode-hold-session-6ad933ec2e84a:06gZZGZuDIMQc2nn",
-        "212.8.249.142:9999:kjpkgpm8de-pool-res.mobile.corp-country-CN-mode-hold-session-6ad933ec2d3bd:06gZZGZuDIMQc2nn",
-        "185.185.51.69:9999:kjpkgpm8de-pool-res.mobile.corp-country-AR-mode-hold-session-6ad933ec2be7a:06gZZGZuDIMQc2nn",
-        "185.185.51.243:9999:kjpkgpm8de-pool-res.mobile.corp-country-FR-mode-hold-session-6ad933ec2a963:06gZZGZuDIMQc2nn",
-        "185.184.192.44:9999:kjpkgpm8de-pool-res.mobile.corp-country-DE-mode-hold-session-6ad933ec296d2:06gZZGZuDIMQc2nn",
-        "185.184.192.44:9999:kjpkgpm8de-pool-res.mobile.corp-country-UA-mode-hold-session-6ad933ec28457:06gZZGZuDIMQc2nn",
-        "45.14.135.182:9999:kjpkgpm8de-pool-res.mobile.corp-country-VN-mode-hold-session-6ad933ec27143:06gZZGZuDIMQc2nn",
-        "190.2.141.31:9999:kjpkgpm8de-pool-res.mobile.corp-country-BR-mode-hold-session-6ad933ec25ee9:06gZZGZuDIMQc2nn",
-        "212.8.248.20:9999:kjpkgpm8de-pool-res.mobile.corp-country-RU-mode-hold-session-6ad933ec24d94:06gZZGZuDIMQc2nn",
-        "212.8.248.20:9999:kjpkgpm8de-pool-res.mobile.corp-country-US-mode-hold-session-6ad933ec23059:06gZZGZuDIMQc2nn"
-      ]
-    },
-    {
-      "email": "ads-power-user1792621078188@sx.org",
-      "token": "2467802|AOYPPsvwf9EsiAYIPnvVDbQD7ha6eSdcCWV1DIJY25369427",
-      "session_id": "2debdd6beca94631979566a32f8a56aa",
-      "x_auth_code": "ibh4n78ffr",
-      "activated_at": "2026-10-21 22:18:00",
-      "proxies": [
-        "190.2.141.12:9999:ab7oodqnbp-pool-res.mobile.corp-country-CA-mode-hold-session-6ad93a17d9f19:hhN5FNE74btSUUxP",
-        "212.8.249.142:9999:ab7oodqnbp-pool-res.mobile.corp-country-CN-mode-hold-session-6ad93a17d8cab:hhN5FNE74btSUUxP",
-        "190.2.143.20:9999:ab7oodqnbp-pool-res.mobile.corp-country-AR-mode-hold-session-6ad93a17d79d5:hhN5FNE74btSUUxP",
-        "190.2.141.31:9999:ab7oodqnbp-pool-res.mobile.corp-country-FR-mode-hold-session-6ad93a17d66ea:hhN5FNE74btSUUxP",
-        "190.2.141.12:9999:ab7oodqnbp-pool-res.mobile.corp-country-DE-mode-hold-session-6ad93a17d54e7:hhN5FNE74btSUUxP",
-        "212.8.252.6:9999:ab7oodqnbp-pool-res.mobile.corp-country-UA-mode-hold-session-6ad93a17d4264:hhN5FNE74btSUUxP",
-        "185.185.51.243:9999:ab7oodqnbp-pool-res.mobile.corp-country-VN-mode-hold-session-6ad93a17d305d:hhN5FNE74btSUUxP",
-        "45.14.135.182:9999:ab7oodqnbp-pool-res.mobile.corp-country-BR-mode-hold-session-6ad93a17d1d1f:hhN5FNE74btSUUxP",
-        "82.38.66.153:9999:ab7oodqnbp-pool-res.mobile.corp-country-RU-mode-hold-session-6ad93a17d08cb:hhN5FNE74btSUUxP",
-        "190.2.141.12:9999:ab7oodqnbp-pool-res.mobile.corp-country-US-mode-hold-session-6ad93a17ce753:hhN5FNE74btSUUxP"
-      ]
-    },
-    {
-      "email": "ads-power-user1792621705152@sx.org",
-      "token": "2467809|gZcGa3CKekZUCPNV0rSBgMcCKtYhz52dbErPGxnl4e92eb42",
-      "session_id": "0d50ac9903de4ec78d1eb732e2fb99c7",
-      "x_auth_code": "onhhzfh1j7",
-      "activated_at": "2026-10-21 22:28:27",
-      "proxies": [
-        "185.185.51.69:9999:gk9ulw77kz-pool-res.mobile.corp-country-CA-mode-hold-session-6ad93c8a6c15f:rh0R8WzeazMMG7IN",
-        "212.8.248.20:9999:gk9ulw77kz-pool-res.mobile.corp-country-CN-mode-hold-session-6ad93c8a6aac1:rh0R8WzeazMMG7IN",
-        "212.8.248.20:9999:gk9ulw77kz-pool-res.mobile.corp-country-AR-mode-hold-session-6ad93c8a691be:rh0R8WzeazMMG7IN",
-        "190.2.143.20:9999:gk9ulw77kz-pool-res.mobile.corp-country-FR-mode-hold-session-6ad93c8a67941:rh0R8WzeazMMG7IN",
-        "185.185.51.243:9999:gk9ulw77kz-pool-res.mobile.corp-country-DE-mode-hold-session-6ad93c8a65f2c:rh0R8WzeazMMG7IN",
-        "185.100.235.113:9999:gk9ulw77kz-pool-res.mobile.corp-country-UA-mode-hold-session-6ad93c8a644fa:rh0R8WzeazMMG7IN",
-        "185.180.220.99:9999:gk9ulw77kz-pool-res.mobile.corp-country-VN-mode-hold-session-6ad93c8a62bba:rh0R8WzeazMMG7IN",
-        "190.2.141.31:9999:gk9ulw77kz-pool-res.mobile.corp-country-BR-mode-hold-session-6ad93c8a61305:rh0R8WzeazMMG7IN",
-        "185.185.51.69:9999:gk9ulw77kz-pool-res.mobile.corp-country-RU-mode-hold-session-6ad93c8a5f9fd:rh0R8WzeazMMG7IN",
-        "212.8.248.113:9999:gk9ulw77kz-pool-res.mobile.corp-country-US-mode-hold-session-6ad93c8a5db1e:rh0R8WzeazMMG7IN"
-      ]
-    },
-    {
-      "email": "ads-power-user1792622250958@sx.org",
-      "token": "2467816|YQKTfpY5vmy2nTImeP3wqtnsoWCN6LCqdmg6U6KC3fcd6b95",
-      "session_id": "56b799a54a4f403d8d07381f8c14c78f",
-      "x_auth_code": "nhjffqh5sa",
-      "activated_at": "2026-10-21 22:37:32",
-      "proxies": [
-        "212.8.252.6:9999:lu63hrxnnq-pool-res.mobile.corp-country-CA-mode-hold-session-6ad93eab5fb50:wJRavmIk0Gz2HBws",
-        "82.38.66.153:9999:lu63hrxnnq-pool-res.mobile.corp-country-CN-mode-hold-session-6ad93eab5e992:wJRavmIk0Gz2HBws",
-        "190.2.143.20:9999:lu63hrxnnq-pool-res.mobile.corp-country-AR-mode-hold-session-6ad93eab5d6ff:wJRavmIk0Gz2HBws",
-        "185.185.51.69:9999:lu63hrxnnq-pool-res.mobile.corp-country-FR-mode-hold-session-6ad93eab5c460:wJRavmIk0Gz2HBws",
-        "185.185.51.243:9999:lu63hrxnnq-pool-res.mobile.corp-country-DE-mode-hold-session-6ad93eab5b1e4:wJRavmIk0Gz2HBws",
-        "62.112.8.26:9999:lu63hrxnnq-pool-res.mobile.corp-country-UA-mode-hold-session-6ad93eab59f67:wJRavmIk0Gz2HBws",
-        "185.100.235.113:9999:lu63hrxnnq-pool-res.mobile.corp-country-VN-mode-hold-session-6ad93eab58cdd:wJRavmIk0Gz2HBws",
-        "190.2.141.31:9999:lu63hrxnnq-pool-res.mobile.corp-country-BR-mode-hold-session-6ad93eab57a90:wJRavmIk0Gz2HBws",
-        "190.2.141.31:9999:lu63hrxnnq-pool-res.mobile.corp-country-RU-mode-hold-session-6ad93eab5679f:wJRavmIk0Gz2HBws",
-        "190.2.141.12:9999:lu63hrxnnq-pool-res.mobile.corp-country-US-mode-hold-session-6ad93eab547ad:wJRavmIk0Gz2HBws"
-      ]
-    },
-    {
-      "email": "ads-power-user1792622300292@sx.org",
-      "token": "2467817|pPBfI3LhoDyPDA6WHybDqMf8Ayp4wvGwOTcu8EDk627bf611",
-      "session_id": "d0e129ecfe2649b19933491670cf0b4f",
-      "x_auth_code": "jrxzj18j2m",
-      "activated_at": "2026-10-21 22:38:22",
-      "proxies": [
-        "212.8.248.20:9999:hb9yuxlpnw-pool-res.mobile.corp-country-CA-mode-hold-session-6ad93ede29dff:zZkVCSldKk1XoNKU",
-        "185.184.192.44:9999:hb9yuxlpnw-pool-res.mobile.corp-country-CN-mode-hold-session-6ad93ede28a18:zZkVCSldKk1XoNKU",
-        "185.185.51.243:9999:hb9yuxlpnw-pool-res.mobile.corp-country-AR-mode-hold-session-6ad93ede276bb:zZkVCSldKk1XoNKU",
-        "185.185.51.69:9999:hb9yuxlpnw-pool-res.mobile.corp-country-FR-mode-hold-session-6ad93ede262f5:zZkVCSldKk1XoNKU",
-        "185.184.192.44:9999:hb9yuxlpnw-pool-res.mobile.corp-country-DE-mode-hold-session-6ad93ede24e9e:zZkVCSldKk1XoNKU",
-        "212.8.252.6:9999:hb9yuxlpnw-pool-res.mobile.corp-country-UA-mode-hold-session-6ad93ede23a0b:zZkVCSldKk1XoNKU",
-        "190.2.141.31:9999:hb9yuxlpnw-pool-res.mobile.corp-country-VN-mode-hold-session-6ad93ede226af:zZkVCSldKk1XoNKU",
-        "190.2.143.20:9999:hb9yuxlpnw-pool-res.mobile.corp-country-BR-mode-hold-session-6ad93ede214a8:zZkVCSldKk1XoNKU",
-        "82.38.66.153:9999:hb9yuxlpnw-pool-res.mobile.corp-country-RU-mode-hold-session-6ad93ede201a3:zZkVCSldKk1XoNKU",
-        "82.38.66.153:9999:hb9yuxlpnw-pool-res.mobile.corp-country-US-mode-hold-session-6ad93ede1e188:zZkVCSldKk1XoNKU"
-      ]
-    },
-    {
-      "email": "ads-power-user1792622695257@sx.org",
-      "token": "2467824|0MIqiTify39oj4GJelJxKgyXsM5otcOtEoramZi1dd10b64b",
-      "session_id": "ed1b29dbe3c94ac396ee5122b99cf486",
-      "x_auth_code": "nfc7jpjhhv",
-      "activated_at": "2026-10-21 22:44:58",
-      "proxies": [
-        "212.8.248.20:9999:pplf3txtoa-pool-res.mobile.corp-country-CA-mode-hold-session-6ad940694176f:hKBaMwFB0FnfzrHp",
-        "212.8.248.20:9999:pplf3txtoa-pool-res.mobile.corp-country-CN-mode-hold-session-6ad940694053b:hKBaMwFB0FnfzrHp",
-        "82.38.66.153:9999:pplf3txtoa-pool-res.mobile.corp-country-AR-mode-hold-session-6ad940693f2a1:hKBaMwFB0FnfzrHp",
-        "212.8.248.20:9999:pplf3txtoa-pool-res.mobile.corp-country-FR-mode-hold-session-6ad940693de37:hKBaMwFB0FnfzrHp",
-        "185.184.192.44:9999:pplf3txtoa-pool-res.mobile.corp-country-DE-mode-hold-session-6ad940693c94a:hKBaMwFB0FnfzrHp",
-        "185.100.235.113:9999:pplf3txtoa-pool-res.mobile.corp-country-UA-mode-hold-session-6ad940693b462:hKBaMwFB0FnfzrHp",
-        "190.2.141.12:9999:pplf3txtoa-pool-res.mobile.corp-country-VN-mode-hold-session-6ad9406939f16:hKBaMwFB0FnfzrHp",
-        "185.100.235.113:9999:pplf3txtoa-pool-res.mobile.corp-country-BR-mode-hold-session-6ad94069388a0:hKBaMwFB0FnfzrHp",
-        "190.2.141.31:9999:pplf3txtoa-pool-res.mobile.corp-country-RU-mode-hold-session-6ad940693748e:hKBaMwFB0FnfzrHp",
-        "185.185.51.243:9999:pplf3txtoa-pool-res.mobile.corp-country-US-mode-hold-session-6ad94069351c6:hKBaMwFB0FnfzrHp"
-      ]
-    },
-    {
-      "email": "ads-power-user1792629436718@sx.org",
-      "token": "2467882|NZjvcEov2g7Pkj51rh27mCFVmbPfpSwme2FyHVid9a96039d",
-      "session_id": "deb7cc8244114548bef3645d7c8c9575",
-      "x_auth_code": "cmn1hzlccf",
-      "activated_at": "2026-10-22 00:37:18",
-      "proxies": [
-        "82.38.66.153:9999:fs4lb66frz-pool-res.mobile.corp-country-CA-mode-hold-session-6ad95abddc4d6:2bQccDra3zGT6U8T",
-        "185.180.220.99:9999:fs4lb66frz-pool-res.mobile.corp-country-CN-mode-hold-session-6ad95abddb02c:2bQccDra3zGT6U8T",
-        "185.185.51.243:9999:fs4lb66frz-pool-res.mobile.corp-country-FR-mode-hold-session-6ad95abdd9b2c:2bQccDra3zGT6U8T",
-        "185.100.235.113:9999:fs4lb66frz-pool-res.mobile.corp-country-AR-mode-hold-session-6ad95abdd8573:2bQccDra3zGT6U8T",
-        "212.8.248.113:9999:fs4lb66frz-pool-res.mobile.corp-country-DE-mode-hold-session-6ad95abdd70c4:2bQccDra3zGT6U8T",
-        "185.185.51.243:9999:fs4lb66frz-pool-res.mobile.corp-country-VN-mode-hold-session-6ad95abdd5ab4:2bQccDra3zGT6U8T",
-        "190.2.143.20:9999:fs4lb66frz-pool-res.mobile.corp-country-UA-mode-hold-session-6ad95abdd45b3:2bQccDra3zGT6U8T",
-        "82.38.66.153:9999:fs4lb66frz-pool-res.mobile.corp-country-RU-mode-hold-session-6ad95abdd2e8a:2bQccDra3zGT6U8T",
-        "212.8.248.113:9999:fs4lb66frz-pool-res.mobile.corp-country-BR-mode-hold-session-6ad95abdd1b9c:2bQccDra3zGT6U8T",
-        "45.14.135.182:9999:fs4lb66frz-pool-res.mobile.corp-country-US-mode-hold-session-6ad95abdcf8d5:2bQccDra3zGT6U8T"
-      ]
-    },
-    {
-      "email": "ads-power-user1792629500632@sx.org",
-      "token": "2467883|vHkbBVGKBnd63myPj882oRBb5YZDKhBS0nMjsgd502878324",
-      "session_id": "e3c50e58fa1e4020ac35bedc67f125ba",
-      "x_auth_code": "nmcmffo7nh",
-      "activated_at": "2026-10-22 00:38:22",
-      "proxies": [
-        "212.8.248.113:9999:u7qrdj6fxr-pool-res.mobile.corp-country-CA-mode-hold-session-6ad95afe1c80b:Ehnjy8sMfa6WkfL8",
-        "212.8.252.6:9999:u7qrdj6fxr-pool-res.mobile.corp-country-CN-mode-hold-session-6ad95afe1b44a:Ehnjy8sMfa6WkfL8",
-        "185.180.220.99:9999:u7qrdj6fxr-pool-res.mobile.corp-country-FR-mode-hold-session-6ad95afe1a043:Ehnjy8sMfa6WkfL8",
-        "185.185.51.69:9999:u7qrdj6fxr-pool-res.mobile.corp-country-AR-mode-hold-session-6ad95afe18be4:Ehnjy8sMfa6WkfL8",
-        "212.8.249.142:9999:u7qrdj6fxr-pool-res.mobile.corp-country-DE-mode-hold-session-6ad95afe1777e:Ehnjy8sMfa6WkfL8",
-        "185.185.51.69:9999:u7qrdj6fxr-pool-res.mobile.corp-country-VN-mode-hold-session-6ad95afe16318:Ehnjy8sMfa6WkfL8",
-        "185.180.220.99:9999:u7qrdj6fxr-pool-res.mobile.corp-country-UA-mode-hold-session-6ad95afe14dc2:Ehnjy8sMfa6WkfL8",
-        "62.112.8.26:9999:u7qrdj6fxr-pool-res.mobile.corp-country-RU-mode-hold-session-6ad95afe13933:Ehnjy8sMfa6WkfL8",
-        "190.2.141.31:9999:u7qrdj6fxr-pool-res.mobile.corp-country-BR-mode-hold-session-6ad95afe1249a:Ehnjy8sMfa6WkfL8",
-        "212.8.248.113:9999:u7qrdj6fxr-pool-res.mobile.corp-country-US-mode-hold-session-6ad95afe10374:Ehnjy8sMfa6WkfL8"
-      ]
-    },
-    {
-      "email": "ads-power-user1792629579289@sx.org",
-      "token": "2467884|0CbibziT4r7SOyRH8Dsep6FtbLn7cNPG37hH3pNh35d65283",
-      "session_id": "78a5792887974c4e9c1adc7670f8ef2c",
-      "x_auth_code": "rnvonmznfh",
-      "activated_at": "2026-10-22 00:39:41",
-      "proxies": [
-        "190.2.141.12:9999:h5iqthqsxk-pool-res.mobile.corp-country-CA-mode-hold-session-6ad95b4cd5886:Tu5bWFMCyZ890uWn",
-        "190.2.141.31:9999:h5iqthqsxk-pool-res.mobile.corp-country-CN-mode-hold-session-6ad95b4cd448c:Tu5bWFMCyZ890uWn",
-        "185.184.192.44:9999:h5iqthqsxk-pool-res.mobile.corp-country-FR-mode-hold-session-6ad95b4cd3064:Tu5bWFMCyZ890uWn",
-        "190.2.143.20:9999:h5iqthqsxk-pool-res.mobile.corp-country-AR-mode-hold-session-6ad95b4cd1958:Tu5bWFMCyZ890uWn",
-        "45.14.135.182:9999:h5iqthqsxk-pool-res.mobile.corp-country-DE-mode-hold-session-6ad95b4cd051b:Tu5bWFMCyZ890uWn",
-        "190.2.143.20:9999:h5iqthqsxk-pool-res.mobile.corp-country-VN-mode-hold-session-6ad95b4ccf152:Tu5bWFMCyZ890uWn",
-        "82.38.66.153:9999:h5iqthqsxk-pool-res.mobile.corp-country-UA-mode-hold-session-6ad95b4ccde1a:Tu5bWFMCyZ890uWn",
-        "185.185.51.69:9999:h5iqthqsxk-pool-res.mobile.corp-country-RU-mode-hold-session-6ad95b4ccca92:Tu5bWFMCyZ890uWn",
-        "185.100.235.113:9999:h5iqthqsxk-pool-res.mobile.corp-country-BR-mode-hold-session-6ad95b4ccb615:Tu5bWFMCyZ890uWn",
-        "190.2.141.12:9999:h5iqthqsxk-pool-res.mobile.corp-country-US-mode-hold-session-6ad95b4cc9418:Tu5bWFMCyZ890uWn"
-      ]
-    },
-    {
-      "email": "ads-power-user1792629624199@sx.org",
-      "token": "2467885|X426whHwfvA2nOf5DeB0okMCYkP9T8XG7QF7bywq781d55f0",
-      "session_id": "353e2d3041a345c6a6b532457a4f709d",
-      "x_auth_code": "fahl4fnmoj",
-      "activated_at": "2026-10-22 00:40:26",
-      "proxies": [
-        "190.2.141.31:9999:slprqhpccs-pool-res.mobile.corp-country-CA-mode-hold-session-6ad95b798d697:nfHDWEvA0wflSdU3",
-        "212.8.252.6:9999:slprqhpccs-pool-res.mobile.corp-country-CN-mode-hold-session-6ad95b798c1f7:nfHDWEvA0wflSdU3",
-        "82.38.66.153:9999:slprqhpccs-pool-res.mobile.corp-country-FR-mode-hold-session-6ad95b798ac5f:nfHDWEvA0wflSdU3",
-        "190.2.141.12:9999:slprqhpccs-pool-res.mobile.corp-country-AR-mode-hold-session-6ad95b7989669:nfHDWEvA0wflSdU3",
-        "190.2.141.31:9999:slprqhpccs-pool-res.mobile.corp-country-DE-mode-hold-session-6ad95b798824d:nfHDWEvA0wflSdU3",
-        "190.2.141.12:9999:slprqhpccs-pool-res.mobile.corp-country-VN-mode-hold-session-6ad95b7986e45:nfHDWEvA0wflSdU3",
-        "190.2.143.20:9999:slprqhpccs-pool-res.mobile.corp-country-UA-mode-hold-session-6ad95b798587d:nfHDWEvA0wflSdU3",
-        "185.100.235.113:9999:slprqhpccs-pool-res.mobile.corp-country-RU-mode-hold-session-6ad95b798449c:nfHDWEvA0wflSdU3",
-        "82.38.66.153:9999:slprqhpccs-pool-res.mobile.corp-country-BR-mode-hold-session-6ad95b79831d8:nfHDWEvA0wflSdU3",
-        "45.14.135.182:9999:slprqhpccs-pool-res.mobile.corp-country-US-mode-hold-session-6ad95b798112d:nfHDWEvA0wflSdU3"
-      ]
-    },
-    {
-      "email": "ads-power-user1792629672439@sx.org",
-      "token": "2467886|GdK0HiZUmHppeXKU8jncwHFViIZhpNCcI9VWUS5zcaefb323",
-      "session_id": "4c0c6fbee4644631be8ac614a017de16",
-      "x_auth_code": "qk1r9hrj2r",
-      "activated_at": "2026-10-22 00:41:14",
-      "proxies": [
-        "185.184.192.44:9999:7uzkpkrmgw-pool-res.mobile.corp-country-CA-mode-hold-session-6ad95ba980517:Q0KuQQlbEtmMpHe6",
-        "185.100.235.113:9999:7uzkpkrmgw-pool-res.mobile.corp-country-CN-mode-hold-session-6ad95ba97eead:Q0KuQQlbEtmMpHe6",
-        "212.8.248.113:9999:7uzkpkrmgw-pool-res.mobile.corp-country-FR-mode-hold-session-6ad95ba97dad3:Q0KuQQlbEtmMpHe6",
-        "185.184.192.44:9999:7uzkpkrmgw-pool-res.mobile.corp-country-AR-mode-hold-session-6ad95ba97c6f5:Q0KuQQlbEtmMpHe6",
-        "190.2.143.20:9999:7uzkpkrmgw-pool-res.mobile.corp-country-DE-mode-hold-session-6ad95ba97b341:Q0KuQQlbEtmMpHe6",
-        "62.112.8.26:9999:7uzkpkrmgw-pool-res.mobile.corp-country-VN-mode-hold-session-6ad95ba97a041:Q0KuQQlbEtmMpHe6",
-        "185.100.235.113:9999:7uzkpkrmgw-pool-res.mobile.corp-country-UA-mode-hold-session-6ad95ba978cf2:Q0KuQQlbEtmMpHe6",
-        "45.14.135.182:9999:7uzkpkrmgw-pool-res.mobile.corp-country-RU-mode-hold-session-6ad95ba97794e:Q0KuQQlbEtmMpHe6",
-        "185.132.177.174:9999:7uzkpkrmgw-pool-res.mobile.corp-country-BR-mode-hold-session-6ad95ba9764f2:Q0KuQQlbEtmMpHe6",
-        "185.180.220.99:9999:7uzkpkrmgw-pool-res.mobile.corp-country-US-mode-hold-session-6ad95ba9742df:Q0KuQQlbEtmMpHe6"
-      ]
-    },
-    {
       "email": "ads-power-user1792629693703@sx.org",
       "token": "2467887|FKBiXwWVYpxz7QGH5ytKSg6AWxwFV2BDHyuPQwgVf277af57",
       "session_id": "a6664fecfc104ac082685f4d2481040d",
@@ -7371,12 +6402,259 @@
         "62.112.8.26:9999:9q58vzkkev-pool-res.mobile.corp-country-RU-mode-hold-session-6ada5455724a8:peplB1Arz2ZQnQsx",
         "62.112.8.26:9999:9q58vzkkev-pool-res.mobile.corp-country-US-mode-hold-session-6ada54557021a:peplB1Arz2ZQnQsx"
       ]
+    },
+    {
+      "email": "ads-power-user1792697240771@sx.org",
+      "token": "2469185|Grk9MI1N2ohn35PBTL9QIEhJWsnog4Z0p6Fllngw2305a37c",
+      "session_id": "e017649ada3f44dea570d011dd22da40",
+      "x_auth_code": "whqngkornh",
+      "activated_at": "2026-10-22 19:27:22",
+      "proxies": [
+        "212.8.248.113:9999:1qjw1dgflr-pool-res.mobile.corp-country-CN-mode-hold-session-6ada639a354b5:8fdkEjSW0w74s19T",
+        "185.100.235.113:9999:1qjw1dgflr-pool-res.mobile.corp-country-CL-mode-hold-session-6ada639a3435d:8fdkEjSW0w74s19T",
+        "185.100.235.113:9999:1qjw1dgflr-pool-res.mobile.corp-country-DE-mode-hold-session-6ada639a331e2:8fdkEjSW0w74s19T",
+        "212.8.248.20:9999:1qjw1dgflr-pool-res.mobile.corp-country-FR-mode-hold-session-6ada639a31f57:8fdkEjSW0w74s19T",
+        "185.185.51.69:9999:1qjw1dgflr-pool-res.mobile.corp-country-UA-mode-hold-session-6ada639a30cbf:8fdkEjSW0w74s19T",
+        "212.8.248.113:9999:1qjw1dgflr-pool-res.mobile.corp-country-AR-mode-hold-session-6ada639a2fb5a:8fdkEjSW0w74s19T",
+        "82.38.66.153:9999:1qjw1dgflr-pool-res.mobile.corp-country-VN-mode-hold-session-6ada639a2e9e8:8fdkEjSW0w74s19T",
+        "185.184.192.44:9999:1qjw1dgflr-pool-res.mobile.corp-country-BR-mode-hold-session-6ada639a2d89c:8fdkEjSW0w74s19T",
+        "62.112.8.26:9999:1qjw1dgflr-pool-res.mobile.corp-country-RU-mode-hold-session-6ada639a2c6b8:8fdkEjSW0w74s19T",
+        "212.8.248.113:9999:1qjw1dgflr-pool-res.mobile.corp-country-US-mode-hold-session-6ada639a2a966:8fdkEjSW0w74s19T"
+      ]
+    },
+    {
+      "email": "ads-power-user1792697292788@sx.org",
+      "token": "2469187|GMaTrRo0esitSGbkMBxYKMdaKbDos8zxAZyW5HdQb2d6b102",
+      "session_id": "e33ba9c3d70c42a1b736768f5eac4ca4",
+      "x_auth_code": "nh0phrg7oj",
+      "activated_at": "2026-10-22 19:28:14",
+      "proxies": [
+        "82.38.66.153:9999:h4s271m22y-pool-res.mobile.corp-country-CN-mode-hold-session-6ada63ce0382c:j81JFL72MU4Zvbkg",
+        "185.100.235.113:9999:h4s271m22y-pool-res.mobile.corp-country-CL-mode-hold-session-6ada63ce0260e:j81JFL72MU4Zvbkg",
+        "185.180.220.99:9999:h4s271m22y-pool-res.mobile.corp-country-DE-mode-hold-session-6ada63ce013a8:j81JFL72MU4Zvbkg",
+        "212.8.249.142:9999:h4s271m22y-pool-res.mobile.corp-country-FR-mode-hold-session-6ada63ce000e1:j81JFL72MU4Zvbkg",
+        "185.184.192.44:9999:h4s271m22y-pool-res.mobile.corp-country-UA-mode-hold-session-6ada63cdf30d4:j81JFL72MU4Zvbkg",
+        "212.8.248.113:9999:h4s271m22y-pool-res.mobile.corp-country-AR-mode-hold-session-6ada63cdf1e81:j81JFL72MU4Zvbkg",
+        "190.2.141.12:9999:h4s271m22y-pool-res.mobile.corp-country-VN-mode-hold-session-6ada63cdf0c27:j81JFL72MU4Zvbkg",
+        "212.8.252.6:9999:h4s271m22y-pool-res.mobile.corp-country-BR-mode-hold-session-6ada63cdefb94:j81JFL72MU4Zvbkg",
+        "185.132.177.174:9999:h4s271m22y-pool-res.mobile.corp-country-RU-mode-hold-session-6ada63cdeeb3d:j81JFL72MU4Zvbkg",
+        "185.185.51.69:9999:h4s271m22y-pool-res.mobile.corp-country-US-mode-hold-session-6ada63cded163:j81JFL72MU4Zvbkg"
+      ]
+    },
+    {
+      "email": "ads-power-user1792697455173@sx.org",
+      "token": "2469190|oqW6DYXCg2Ppvhz1Xk0ZbmyPH7wDmAtkadpGAKrm57fc7b9f",
+      "session_id": "eee292521a8747129b4414a00ea57c28",
+      "x_auth_code": "rnxqs8hguh",
+      "activated_at": "2026-10-22 19:30:58",
+      "proxies": [
+        "185.100.235.113:9999:jde0mqzrfb-pool-res.mobile.corp-country-CN-mode-hold-session-6ada64713af85:1K2XWsRUU1v2H7Kk",
+        "45.14.135.182:9999:jde0mqzrfb-pool-res.mobile.corp-country-CL-mode-hold-session-6ada647139dca:1K2XWsRUU1v2H7Kk",
+        "185.180.220.99:9999:jde0mqzrfb-pool-res.mobile.corp-country-DE-mode-hold-session-6ada647138d65:1K2XWsRUU1v2H7Kk",
+        "190.2.143.20:9999:jde0mqzrfb-pool-res.mobile.corp-country-FR-mode-hold-session-6ada647137d13:1K2XWsRUU1v2H7Kk",
+        "212.8.248.113:9999:jde0mqzrfb-pool-res.mobile.corp-country-UA-mode-hold-session-6ada647136ce3:1K2XWsRUU1v2H7Kk",
+        "45.14.135.182:9999:jde0mqzrfb-pool-res.mobile.corp-country-AR-mode-hold-session-6ada647135c67:1K2XWsRUU1v2H7Kk",
+        "190.2.141.31:9999:jde0mqzrfb-pool-res.mobile.corp-country-VN-mode-hold-session-6ada647134c44:1K2XWsRUU1v2H7Kk",
+        "185.184.192.44:9999:jde0mqzrfb-pool-res.mobile.corp-country-BR-mode-hold-session-6ada647133c6c:1K2XWsRUU1v2H7Kk",
+        "185.184.192.44:9999:jde0mqzrfb-pool-res.mobile.corp-country-RU-mode-hold-session-6ada647132b97:1K2XWsRUU1v2H7Kk",
+        "185.185.51.243:9999:jde0mqzrfb-pool-res.mobile.corp-country-US-mode-hold-session-6ada647130b26:1K2XWsRUU1v2H7Kk"
+      ]
+    },
+    {
+      "email": "ads-power-user1792697506718@sx.org",
+      "token": "2469193|R7Vb89IKZftX4N982qlEbWfFOWft1OZFSDvJUUGC435f200b",
+      "session_id": "560450c884a24807b6635f82d8ea649d",
+      "x_auth_code": "g5qnhnev3h",
+      "activated_at": "2026-10-22 19:31:49",
+      "proxies": [
+        "185.184.192.44:9999:fnmouhaxxg-pool-res.mobile.corp-country-CN-mode-hold-session-6ada64a48ae09:UOeBdSQvbRRmX6Is",
+        "190.2.141.31:9999:fnmouhaxxg-pool-res.mobile.corp-country-CL-mode-hold-session-6ada64a489bf8:UOeBdSQvbRRmX6Is",
+        "212.8.248.113:9999:fnmouhaxxg-pool-res.mobile.corp-country-DE-mode-hold-session-6ada64a488951:UOeBdSQvbRRmX6Is",
+        "62.112.8.26:9999:fnmouhaxxg-pool-res.mobile.corp-country-FR-mode-hold-session-6ada64a487869:UOeBdSQvbRRmX6Is",
+        "190.2.141.12:9999:fnmouhaxxg-pool-res.mobile.corp-country-UA-mode-hold-session-6ada64a4867f5:UOeBdSQvbRRmX6Is",
+        "62.112.8.26:9999:fnmouhaxxg-pool-res.mobile.corp-country-AR-mode-hold-session-6ada64a4857e0:UOeBdSQvbRRmX6Is",
+        "45.14.135.182:9999:fnmouhaxxg-pool-res.mobile.corp-country-VN-mode-hold-session-6ada64a4847cf:UOeBdSQvbRRmX6Is",
+        "185.184.192.44:9999:fnmouhaxxg-pool-res.mobile.corp-country-BR-mode-hold-session-6ada64a483787:UOeBdSQvbRRmX6Is",
+        "185.184.192.44:9999:fnmouhaxxg-pool-res.mobile.corp-country-RU-mode-hold-session-6ada64a482697:UOeBdSQvbRRmX6Is",
+        "185.100.235.113:9999:fnmouhaxxg-pool-res.mobile.corp-country-US-mode-hold-session-6ada64a48091e:UOeBdSQvbRRmX6Is"
+      ]
+    },
+    {
+      "email": "ads-power-user1792697541352@sx.org",
+      "token": "2469196|SKCGU6HFww2RXsFPumAmICtYuuOrmijnZgTjHXqB0066296c",
+      "session_id": "d8a4d42e3d8440379f45464d36852072",
+      "x_auth_code": "kwntvgnhrh",
+      "activated_at": "2026-10-22 19:32:23",
+      "proxies": [
+        "212.8.248.20:9999:flnyn8f3nu-pool-res.mobile.corp-country-CN-mode-hold-session-6ada64c7084c6:wszLyNjk7FHQtfBr",
+        "185.132.177.174:9999:flnyn8f3nu-pool-res.mobile.corp-country-CL-mode-hold-session-6ada64c70741b:wszLyNjk7FHQtfBr",
+        "212.8.248.20:9999:flnyn8f3nu-pool-res.mobile.corp-country-DE-mode-hold-session-6ada64c7061cb:wszLyNjk7FHQtfBr",
+        "185.100.235.113:9999:flnyn8f3nu-pool-res.mobile.corp-country-FR-mode-hold-session-6ada64c704f17:wszLyNjk7FHQtfBr",
+        "185.132.177.174:9999:flnyn8f3nu-pool-res.mobile.corp-country-UA-mode-hold-session-6ada64c703c94:wszLyNjk7FHQtfBr",
+        "185.100.235.113:9999:flnyn8f3nu-pool-res.mobile.corp-country-AR-mode-hold-session-6ada64c702b2b:wszLyNjk7FHQtfBr",
+        "190.2.141.31:9999:flnyn8f3nu-pool-res.mobile.corp-country-VN-mode-hold-session-6ada64c7018ab:wszLyNjk7FHQtfBr",
+        "185.180.220.99:9999:flnyn8f3nu-pool-res.mobile.corp-country-BR-mode-hold-session-6ada64c700627:wszLyNjk7FHQtfBr",
+        "185.132.177.174:9999:flnyn8f3nu-pool-res.mobile.corp-country-RU-mode-hold-session-6ada64c6f353d:wszLyNjk7FHQtfBr",
+        "190.2.141.31:9999:flnyn8f3nu-pool-res.mobile.corp-country-US-mode-hold-session-6ada64c6f1433:wszLyNjk7FHQtfBr"
+      ]
+    },
+    {
+      "email": "ads-power-user1792697605531@sx.org",
+      "token": "2469198|mMofkUGqGYIRVULcYytLSWSURlaZmk0pI6P60zlp48e87aec",
+      "session_id": "277ae63788de42d1b6c13f08574548f1",
+      "x_auth_code": "njmrv2ej1r",
+      "activated_at": "2026-10-22 19:33:28",
+      "proxies": [
+        "212.8.249.142:9999:etipusaguw-pool-res.mobile.corp-country-CN-mode-hold-session-6ada65072558d:sPmqa1Lo4C0tksdS",
+        "190.2.141.12:9999:etipusaguw-pool-res.mobile.corp-country-CL-mode-hold-session-6ada650724290:sPmqa1Lo4C0tksdS",
+        "185.100.235.113:9999:etipusaguw-pool-res.mobile.corp-country-DE-mode-hold-session-6ada650722f9b:sPmqa1Lo4C0tksdS",
+        "62.112.8.26:9999:etipusaguw-pool-res.mobile.corp-country-FR-mode-hold-session-6ada650721cb1:sPmqa1Lo4C0tksdS",
+        "185.184.192.44:9999:etipusaguw-pool-res.mobile.corp-country-UA-mode-hold-session-6ada650720968:sPmqa1Lo4C0tksdS",
+        "185.185.51.69:9999:etipusaguw-pool-res.mobile.corp-country-AR-mode-hold-session-6ada65071f5f7:sPmqa1Lo4C0tksdS",
+        "185.185.51.69:9999:etipusaguw-pool-res.mobile.corp-country-VN-mode-hold-session-6ada65071e1c6:sPmqa1Lo4C0tksdS",
+        "190.2.141.31:9999:etipusaguw-pool-res.mobile.corp-country-BR-mode-hold-session-6ada65071cdaf:sPmqa1Lo4C0tksdS",
+        "190.2.141.31:9999:etipusaguw-pool-res.mobile.corp-country-RU-mode-hold-session-6ada65071b9ae:sPmqa1Lo4C0tksdS",
+        "212.8.252.6:9999:etipusaguw-pool-res.mobile.corp-country-US-mode-hold-session-6ada6507194e9:sPmqa1Lo4C0tksdS"
+      ]
+    },
+    {
+      "email": "ads-power-user1792707024810@sx.org",
+      "token": "2469302|nvBRR6WT9rBv5QvwiykfNTK7wg6akxFFXncnM9ar0cddb802",
+      "session_id": "11b0f9dc71bf4cc69d8d7fae916fd9f4",
+      "x_auth_code": "uh38gmhhnc",
+      "activated_at": "2026-10-22 22:10:27",
+      "proxies": [
+        "45.14.135.182:9999:v6jz8jxsqh-pool-res.mobile.corp-country-CN-mode-hold-session-6ada89d233cf8:2qdj1Obi9N9QOObF",
+        "185.180.220.99:9999:v6jz8jxsqh-pool-res.mobile.corp-country-CL-mode-hold-session-6ada89d2328ca:2qdj1Obi9N9QOObF",
+        "45.14.135.182:9999:v6jz8jxsqh-pool-res.mobile.corp-country-FR-mode-hold-session-6ada89d2314a0:2qdj1Obi9N9QOObF",
+        "190.2.141.31:9999:v6jz8jxsqh-pool-res.mobile.corp-country-DE-mode-hold-session-6ada89d230064:2qdj1Obi9N9QOObF",
+        "212.8.252.6:9999:v6jz8jxsqh-pool-res.mobile.corp-country-UA-mode-hold-session-6ada89d22eaf5:2qdj1Obi9N9QOObF",
+        "82.38.66.153:9999:v6jz8jxsqh-pool-res.mobile.corp-country-AR-mode-hold-session-6ada89d22d603:2qdj1Obi9N9QOObF",
+        "185.185.51.243:9999:v6jz8jxsqh-pool-res.mobile.corp-country-VN-mode-hold-session-6ada89d22bf62:2qdj1Obi9N9QOObF",
+        "185.132.177.174:9999:v6jz8jxsqh-pool-res.mobile.corp-country-BR-mode-hold-session-6ada89d22a4e4:2qdj1Obi9N9QOObF",
+        "45.14.135.182:9999:v6jz8jxsqh-pool-res.mobile.corp-country-RU-mode-hold-session-6ada89d2287b3:2qdj1Obi9N9QOObF",
+        "190.2.141.12:9999:v6jz8jxsqh-pool-res.mobile.corp-country-US-mode-hold-session-6ada89d2267f6:2qdj1Obi9N9QOObF"
+      ]
+    },
+    {
+      "email": "ads-power-user1792707036966@sx.org",
+      "token": "2469303|L8ZojaQU3NwICsMUimA5YzEqyBbVhZf5s3D4olLo34b4777f",
+      "session_id": "dbc54c742db8422cbbaf268e80897b40",
+      "x_auth_code": "mkh8n7cgfp",
+      "activated_at": "2026-10-22 22:10:39",
+      "proxies": [
+        "185.185.51.69:9999:zzhirnpu2v-pool-res.mobile.corp-country-CN-mode-hold-session-6ada89dea219d:hWjJQEV5UOvNdmwb",
+        "212.8.248.113:9999:zzhirnpu2v-pool-res.mobile.corp-country-CL-mode-hold-session-6ada89dea10eb:hWjJQEV5UOvNdmwb",
+        "190.2.143.20:9999:zzhirnpu2v-pool-res.mobile.corp-country-FR-mode-hold-session-6ada89dea0058:hWjJQEV5UOvNdmwb",
+        "212.8.248.113:9999:zzhirnpu2v-pool-res.mobile.corp-country-DE-mode-hold-session-6ada89de9ef90:hWjJQEV5UOvNdmwb",
+        "212.8.248.113:9999:zzhirnpu2v-pool-res.mobile.corp-country-UA-mode-hold-session-6ada89de9ddf1:hWjJQEV5UOvNdmwb",
+        "212.8.252.6:9999:zzhirnpu2v-pool-res.mobile.corp-country-AR-mode-hold-session-6ada89de9cb1a:hWjJQEV5UOvNdmwb",
+        "190.2.141.31:9999:zzhirnpu2v-pool-res.mobile.corp-country-VN-mode-hold-session-6ada89de9ba0f:hWjJQEV5UOvNdmwb",
+        "185.100.235.113:9999:zzhirnpu2v-pool-res.mobile.corp-country-BR-mode-hold-session-6ada89de9a8ec:hWjJQEV5UOvNdmwb",
+        "212.8.249.142:9999:zzhirnpu2v-pool-res.mobile.corp-country-RU-mode-hold-session-6ada89de9956c:hWjJQEV5UOvNdmwb",
+        "185.100.235.113:9999:zzhirnpu2v-pool-res.mobile.corp-country-US-mode-hold-session-6ada89de9735a:hWjJQEV5UOvNdmwb"
+      ]
+    },
+    {
+      "email": "ads-power-user1792707700187@sx.org",
+      "token": "2469312|SGct835Bjw4z35AB8faAXVrORy3wMkhhj5Kv58N0fb054722",
+      "session_id": "3b2ec7a66e754fd7b1644b1a0f427214",
+      "x_auth_code": "7gmnh0njoj",
+      "activated_at": "2026-10-22 22:21:42",
+      "proxies": [
+        "190.2.143.20:9999:8mzv9kzhv2-pool-res.mobile.corp-country-CN-mode-hold-session-6ada8c75e26e1:waEJvNacehwExKg0",
+        "212.8.248.20:9999:8mzv9kzhv2-pool-res.mobile.corp-country-CL-mode-hold-session-6ada8c75e1324:waEJvNacehwExKg0",
+        "190.2.143.20:9999:8mzv9kzhv2-pool-res.mobile.corp-country-DE-mode-hold-session-6ada8c75dff98:waEJvNacehwExKg0",
+        "190.2.141.12:9999:8mzv9kzhv2-pool-res.mobile.corp-country-FR-mode-hold-session-6ada8c75debf2:waEJvNacehwExKg0",
+        "212.8.248.113:9999:8mzv9kzhv2-pool-res.mobile.corp-country-UA-mode-hold-session-6ada8c75dd8a2:waEJvNacehwExKg0",
+        "190.2.141.12:9999:8mzv9kzhv2-pool-res.mobile.corp-country-AR-mode-hold-session-6ada8c75dc536:waEJvNacehwExKg0",
+        "190.2.141.31:9999:8mzv9kzhv2-pool-res.mobile.corp-country-VN-mode-hold-session-6ada8c75db24a:waEJvNacehwExKg0",
+        "212.8.248.20:9999:8mzv9kzhv2-pool-res.mobile.corp-country-BR-mode-hold-session-6ada8c75d9f19:waEJvNacehwExKg0",
+        "190.2.141.12:9999:8mzv9kzhv2-pool-res.mobile.corp-country-RU-mode-hold-session-6ada8c75d8ac6:waEJvNacehwExKg0",
+        "185.180.220.99:9999:8mzv9kzhv2-pool-res.mobile.corp-country-US-mode-hold-session-6ada8c75d6a81:waEJvNacehwExKg0"
+      ]
+    },
+    {
+      "email": "ads-power-user1792709939275@sx.org",
+      "token": "2469326|oNrCXYdavLtwXKvAK0PYopQrrBxLWrwhPE72MTp4cff39a3d",
+      "session_id": "3c05db3335d545a593ffedbe5d0ba0cb",
+      "x_auth_code": "nfrgpznhtk",
+      "activated_at": "2026-10-22 22:59:02",
+      "proxies": [
+        "185.185.51.69:9999:rqbvsawlp7-pool-res.mobile.corp-country-CN-mode-hold-session-6ada95357b814:zyMnt6FMb5mU6B9P",
+        "190.2.143.20:9999:rqbvsawlp7-pool-res.mobile.corp-country-CL-mode-hold-session-6ada95357a341:zyMnt6FMb5mU6B9P",
+        "212.8.248.20:9999:rqbvsawlp7-pool-res.mobile.corp-country-DE-mode-hold-session-6ada953578e42:zyMnt6FMb5mU6B9P",
+        "82.38.66.153:9999:rqbvsawlp7-pool-res.mobile.corp-country-FR-mode-hold-session-6ada95357794f:zyMnt6FMb5mU6B9P",
+        "185.100.235.113:9999:rqbvsawlp7-pool-res.mobile.corp-country-UA-mode-hold-session-6ada95357642a:zyMnt6FMb5mU6B9P",
+        "212.8.248.20:9999:rqbvsawlp7-pool-res.mobile.corp-country-AR-mode-hold-session-6ada953574f5d:zyMnt6FMb5mU6B9P",
+        "190.2.141.31:9999:rqbvsawlp7-pool-res.mobile.corp-country-VN-mode-hold-session-6ada953573a6d:zyMnt6FMb5mU6B9P",
+        "185.132.177.174:9999:rqbvsawlp7-pool-res.mobile.corp-country-BR-mode-hold-session-6ada953572572:zyMnt6FMb5mU6B9P",
+        "212.8.248.20:9999:rqbvsawlp7-pool-res.mobile.corp-country-RU-mode-hold-session-6ada953570eb4:zyMnt6FMb5mU6B9P",
+        "212.8.249.142:9999:rqbvsawlp7-pool-res.mobile.corp-country-US-mode-hold-session-6ada95356e50f:zyMnt6FMb5mU6B9P"
+      ]
+    },
+    {
+      "email": "ads-power-user1792710386140@sx.org",
+      "token": "2469332|THf0G4dNG0lt9ioOHRMKayo94DJq6o2uhkdfBxS0d55b1e86",
+      "session_id": "6d9c2942f6694ec9927873c87efe577d",
+      "x_auth_code": "sgnn3vfnvh",
+      "activated_at": "2026-10-22 23:06:29",
+      "proxies": [
+        "190.2.141.12:9999:fdfnwbrfrg-pool-res.mobile.corp-country-CN-mode-hold-session-6ada96f423807:qryz0PQeLRZIiKJN",
+        "62.112.8.26:9999:fdfnwbrfrg-pool-res.mobile.corp-country-CL-mode-hold-session-6ada96f422474:qryz0PQeLRZIiKJN",
+        "45.14.135.182:9999:fdfnwbrfrg-pool-res.mobile.corp-country-DE-mode-hold-session-6ada96f420fb7:qryz0PQeLRZIiKJN",
+        "82.38.66.153:9999:fdfnwbrfrg-pool-res.mobile.corp-country-FR-mode-hold-session-6ada96f41fb4c:qryz0PQeLRZIiKJN",
+        "212.8.249.142:9999:fdfnwbrfrg-pool-res.mobile.corp-country-UA-mode-hold-session-6ada96f41e906:qryz0PQeLRZIiKJN",
+        "212.8.249.142:9999:fdfnwbrfrg-pool-res.mobile.corp-country-AR-mode-hold-session-6ada96f41d734:qryz0PQeLRZIiKJN",
+        "212.8.249.142:9999:fdfnwbrfrg-pool-res.mobile.corp-country-VN-mode-hold-session-6ada96f41c51e:qryz0PQeLRZIiKJN",
+        "190.2.143.20:9999:fdfnwbrfrg-pool-res.mobile.corp-country-BR-mode-hold-session-6ada96f41b112:qryz0PQeLRZIiKJN",
+        "212.8.248.20:9999:fdfnwbrfrg-pool-res.mobile.corp-country-RU-mode-hold-session-6ada96f419d90:qryz0PQeLRZIiKJN",
+        "190.2.143.20:9999:fdfnwbrfrg-pool-res.mobile.corp-country-US-mode-hold-session-6ada96f417cbd:qryz0PQeLRZIiKJN"
+      ]
+    },
+    {
+      "email": "ads-power-user1792710397369@sx.org",
+      "token": "2469333|aJaVTfFTnjYkZnWgSnCQnLCgiQaUEx7vaLxljiFS40ecac16",
+      "session_id": "9d8a924bdea64093a580a938e3afa1f7",
+      "x_auth_code": "hwa6gtnsvn",
+      "activated_at": "2026-10-22 23:06:39",
+      "proxies": [
+        "185.100.235.113:9999:4sjpzlfvwb-pool-res.mobile.corp-country-CN-mode-hold-session-6ada96ff2db4c:sZ5zGrG3NkZwryKS",
+        "185.185.51.69:9999:4sjpzlfvwb-pool-res.mobile.corp-country-CL-mode-hold-session-6ada96ff2c76e:sZ5zGrG3NkZwryKS",
+        "190.2.143.20:9999:4sjpzlfvwb-pool-res.mobile.corp-country-DE-mode-hold-session-6ada96ff2b360:sZ5zGrG3NkZwryKS",
+        "185.185.51.69:9999:4sjpzlfvwb-pool-res.mobile.corp-country-FR-mode-hold-session-6ada96ff29fcd:sZ5zGrG3NkZwryKS",
+        "190.2.141.12:9999:4sjpzlfvwb-pool-res.mobile.corp-country-UA-mode-hold-session-6ada96ff28bc0:sZ5zGrG3NkZwryKS",
+        "185.185.51.243:9999:4sjpzlfvwb-pool-res.mobile.corp-country-AR-mode-hold-session-6ada96ff277d6:sZ5zGrG3NkZwryKS",
+        "190.2.141.12:9999:4sjpzlfvwb-pool-res.mobile.corp-country-VN-mode-hold-session-6ada96ff26344:sZ5zGrG3NkZwryKS",
+        "185.185.51.243:9999:4sjpzlfvwb-pool-res.mobile.corp-country-BR-mode-hold-session-6ada96ff24d5f:sZ5zGrG3NkZwryKS",
+        "62.112.8.26:9999:4sjpzlfvwb-pool-res.mobile.corp-country-RU-mode-hold-session-6ada96ff2374e:sZ5zGrG3NkZwryKS",
+        "185.180.220.99:9999:4sjpzlfvwb-pool-res.mobile.corp-country-US-mode-hold-session-6ada96ff21364:sZ5zGrG3NkZwryKS"
+      ]
+    },
+    {
+      "email": "ads-power-user1792713493944@sx.org",
+      "token": "2469353|i0ddY9wSykOf98FAduQBiRfxAk3h3ODzvp3iTC2r2c07f56a",
+      "session_id": "490d08a107e447cfa8966a0c5659b743",
+      "x_auth_code": "ghp97znh1f",
+      "activated_at": "2026-10-22 23:58:16",
+      "proxies": [
+        "190.2.141.12:9999:yqaxxxqukf-pool-res.mobile.corp-country-CL-mode-hold-session-6adaa3172b80b:2CUefKJMb9lcAo19",
+        "190.2.141.12:9999:yqaxxxqukf-pool-res.mobile.corp-country-CN-mode-hold-session-6adaa3172a515:2CUefKJMb9lcAo19",
+        "212.8.248.113:9999:yqaxxxqukf-pool-res.mobile.corp-country-DE-mode-hold-session-6adaa3172930a:2CUefKJMb9lcAo19",
+        "185.132.177.174:9999:yqaxxxqukf-pool-res.mobile.corp-country-FR-mode-hold-session-6adaa3172817d:2CUefKJMb9lcAo19",
+        "45.14.135.182:9999:yqaxxxqukf-pool-res.mobile.corp-country-AR-mode-hold-session-6adaa31726bd7:2CUefKJMb9lcAo19",
+        "212.8.248.113:9999:yqaxxxqukf-pool-res.mobile.corp-country-UA-mode-hold-session-6adaa31725599:2CUefKJMb9lcAo19",
+        "212.8.252.6:9999:yqaxxxqukf-pool-res.mobile.corp-country-VN-mode-hold-session-6adaa317241d3:2CUefKJMb9lcAo19",
+        "185.184.192.44:9999:yqaxxxqukf-pool-res.mobile.corp-country-BR-mode-hold-session-6adaa31722ddb:2CUefKJMb9lcAo19",
+        "190.2.141.31:9999:yqaxxxqukf-pool-res.mobile.corp-country-RU-mode-hold-session-6adaa31721b5e:2CUefKJMb9lcAo19",
+        "45.14.135.182:9999:yqaxxxqukf-pool-res.mobile.corp-country-US-mode-hold-session-6adaa3171fad3:2CUefKJMb9lcAo19"
+      ]
     }
   ],
-  "email": "ads-power-user1792608086152@sx.org",
-  "token": "2467597|anCFd4VHymidaucG5LU0xsDKUPVYjwJGtVFB4JNW83297393",
-  "session_id": "fcbad582be9e412fbda4542f586d56a0",
-  "x_auth_code": "k2dhsfcn9v",
-  "activated_at": "2026-10-21 18:41:28",
-  "total_active_sessions": 388
+  "email": "ads-power-user1792629693703@sx.org",
+  "token": "2467887|FKBiXwWVYpxz7QGH5ytKSg6AWxwFV2BDHyuPQwgVf277af57",
+  "session_id": "a6664fecfc104ac082685f4d2481040d",
+  "x_auth_code": "nmnplhi1fz",
+  "activated_at": "2026-10-22 00:41:34",
+  "total_active_sessions": 350
 }
